@@ -1,28 +1,13 @@
-const fs = require('fs').promises;
+import { readLines, printd } from "../common.mjs";
 
-const DEBUG_MODE = false
+const D = false
 const MODE = 'r' //t - test, r - real
 const FILE_PATH = `${MODE}input.txt`;
-
-async function readLines(path) {
-	try {
-		const inputD = await fs.readFile(path);
-		return inputD.toString().split('\n');
-	} catch (err) {
-		throw err;
-	}
-}
-
-function printd(str) {
-	if (DEBUG_MODE) {
-		console.log(str);
-	}
-}
 
 (async () => {
 	try {
 		const lines = await readLines(FILE_PATH);
-		printd(lines);
+		printd(lines, D);
 
 		let sum = 0;
 		let enabled = true;
@@ -48,7 +33,7 @@ function printd(str) {
 								console.log("PROBLEM: ", numsStr);
 							}
 							const nums = numsStr.map(en => Number(en[0])).reduce((acc, val) => acc * val, 1);
-							printd(`  With ${numsStr} - Total B/A: ${sum}/${sum + nums}`);
+							printd(`  With ${numsStr} - Total B/A: ${sum}/${sum + nums}`, D);
 							sum += nums;
 						}
 					} else {
@@ -56,9 +41,7 @@ function printd(str) {
 					}
 				});
 
-				printd("\n");
-
-
+				printd("\n", D);
 			}
 		});
 

@@ -1,23 +1,8 @@
-const fs = require('fs').promises;
+import { readLines, printd } from "../common.mjs";
 
-const DEBUG_MODE = false
+const D = false
 const MODE = 'r' //t - test, r - real
 const FILE_PATH = `${MODE}input.txt`;
-
-async function readLines(path) {
-	try {
-		const inputD = await fs.readFile(path);
-		return inputD.toString().split('\n');
-	} catch (err) {
-		throw err;
-	}
-}
-
-function printd(str) {
-	if (DEBUG_MODE) {
-		console.log(str);
-	}
-}
 
 /**
 	* We look at the central A and check if the cardinal positions correspond to our expectation 
@@ -29,7 +14,7 @@ function isXMAS(mat, i, j) {
 	}
 
 	if ((i - 1 >= 0) && (i + 1 < mat.length) && (j - 1 >= 0) && (j + 1 < mat[0].length)) {
-		printd(`Safe to get in at (${i},${j})`)
+		printd(`Safe to get in at (${i},${j})`, D);
 		//We can check for XMAS
 		//Count if we got 2 M and 2 S
 		const checkStr = mat[i - 1][j - 1] + mat[i - 1][j + 1] + mat[i + 1][j - 1] + mat[i + 1][j + 1];
@@ -67,14 +52,14 @@ function isXMAS(mat, i, j) {
 		return false;
 	}
 
-	printd("   - true")
+	printd("   - true", D);
 	return true;
 }
 
 (async () => {
 	try {
 		const lines = await readLines(FILE_PATH);
-		printd(lines);
+		printd(lines, D);
 
 		let sum = 0;
 
@@ -90,7 +75,6 @@ function isXMAS(mat, i, j) {
 		}
 
 		console.log("The Sum is: ", sum);
-
 	} catch (err) {
 		console.error("Error reading file:", err);
 	}

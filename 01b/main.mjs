@@ -1,6 +1,6 @@
-const fs = require('fs').promises;
+import { readLines, printd } from "../common.mjs";
 
-const DEBUG_MODE = false
+const D = false
 const MODE = 'r' //t - test, r - real
 const FILE_PATH = `${MODE}input.txt`;
 
@@ -16,9 +16,7 @@ async function readLines(path) {
 (async () => {
 	try {
 		const lines = await readLines(FILE_PATH);
-		if (DEBUG_MODE) {
-			console.log(lines);
-		}
+		printd(lines, D);
 
 		const list1 = [];
 		const list2 = [];
@@ -31,10 +29,8 @@ async function readLines(path) {
 			}
 		});
 
-		if (DEBUG_MODE) {
-			console.log("List1: ", list1);
-			console.log("List2: ", list2);
-		}
+		printd(`List1: ${list1}`, D);
+		printd(`List2: ${list2}`, D);
 
 		let sum = 0;
 

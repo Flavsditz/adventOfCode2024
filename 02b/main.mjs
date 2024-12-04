@@ -1,23 +1,9 @@
-const fs = require('fs').promises;
+import { readLines, printd } from "../common.mjs";
 
-const DEBUG_MODE = true
-const MODE = 'r' //t - test, r - real
+const D = true
+const MODE = 't' //t - test, r - real
 const FILE_PATH = `${MODE}input.txt`;
 
-async function readLines(path) {
-	try {
-		const inputD = await fs.readFile(path);
-		return inputD.toString().split('\n');
-	} catch (err) {
-		throw err;
-	}
-}
-
-function printd(str) {
-	if (DEBUG_MODE) {
-		console.log(str);
-	}
-}
 
 function isSafeLevels(nums) {
 	let isDecreasing = undefined;
@@ -53,7 +39,7 @@ function isSafeLevels(nums) {
 (async () => {
 	try {
 		const lines = await readLines(FILE_PATH);
-		printd(lines);
+		printd(lines, D);
 
 		let sum = 0;
 
@@ -61,18 +47,18 @@ function isSafeLevels(nums) {
 			if (line.trim() !== "") {
 				const nums = line.trim().split(/\s+/).map(Number);
 
-				printd(`Testing ${line}:`);
+				printd(`Testing ${line}:`, D);
 
 				if (isSafeLevels(nums)) {
 					sum++
-					printd(`   ----The line is safe as it is`);
+					printd(`   ----The line is safe as it is`, D);
 				} else {
 					for (let i = 0; i < nums.length; i++) {
 						const testNums = nums.slice()
 						testNums.splice(i, 1)
 						if (isSafeLevels(testNums)) {
 							sum++;
-							printd(`   ----The line ${line} is safe with variant ${testNums}`);
+							printd(`   ----The line ${line} is safe with variant ${testNums}`, D);
 							break
 						}
 					}
@@ -86,4 +72,3 @@ function isSafeLevels(nums) {
 		console.error("Error reading file:", err);
 	}
 })();
-

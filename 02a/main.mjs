@@ -1,24 +1,13 @@
-const fs = require('fs').promises;
+import { readLines, printd } from "../common.mjs";
 
-const DEBUG_MODE = true
+const D = false
 const MODE = 't' //t - test, r - real
 const FILE_PATH = `${MODE}input.txt`;
-
-async function readLines(path) {
-	try {
-		const inputD = await fs.readFile(path);
-		return inputD.toString().split('\n');
-	} catch (err) {
-		throw err;
-	}
-}
 
 (async () => {
 	try {
 		const lines = await readLines(FILE_PATH);
-		if (DEBUG_MODE) {
-			console.log(lines);
-		}
+		printd(lines, D);
 
 		let sum = 0;
 
@@ -58,17 +47,12 @@ async function readLines(path) {
 					sum++;
 				}
 
-				if (DEBUG_MODE) {
-					console.log(`The line ${line} is ${isSafe}`);
-				}
+				printd(`The line ${line} is ${isSafe}`, D);
 
 
 			}
 		});
 
-
-		if (DEBUG_MODE) {
-		}
 		console.log("The Sum is: ", sum);
 
 	} catch (err) {

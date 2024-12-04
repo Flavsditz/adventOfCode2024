@@ -1,24 +1,13 @@
-const fs = require('fs').promises;
+import { readLines, printd } from "../common.mjs";
 
-const DEBUG_MODE = false
+const D = false
 const MODE = 'r' //t - test, r - real
 const FILE_PATH = `${MODE}input.txt`;
-
-async function readLines(path) {
-	try {
-		const inputD = await fs.readFile(path);
-		return inputD.toString().split('\n');
-	} catch (err) {
-		throw err;
-	}
-}
 
 (async () => {
 	try {
 		const lines = await readLines(FILE_PATH);
-		if (DEBUG_MODE) {
-			console.log(lines);
-		}
+		printd(lines, D);
 
 		const list1 = [];
 		const list2 = [];
@@ -34,10 +23,8 @@ async function readLines(path) {
 		list1.sort();
 		list2.sort();
 
-		if (DEBUG_MODE) {
-			console.log("List1: ", list1);
-			console.log("List2: ", list2);
-		}
+		printd(`List1: ${list1}`, D);
+		printd(`List2: ${list2}`, D);
 		let sum = 0;
 		for (idx in list1) {
 			sum += Math.abs(list1[idx] - list2[idx])
