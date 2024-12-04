@@ -65,36 +65,21 @@ function isSafeLevels(nums) {
 
 				if (isSafeLevels(nums)) {
 					sum++
-					printd(`   ----The line ${line} is safe as it is`);
+					printd(`   ----The line is safe as it is`);
 				} else {
-					let count = 0;
-					for (let i = 0; i < nums.length - 1; i++) {
+					for (let i = 0; i < nums.length; i++) {
 						const testNums = nums.slice()
 						testNums.splice(i, 1)
-						if (!isSafeLevels(testNums)) {
-							printd(`   Variant ${testNums} is UNsafe`)
-						} else {
-							count++;
-							printd(`   Variant ${testNums} is safe`)
+						if (isSafeLevels(testNums)) {
+							sum++;
+							printd(`   ----The line ${line} is safe with variant ${testNums}`);
+							break
 						}
-					}
-
-					if (count > 0) {
-						sum++;
-					}
-
-					if (count > 0) {
-						printd(`   ----The line ${line} is safe (${count} safe options)`);
-					} else {
-						printd(`   ----The line ${line} is unsafe (${count} safe options)`);
 					}
 				}
 			}
 		});
 
-
-		if (DEBUG_MODE) {
-		}
 		console.log("The Sum is: ", sum);
 
 	} catch (err) {
