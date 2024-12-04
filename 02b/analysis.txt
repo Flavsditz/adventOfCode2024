@@ -1,0 +1,4460 @@
+[
+  '2 5 6 8 6',
+  '87 89 90 93 96 99 99',
+  '13 14 15 18 19 23',
+  '67 69 71 72 73 76 82',
+  '29 32 30 31 34 35 37',
+  '54 56 54 57 54',
+  '70 73 75 74 77 79 81 81',
+  '53 55 56 59 62 61 65',
+  '90 93 95 92 99',
+  '58 61 61 64 67',
+  '36 37 37 39 42 39',
+  '32 35 38 40 40 40',
+  '17 19 19 21 22 23 25 29',
+  '9 11 12 12 14 20',
+  '20 22 26 27 28 29',
+  '75 78 82 84 87 84',
+  '78 79 83 85 88 91 91',
+  '30 31 32 36 40',
+  '68 69 72 76 79 82 88',
+  '29 31 37 38 40 43 45 46',
+  '23 26 31 34 32',
+  '59 61 62 69 72 72',
+  '39 40 42 49 50 53 55 59',
+  '60 61 63 68 71 78',
+  '27 25 26 27 30 31',
+  '92 89 90 91 92 91',
+  '25 24 26 28 28',
+  '45 44 47 49 52 56',
+  '45 44 47 48 55',
+  '13 11 9 11 14 16 19',
+  '70 69 71 68 70 73 72',
+  '25 24 26 27 29 28 28',
+  '43 41 43 42 43 44 48',
+  '15 13 15 14 16 19 24',
+  '26 23 26 28 28 31',
+  '81 79 79 81 84 85 84',
+  '15 12 15 15 15',
+  '83 82 85 85 87 91',
+  '33 31 32 32 39',
+  '84 82 85 89 90',
+  '67 64 67 71 72 75 78 76',
+  '17 15 19 22 23 25 25',
+  '44 42 43 47 51',
+  '6 3 7 8 9 16',
+  '39 36 38 43 44 45 48 50',
+  '93 92 93 98 99 96',
+  '19 16 19 20 22 25 31 31',
+  '56 53 55 60 61 62 65 69',
+  '19 18 21 23 28 30 35',
+  '84 84 85 86 89',
+  '44 44 45 48 47',
+  '48 48 50 53 53',
+  '84 84 85 86 89 91 94 98',
+  '21 21 23 24 26 33',
+  '38 38 40 37 39',
+  '41 41 43 40 37',
+  '6 6 3 6 9 10 10',
+  '32 32 34 35 36 35 37 41',
+  '54 54 52 53 55 56 61',
+  '86 86 88 88 91 92 95 96',
+  '42 42 42 43 44 46 47 46',
+  '24 24 24 26 27 28 28',
+  '38 38 39 39 43',
+  '21 21 24 27 27 28 33',
+  '52 52 54 57 61 62',
+  '60 60 61 65 64',
+  '45 45 46 47 51 54 57 57',
+  '27 27 31 33 34 37 38 42',
+  '21 21 22 26 27 34',
+  '52 52 58 59 60 63 65 66',
+  '47 47 54 56 57 56',
+  '57 57 60 63 64 65 70 70',
+  '39 39 42 47 50 53 56 60',
+  '22 22 25 27 30 37 40 45',
+  '8 12 15 16 18 19 22',
+  '56 60 62 65 67 68 66',
+  '78 82 83 85 88 89 89',
+  '4 8 10 13 14 18',
+  '80 84 86 88 90 91 96',
+  '31 35 34 36 38 39',
+  '33 37 40 43 44 46 43 40',
+  '48 52 53 55 56 55 57 57',
+  '66 70 67 68 69 72 76',
+  '63 67 70 71 73 74 72 78',
+  '36 40 40 43 45',
+  '1 5 5 7 6',
+  '61 65 67 68 71 74 74 74',
+  '68 72 73 73 74 78',
+  '37 41 42 44 44 47 48 53',
+  '65 69 70 71 75 76',
+  '13 17 18 20 23 27 30 27',
+  '8 12 14 18 21 22 22',
+  '7 11 12 15 19 21 24 28',
+  '24 28 32 35 36 41',
+  '59 63 66 71 72',
+  '15 19 20 26 25',
+  '25 29 34 36 36',
+  '32 36 37 42 43 46 48 52',
+  '8 12 19 20 22 28',
+  '17 24 25 28 29 31 34',
+  ... 901 more items
+]
+Testing 2 5 6 8 6:
+   Variant 5,6,8,6 is UNsafe
+   Variant 2,6,8,6 is UNsafe
+   Variant 2,5,8,6 is UNsafe
+   Variant 2,5,6,6 is UNsafe
+   ----The line 2 5 6 8 6 is unsafe (0 safe options)
+Testing 87 89 90 93 96 99 99:
+   Variant 89,90,93,96,99,99 is UNsafe
+   Variant 87,90,93,96,99,99 is UNsafe
+   Variant 87,89,93,96,99,99 is UNsafe
+   Variant 87,89,90,96,99,99 is UNsafe
+   Variant 87,89,90,93,99,99 is UNsafe
+   Variant 87,89,90,93,96,99 is safe
+   ----The line 87 89 90 93 96 99 99 is safe (1 safe options)
+Testing 13 14 15 18 19 23:
+   Variant 14,15,18,19,23 is UNsafe
+   Variant 13,15,18,19,23 is UNsafe
+   Variant 13,14,18,19,23 is UNsafe
+   Variant 13,14,15,19,23 is UNsafe
+   Variant 13,14,15,18,23 is UNsafe
+   ----The line 13 14 15 18 19 23 is unsafe (0 safe options)
+Testing 67 69 71 72 73 76 82:
+   Variant 69,71,72,73,76,82 is UNsafe
+   Variant 67,71,72,73,76,82 is UNsafe
+   Variant 67,69,72,73,76,82 is UNsafe
+   Variant 67,69,71,73,76,82 is UNsafe
+   Variant 67,69,71,72,76,82 is UNsafe
+   Variant 67,69,71,72,73,82 is UNsafe
+   ----The line 67 69 71 72 73 76 82 is unsafe (0 safe options)
+Testing 29 32 30 31 34 35 37:
+   Variant 32,30,31,34,35,37 is UNsafe
+   Variant 29,30,31,34,35,37 is safe
+   Variant 29,32,31,34,35,37 is UNsafe
+   Variant 29,32,30,34,35,37 is UNsafe
+   Variant 29,32,30,31,35,37 is UNsafe
+   Variant 29,32,30,31,34,37 is UNsafe
+   ----The line 29 32 30 31 34 35 37 is safe (1 safe options)
+Testing 54 56 54 57 54:
+   Variant 56,54,57,54 is UNsafe
+   Variant 54,54,57,54 is UNsafe
+   Variant 54,56,57,54 is UNsafe
+   Variant 54,56,54,54 is UNsafe
+   ----The line 54 56 54 57 54 is unsafe (0 safe options)
+Testing 70 73 75 74 77 79 81 81:
+   Variant 73,75,74,77,79,81,81 is UNsafe
+   Variant 70,75,74,77,79,81,81 is UNsafe
+   Variant 70,73,74,77,79,81,81 is UNsafe
+   Variant 70,73,75,77,79,81,81 is UNsafe
+   Variant 70,73,75,74,79,81,81 is UNsafe
+   Variant 70,73,75,74,77,81,81 is UNsafe
+   Variant 70,73,75,74,77,79,81 is UNsafe
+   ----The line 70 73 75 74 77 79 81 81 is unsafe (0 safe options)
+Testing 53 55 56 59 62 61 65:
+   Variant 55,56,59,62,61,65 is UNsafe
+   Variant 53,56,59,62,61,65 is UNsafe
+   Variant 53,55,59,62,61,65 is UNsafe
+   Variant 53,55,56,62,61,65 is UNsafe
+   Variant 53,55,56,59,61,65 is UNsafe
+   Variant 53,55,56,59,62,65 is safe
+   ----The line 53 55 56 59 62 61 65 is safe (1 safe options)
+Testing 90 93 95 92 99:
+   Variant 93,95,92,99 is UNsafe
+   Variant 90,95,92,99 is UNsafe
+   Variant 90,93,92,99 is UNsafe
+   Variant 90,93,95,99 is UNsafe
+   ----The line 90 93 95 92 99 is unsafe (0 safe options)
+Testing 58 61 61 64 67:
+   Variant 61,61,64,67 is UNsafe
+   Variant 58,61,64,67 is safe
+   Variant 58,61,64,67 is safe
+   Variant 58,61,61,67 is UNsafe
+   ----The line 58 61 61 64 67 is safe (2 safe options)
+Testing 36 37 37 39 42 39:
+   Variant 37,37,39,42,39 is UNsafe
+   Variant 36,37,39,42,39 is UNsafe
+   Variant 36,37,39,42,39 is UNsafe
+   Variant 36,37,37,42,39 is UNsafe
+   Variant 36,37,37,39,39 is UNsafe
+   ----The line 36 37 37 39 42 39 is unsafe (0 safe options)
+Testing 32 35 38 40 40 40:
+   Variant 35,38,40,40,40 is UNsafe
+   Variant 32,38,40,40,40 is UNsafe
+   Variant 32,35,40,40,40 is UNsafe
+   Variant 32,35,38,40,40 is UNsafe
+   Variant 32,35,38,40,40 is UNsafe
+   ----The line 32 35 38 40 40 40 is unsafe (0 safe options)
+Testing 17 19 19 21 22 23 25 29:
+   Variant 19,19,21,22,23,25,29 is UNsafe
+   Variant 17,19,21,22,23,25,29 is UNsafe
+   Variant 17,19,21,22,23,25,29 is UNsafe
+   Variant 17,19,19,22,23,25,29 is UNsafe
+   Variant 17,19,19,21,23,25,29 is UNsafe
+   Variant 17,19,19,21,22,25,29 is UNsafe
+   Variant 17,19,19,21,22,23,29 is UNsafe
+   ----The line 17 19 19 21 22 23 25 29 is unsafe (0 safe options)
+Testing 9 11 12 12 14 20:
+   Variant 11,12,12,14,20 is UNsafe
+   Variant 9,12,12,14,20 is UNsafe
+   Variant 9,11,12,14,20 is UNsafe
+   Variant 9,11,12,14,20 is UNsafe
+   Variant 9,11,12,12,20 is UNsafe
+   ----The line 9 11 12 12 14 20 is unsafe (0 safe options)
+Testing 20 22 26 27 28 29:
+   Variant 22,26,27,28,29 is UNsafe
+   Variant 20,26,27,28,29 is UNsafe
+   Variant 20,22,27,28,29 is UNsafe
+   Variant 20,22,26,28,29 is UNsafe
+   Variant 20,22,26,27,29 is UNsafe
+   ----The line 20 22 26 27 28 29 is unsafe (0 safe options)
+Testing 75 78 82 84 87 84:
+   Variant 78,82,84,87,84 is UNsafe
+   Variant 75,82,84,87,84 is UNsafe
+   Variant 75,78,84,87,84 is UNsafe
+   Variant 75,78,82,87,84 is UNsafe
+   Variant 75,78,82,84,84 is UNsafe
+   ----The line 75 78 82 84 87 84 is unsafe (0 safe options)
+Testing 78 79 83 85 88 91 91:
+   Variant 79,83,85,88,91,91 is UNsafe
+   Variant 78,83,85,88,91,91 is UNsafe
+   Variant 78,79,85,88,91,91 is UNsafe
+   Variant 78,79,83,88,91,91 is UNsafe
+   Variant 78,79,83,85,91,91 is UNsafe
+   Variant 78,79,83,85,88,91 is UNsafe
+   ----The line 78 79 83 85 88 91 91 is unsafe (0 safe options)
+Testing 30 31 32 36 40:
+   Variant 31,32,36,40 is UNsafe
+   Variant 30,32,36,40 is UNsafe
+   Variant 30,31,36,40 is UNsafe
+   Variant 30,31,32,40 is UNsafe
+   ----The line 30 31 32 36 40 is unsafe (0 safe options)
+Testing 68 69 72 76 79 82 88:
+   Variant 69,72,76,79,82,88 is UNsafe
+   Variant 68,72,76,79,82,88 is UNsafe
+   Variant 68,69,76,79,82,88 is UNsafe
+   Variant 68,69,72,79,82,88 is UNsafe
+   Variant 68,69,72,76,82,88 is UNsafe
+   Variant 68,69,72,76,79,88 is UNsafe
+   ----The line 68 69 72 76 79 82 88 is unsafe (0 safe options)
+Testing 29 31 37 38 40 43 45 46:
+   Variant 31,37,38,40,43,45,46 is UNsafe
+   Variant 29,37,38,40,43,45,46 is UNsafe
+   Variant 29,31,38,40,43,45,46 is UNsafe
+   Variant 29,31,37,40,43,45,46 is UNsafe
+   Variant 29,31,37,38,43,45,46 is UNsafe
+   Variant 29,31,37,38,40,45,46 is UNsafe
+   Variant 29,31,37,38,40,43,46 is UNsafe
+   ----The line 29 31 37 38 40 43 45 46 is unsafe (0 safe options)
+Testing 23 26 31 34 32:
+   Variant 26,31,34,32 is UNsafe
+   Variant 23,31,34,32 is UNsafe
+   Variant 23,26,34,32 is UNsafe
+   Variant 23,26,31,32 is UNsafe
+   ----The line 23 26 31 34 32 is unsafe (0 safe options)
+Testing 59 61 62 69 72 72:
+   Variant 61,62,69,72,72 is UNsafe
+   Variant 59,62,69,72,72 is UNsafe
+   Variant 59,61,69,72,72 is UNsafe
+   Variant 59,61,62,72,72 is UNsafe
+   Variant 59,61,62,69,72 is UNsafe
+   ----The line 59 61 62 69 72 72 is unsafe (0 safe options)
+Testing 39 40 42 49 50 53 55 59:
+   Variant 40,42,49,50,53,55,59 is UNsafe
+   Variant 39,42,49,50,53,55,59 is UNsafe
+   Variant 39,40,49,50,53,55,59 is UNsafe
+   Variant 39,40,42,50,53,55,59 is UNsafe
+   Variant 39,40,42,49,53,55,59 is UNsafe
+   Variant 39,40,42,49,50,55,59 is UNsafe
+   Variant 39,40,42,49,50,53,59 is UNsafe
+   ----The line 39 40 42 49 50 53 55 59 is unsafe (0 safe options)
+Testing 60 61 63 68 71 78:
+   Variant 61,63,68,71,78 is UNsafe
+   Variant 60,63,68,71,78 is UNsafe
+   Variant 60,61,68,71,78 is UNsafe
+   Variant 60,61,63,71,78 is UNsafe
+   Variant 60,61,63,68,78 is UNsafe
+   ----The line 60 61 63 68 71 78 is unsafe (0 safe options)
+Testing 27 25 26 27 30 31:
+   Variant 25,26,27,30,31 is safe
+   Variant 27,26,27,30,31 is UNsafe
+   Variant 27,25,27,30,31 is UNsafe
+   Variant 27,25,26,30,31 is UNsafe
+   Variant 27,25,26,27,31 is UNsafe
+   ----The line 27 25 26 27 30 31 is safe (1 safe options)
+Testing 92 89 90 91 92 91:
+   Variant 89,90,91,92,91 is UNsafe
+   Variant 92,90,91,92,91 is UNsafe
+   Variant 92,89,91,92,91 is UNsafe
+   Variant 92,89,90,92,91 is UNsafe
+   Variant 92,89,90,91,91 is UNsafe
+   ----The line 92 89 90 91 92 91 is unsafe (0 safe options)
+Testing 25 24 26 28 28:
+   Variant 24,26,28,28 is UNsafe
+   Variant 25,26,28,28 is UNsafe
+   Variant 25,24,28,28 is UNsafe
+   Variant 25,24,26,28 is UNsafe
+   ----The line 25 24 26 28 28 is unsafe (0 safe options)
+Testing 45 44 47 49 52 56:
+   Variant 44,47,49,52,56 is UNsafe
+   Variant 45,47,49,52,56 is UNsafe
+   Variant 45,44,49,52,56 is UNsafe
+   Variant 45,44,47,52,56 is UNsafe
+   Variant 45,44,47,49,56 is UNsafe
+   ----The line 45 44 47 49 52 56 is unsafe (0 safe options)
+Testing 45 44 47 48 55:
+   Variant 44,47,48,55 is UNsafe
+   Variant 45,47,48,55 is UNsafe
+   Variant 45,44,48,55 is UNsafe
+   Variant 45,44,47,55 is UNsafe
+   ----The line 45 44 47 48 55 is unsafe (0 safe options)
+Testing 13 11 9 11 14 16 19:
+   Variant 11,9,11,14,16,19 is UNsafe
+   Variant 13,9,11,14,16,19 is UNsafe
+   Variant 13,11,11,14,16,19 is UNsafe
+   Variant 13,11,9,14,16,19 is UNsafe
+   Variant 13,11,9,11,16,19 is UNsafe
+   Variant 13,11,9,11,14,19 is UNsafe
+   ----The line 13 11 9 11 14 16 19 is unsafe (0 safe options)
+Testing 70 69 71 68 70 73 72:
+   Variant 69,71,68,70,73,72 is UNsafe
+   Variant 70,71,68,70,73,72 is UNsafe
+   Variant 70,69,68,70,73,72 is UNsafe
+   Variant 70,69,71,70,73,72 is UNsafe
+   Variant 70,69,71,68,73,72 is UNsafe
+   Variant 70,69,71,68,70,72 is UNsafe
+   ----The line 70 69 71 68 70 73 72 is unsafe (0 safe options)
+Testing 25 24 26 27 29 28 28:
+   Variant 24,26,27,29,28,28 is UNsafe
+   Variant 25,26,27,29,28,28 is UNsafe
+   Variant 25,24,27,29,28,28 is UNsafe
+   Variant 25,24,26,29,28,28 is UNsafe
+   Variant 25,24,26,27,28,28 is UNsafe
+   Variant 25,24,26,27,29,28 is UNsafe
+   ----The line 25 24 26 27 29 28 28 is unsafe (0 safe options)
+Testing 43 41 43 42 43 44 48:
+   Variant 41,43,42,43,44,48 is UNsafe
+   Variant 43,43,42,43,44,48 is UNsafe
+   Variant 43,41,42,43,44,48 is UNsafe
+   Variant 43,41,43,43,44,48 is UNsafe
+   Variant 43,41,43,42,44,48 is UNsafe
+   Variant 43,41,43,42,43,48 is UNsafe
+   ----The line 43 41 43 42 43 44 48 is unsafe (0 safe options)
+Testing 15 13 15 14 16 19 24:
+   Variant 13,15,14,16,19,24 is UNsafe
+   Variant 15,15,14,16,19,24 is UNsafe
+   Variant 15,13,14,16,19,24 is UNsafe
+   Variant 15,13,15,16,19,24 is UNsafe
+   Variant 15,13,15,14,19,24 is UNsafe
+   Variant 15,13,15,14,16,24 is UNsafe
+   ----The line 15 13 15 14 16 19 24 is unsafe (0 safe options)
+Testing 26 23 26 28 28 31:
+   Variant 23,26,28,28,31 is UNsafe
+   Variant 26,26,28,28,31 is UNsafe
+   Variant 26,23,28,28,31 is UNsafe
+   Variant 26,23,26,28,31 is UNsafe
+   Variant 26,23,26,28,31 is UNsafe
+   ----The line 26 23 26 28 28 31 is unsafe (0 safe options)
+Testing 81 79 79 81 84 85 84:
+   Variant 79,79,81,84,85,84 is UNsafe
+   Variant 81,79,81,84,85,84 is UNsafe
+   Variant 81,79,81,84,85,84 is UNsafe
+   Variant 81,79,79,84,85,84 is UNsafe
+   Variant 81,79,79,81,85,84 is UNsafe
+   Variant 81,79,79,81,84,84 is UNsafe
+   ----The line 81 79 79 81 84 85 84 is unsafe (0 safe options)
+Testing 15 12 15 15 15:
+   Variant 12,15,15,15 is UNsafe
+   Variant 15,15,15,15 is UNsafe
+   Variant 15,12,15,15 is UNsafe
+   Variant 15,12,15,15 is UNsafe
+   ----The line 15 12 15 15 15 is unsafe (0 safe options)
+Testing 83 82 85 85 87 91:
+   Variant 82,85,85,87,91 is UNsafe
+   Variant 83,85,85,87,91 is UNsafe
+   Variant 83,82,85,87,91 is UNsafe
+   Variant 83,82,85,87,91 is UNsafe
+   Variant 83,82,85,85,91 is UNsafe
+   ----The line 83 82 85 85 87 91 is unsafe (0 safe options)
+Testing 33 31 32 32 39:
+   Variant 31,32,32,39 is UNsafe
+   Variant 33,32,32,39 is UNsafe
+   Variant 33,31,32,39 is UNsafe
+   Variant 33,31,32,39 is UNsafe
+   ----The line 33 31 32 32 39 is unsafe (0 safe options)
+Testing 84 82 85 89 90:
+   Variant 82,85,89,90 is UNsafe
+   Variant 84,85,89,90 is UNsafe
+   Variant 84,82,89,90 is UNsafe
+   Variant 84,82,85,90 is UNsafe
+   ----The line 84 82 85 89 90 is unsafe (0 safe options)
+Testing 67 64 67 71 72 75 78 76:
+   Variant 64,67,71,72,75,78,76 is UNsafe
+   Variant 67,67,71,72,75,78,76 is UNsafe
+   Variant 67,64,71,72,75,78,76 is UNsafe
+   Variant 67,64,67,72,75,78,76 is UNsafe
+   Variant 67,64,67,71,75,78,76 is UNsafe
+   Variant 67,64,67,71,72,78,76 is UNsafe
+   Variant 67,64,67,71,72,75,76 is UNsafe
+   ----The line 67 64 67 71 72 75 78 76 is unsafe (0 safe options)
+Testing 17 15 19 22 23 25 25:
+   Variant 15,19,22,23,25,25 is UNsafe
+   Variant 17,19,22,23,25,25 is UNsafe
+   Variant 17,15,22,23,25,25 is UNsafe
+   Variant 17,15,19,23,25,25 is UNsafe
+   Variant 17,15,19,22,25,25 is UNsafe
+   Variant 17,15,19,22,23,25 is UNsafe
+   ----The line 17 15 19 22 23 25 25 is unsafe (0 safe options)
+Testing 44 42 43 47 51:
+   Variant 42,43,47,51 is UNsafe
+   Variant 44,43,47,51 is UNsafe
+   Variant 44,42,47,51 is UNsafe
+   Variant 44,42,43,51 is UNsafe
+   ----The line 44 42 43 47 51 is unsafe (0 safe options)
+Testing 6 3 7 8 9 16:
+   Variant 3,7,8,9,16 is UNsafe
+   Variant 6,7,8,9,16 is UNsafe
+   Variant 6,3,8,9,16 is UNsafe
+   Variant 6,3,7,9,16 is UNsafe
+   Variant 6,3,7,8,16 is UNsafe
+   ----The line 6 3 7 8 9 16 is unsafe (0 safe options)
+Testing 39 36 38 43 44 45 48 50:
+   Variant 36,38,43,44,45,48,50 is UNsafe
+   Variant 39,38,43,44,45,48,50 is UNsafe
+   Variant 39,36,43,44,45,48,50 is UNsafe
+   Variant 39,36,38,44,45,48,50 is UNsafe
+   Variant 39,36,38,43,45,48,50 is UNsafe
+   Variant 39,36,38,43,44,48,50 is UNsafe
+   Variant 39,36,38,43,44,45,50 is UNsafe
+   ----The line 39 36 38 43 44 45 48 50 is unsafe (0 safe options)
+Testing 93 92 93 98 99 96:
+   Variant 92,93,98,99,96 is UNsafe
+   Variant 93,93,98,99,96 is UNsafe
+   Variant 93,92,98,99,96 is UNsafe
+   Variant 93,92,93,99,96 is UNsafe
+   Variant 93,92,93,98,96 is UNsafe
+   ----The line 93 92 93 98 99 96 is unsafe (0 safe options)
+Testing 19 16 19 20 22 25 31 31:
+   Variant 16,19,20,22,25,31,31 is UNsafe
+   Variant 19,19,20,22,25,31,31 is UNsafe
+   Variant 19,16,20,22,25,31,31 is UNsafe
+   Variant 19,16,19,22,25,31,31 is UNsafe
+   Variant 19,16,19,20,25,31,31 is UNsafe
+   Variant 19,16,19,20,22,31,31 is UNsafe
+   Variant 19,16,19,20,22,25,31 is UNsafe
+   ----The line 19 16 19 20 22 25 31 31 is unsafe (0 safe options)
+Testing 56 53 55 60 61 62 65 69:
+   Variant 53,55,60,61,62,65,69 is UNsafe
+   Variant 56,55,60,61,62,65,69 is UNsafe
+   Variant 56,53,60,61,62,65,69 is UNsafe
+   Variant 56,53,55,61,62,65,69 is UNsafe
+   Variant 56,53,55,60,62,65,69 is UNsafe
+   Variant 56,53,55,60,61,65,69 is UNsafe
+   Variant 56,53,55,60,61,62,69 is UNsafe
+   ----The line 56 53 55 60 61 62 65 69 is unsafe (0 safe options)
+Testing 19 18 21 23 28 30 35:
+   Variant 18,21,23,28,30,35 is UNsafe
+   Variant 19,21,23,28,30,35 is UNsafe
+   Variant 19,18,23,28,30,35 is UNsafe
+   Variant 19,18,21,28,30,35 is UNsafe
+   Variant 19,18,21,23,30,35 is UNsafe
+   Variant 19,18,21,23,28,35 is UNsafe
+   ----The line 19 18 21 23 28 30 35 is unsafe (0 safe options)
+Testing 84 84 85 86 89:
+   Variant 84,85,86,89 is safe
+   Variant 84,85,86,89 is safe
+   Variant 84,84,86,89 is UNsafe
+   Variant 84,84,85,89 is UNsafe
+   ----The line 84 84 85 86 89 is safe (2 safe options)
+Testing 44 44 45 48 47:
+   Variant 44,45,48,47 is UNsafe
+   Variant 44,45,48,47 is UNsafe
+   Variant 44,44,48,47 is UNsafe
+   Variant 44,44,45,47 is UNsafe
+   ----The line 44 44 45 48 47 is unsafe (0 safe options)
+Testing 48 48 50 53 53:
+   Variant 48,50,53,53 is UNsafe
+   Variant 48,50,53,53 is UNsafe
+   Variant 48,48,53,53 is UNsafe
+   Variant 48,48,50,53 is UNsafe
+   ----The line 48 48 50 53 53 is unsafe (0 safe options)
+Testing 84 84 85 86 89 91 94 98:
+   Variant 84,85,86,89,91,94,98 is UNsafe
+   Variant 84,85,86,89,91,94,98 is UNsafe
+   Variant 84,84,86,89,91,94,98 is UNsafe
+   Variant 84,84,85,89,91,94,98 is UNsafe
+   Variant 84,84,85,86,91,94,98 is UNsafe
+   Variant 84,84,85,86,89,94,98 is UNsafe
+   Variant 84,84,85,86,89,91,98 is UNsafe
+   ----The line 84 84 85 86 89 91 94 98 is unsafe (0 safe options)
+Testing 21 21 23 24 26 33:
+   Variant 21,23,24,26,33 is UNsafe
+   Variant 21,23,24,26,33 is UNsafe
+   Variant 21,21,24,26,33 is UNsafe
+   Variant 21,21,23,26,33 is UNsafe
+   Variant 21,21,23,24,33 is UNsafe
+   ----The line 21 21 23 24 26 33 is unsafe (0 safe options)
+Testing 38 38 40 37 39:
+   Variant 38,40,37,39 is UNsafe
+   Variant 38,40,37,39 is UNsafe
+   Variant 38,38,37,39 is UNsafe
+   Variant 38,38,40,39 is UNsafe
+   ----The line 38 38 40 37 39 is unsafe (0 safe options)
+Testing 41 41 43 40 37:
+   Variant 41,43,40,37 is UNsafe
+   Variant 41,43,40,37 is UNsafe
+   Variant 41,41,40,37 is UNsafe
+   Variant 41,41,43,37 is UNsafe
+   ----The line 41 41 43 40 37 is unsafe (0 safe options)
+Testing 6 6 3 6 9 10 10:
+   Variant 6,3,6,9,10,10 is UNsafe
+   Variant 6,3,6,9,10,10 is UNsafe
+   Variant 6,6,6,9,10,10 is UNsafe
+   Variant 6,6,3,9,10,10 is UNsafe
+   Variant 6,6,3,6,10,10 is UNsafe
+   Variant 6,6,3,6,9,10 is UNsafe
+   ----The line 6 6 3 6 9 10 10 is unsafe (0 safe options)
+Testing 32 32 34 35 36 35 37 41:
+   Variant 32,34,35,36,35,37,41 is UNsafe
+   Variant 32,34,35,36,35,37,41 is UNsafe
+   Variant 32,32,35,36,35,37,41 is UNsafe
+   Variant 32,32,34,36,35,37,41 is UNsafe
+   Variant 32,32,34,35,35,37,41 is UNsafe
+   Variant 32,32,34,35,36,37,41 is UNsafe
+   Variant 32,32,34,35,36,35,41 is UNsafe
+   ----The line 32 32 34 35 36 35 37 41 is unsafe (0 safe options)
+Testing 54 54 52 53 55 56 61:
+   Variant 54,52,53,55,56,61 is UNsafe
+   Variant 54,52,53,55,56,61 is UNsafe
+   Variant 54,54,53,55,56,61 is UNsafe
+   Variant 54,54,52,55,56,61 is UNsafe
+   Variant 54,54,52,53,56,61 is UNsafe
+   Variant 54,54,52,53,55,61 is UNsafe
+   ----The line 54 54 52 53 55 56 61 is unsafe (0 safe options)
+Testing 86 86 88 88 91 92 95 96:
+   Variant 86,88,88,91,92,95,96 is UNsafe
+   Variant 86,88,88,91,92,95,96 is UNsafe
+   Variant 86,86,88,91,92,95,96 is UNsafe
+   Variant 86,86,88,91,92,95,96 is UNsafe
+   Variant 86,86,88,88,92,95,96 is UNsafe
+   Variant 86,86,88,88,91,95,96 is UNsafe
+   Variant 86,86,88,88,91,92,96 is UNsafe
+   ----The line 86 86 88 88 91 92 95 96 is unsafe (0 safe options)
+Testing 42 42 42 43 44 46 47 46:
+   Variant 42,42,43,44,46,47,46 is UNsafe
+   Variant 42,42,43,44,46,47,46 is UNsafe
+   Variant 42,42,43,44,46,47,46 is UNsafe
+   Variant 42,42,42,44,46,47,46 is UNsafe
+   Variant 42,42,42,43,46,47,46 is UNsafe
+   Variant 42,42,42,43,44,47,46 is UNsafe
+   Variant 42,42,42,43,44,46,46 is UNsafe
+   ----The line 42 42 42 43 44 46 47 46 is unsafe (0 safe options)
+Testing 24 24 24 26 27 28 28:
+   Variant 24,24,26,27,28,28 is UNsafe
+   Variant 24,24,26,27,28,28 is UNsafe
+   Variant 24,24,26,27,28,28 is UNsafe
+   Variant 24,24,24,27,28,28 is UNsafe
+   Variant 24,24,24,26,28,28 is UNsafe
+   Variant 24,24,24,26,27,28 is UNsafe
+   ----The line 24 24 24 26 27 28 28 is unsafe (0 safe options)
+Testing 38 38 39 39 43:
+   Variant 38,39,39,43 is UNsafe
+   Variant 38,39,39,43 is UNsafe
+   Variant 38,38,39,43 is UNsafe
+   Variant 38,38,39,43 is UNsafe
+   ----The line 38 38 39 39 43 is unsafe (0 safe options)
+Testing 21 21 24 27 27 28 33:
+   Variant 21,24,27,27,28,33 is UNsafe
+   Variant 21,24,27,27,28,33 is UNsafe
+   Variant 21,21,27,27,28,33 is UNsafe
+   Variant 21,21,24,27,28,33 is UNsafe
+   Variant 21,21,24,27,28,33 is UNsafe
+   Variant 21,21,24,27,27,33 is UNsafe
+   ----The line 21 21 24 27 27 28 33 is unsafe (0 safe options)
+Testing 52 52 54 57 61 62:
+   Variant 52,54,57,61,62 is UNsafe
+   Variant 52,54,57,61,62 is UNsafe
+   Variant 52,52,57,61,62 is UNsafe
+   Variant 52,52,54,61,62 is UNsafe
+   Variant 52,52,54,57,62 is UNsafe
+   ----The line 52 52 54 57 61 62 is unsafe (0 safe options)
+Testing 60 60 61 65 64:
+   Variant 60,61,65,64 is UNsafe
+   Variant 60,61,65,64 is UNsafe
+   Variant 60,60,65,64 is UNsafe
+   Variant 60,60,61,64 is UNsafe
+   ----The line 60 60 61 65 64 is unsafe (0 safe options)
+Testing 45 45 46 47 51 54 57 57:
+   Variant 45,46,47,51,54,57,57 is UNsafe
+   Variant 45,46,47,51,54,57,57 is UNsafe
+   Variant 45,45,47,51,54,57,57 is UNsafe
+   Variant 45,45,46,51,54,57,57 is UNsafe
+   Variant 45,45,46,47,54,57,57 is UNsafe
+   Variant 45,45,46,47,51,57,57 is UNsafe
+   Variant 45,45,46,47,51,54,57 is UNsafe
+   ----The line 45 45 46 47 51 54 57 57 is unsafe (0 safe options)
+Testing 27 27 31 33 34 37 38 42:
+   Variant 27,31,33,34,37,38,42 is UNsafe
+   Variant 27,31,33,34,37,38,42 is UNsafe
+   Variant 27,27,33,34,37,38,42 is UNsafe
+   Variant 27,27,31,34,37,38,42 is UNsafe
+   Variant 27,27,31,33,37,38,42 is UNsafe
+   Variant 27,27,31,33,34,38,42 is UNsafe
+   Variant 27,27,31,33,34,37,42 is UNsafe
+   ----The line 27 27 31 33 34 37 38 42 is unsafe (0 safe options)
+Testing 21 21 22 26 27 34:
+   Variant 21,22,26,27,34 is UNsafe
+   Variant 21,22,26,27,34 is UNsafe
+   Variant 21,21,26,27,34 is UNsafe
+   Variant 21,21,22,27,34 is UNsafe
+   Variant 21,21,22,26,34 is UNsafe
+   ----The line 21 21 22 26 27 34 is unsafe (0 safe options)
+Testing 52 52 58 59 60 63 65 66:
+   Variant 52,58,59,60,63,65,66 is UNsafe
+   Variant 52,58,59,60,63,65,66 is UNsafe
+   Variant 52,52,59,60,63,65,66 is UNsafe
+   Variant 52,52,58,60,63,65,66 is UNsafe
+   Variant 52,52,58,59,63,65,66 is UNsafe
+   Variant 52,52,58,59,60,65,66 is UNsafe
+   Variant 52,52,58,59,60,63,66 is UNsafe
+   ----The line 52 52 58 59 60 63 65 66 is unsafe (0 safe options)
+Testing 47 47 54 56 57 56:
+   Variant 47,54,56,57,56 is UNsafe
+   Variant 47,54,56,57,56 is UNsafe
+   Variant 47,47,56,57,56 is UNsafe
+   Variant 47,47,54,57,56 is UNsafe
+   Variant 47,47,54,56,56 is UNsafe
+   ----The line 47 47 54 56 57 56 is unsafe (0 safe options)
+Testing 57 57 60 63 64 65 70 70:
+   Variant 57,60,63,64,65,70,70 is UNsafe
+   Variant 57,60,63,64,65,70,70 is UNsafe
+   Variant 57,57,63,64,65,70,70 is UNsafe
+   Variant 57,57,60,64,65,70,70 is UNsafe
+   Variant 57,57,60,63,65,70,70 is UNsafe
+   Variant 57,57,60,63,64,70,70 is UNsafe
+   Variant 57,57,60,63,64,65,70 is UNsafe
+   ----The line 57 57 60 63 64 65 70 70 is unsafe (0 safe options)
+Testing 39 39 42 47 50 53 56 60:
+   Variant 39,42,47,50,53,56,60 is UNsafe
+   Variant 39,42,47,50,53,56,60 is UNsafe
+   Variant 39,39,47,50,53,56,60 is UNsafe
+   Variant 39,39,42,50,53,56,60 is UNsafe
+   Variant 39,39,42,47,53,56,60 is UNsafe
+   Variant 39,39,42,47,50,56,60 is UNsafe
+   Variant 39,39,42,47,50,53,60 is UNsafe
+   ----The line 39 39 42 47 50 53 56 60 is unsafe (0 safe options)
+Testing 22 22 25 27 30 37 40 45:
+   Variant 22,25,27,30,37,40,45 is UNsafe
+   Variant 22,25,27,30,37,40,45 is UNsafe
+   Variant 22,22,27,30,37,40,45 is UNsafe
+   Variant 22,22,25,30,37,40,45 is UNsafe
+   Variant 22,22,25,27,37,40,45 is UNsafe
+   Variant 22,22,25,27,30,40,45 is UNsafe
+   Variant 22,22,25,27,30,37,45 is UNsafe
+   ----The line 22 22 25 27 30 37 40 45 is unsafe (0 safe options)
+Testing 8 12 15 16 18 19 22:
+   Variant 12,15,16,18,19,22 is safe
+   Variant 8,15,16,18,19,22 is UNsafe
+   Variant 8,12,16,18,19,22 is UNsafe
+   Variant 8,12,15,18,19,22 is UNsafe
+   Variant 8,12,15,16,19,22 is UNsafe
+   Variant 8,12,15,16,18,22 is UNsafe
+   ----The line 8 12 15 16 18 19 22 is safe (1 safe options)
+Testing 56 60 62 65 67 68 66:
+   Variant 60,62,65,67,68,66 is UNsafe
+   Variant 56,62,65,67,68,66 is UNsafe
+   Variant 56,60,65,67,68,66 is UNsafe
+   Variant 56,60,62,67,68,66 is UNsafe
+   Variant 56,60,62,65,68,66 is UNsafe
+   Variant 56,60,62,65,67,66 is UNsafe
+   ----The line 56 60 62 65 67 68 66 is unsafe (0 safe options)
+Testing 78 82 83 85 88 89 89:
+   Variant 82,83,85,88,89,89 is UNsafe
+   Variant 78,83,85,88,89,89 is UNsafe
+   Variant 78,82,85,88,89,89 is UNsafe
+   Variant 78,82,83,88,89,89 is UNsafe
+   Variant 78,82,83,85,89,89 is UNsafe
+   Variant 78,82,83,85,88,89 is UNsafe
+   ----The line 78 82 83 85 88 89 89 is unsafe (0 safe options)
+Testing 4 8 10 13 14 18:
+   Variant 8,10,13,14,18 is UNsafe
+   Variant 4,10,13,14,18 is UNsafe
+   Variant 4,8,13,14,18 is UNsafe
+   Variant 4,8,10,14,18 is UNsafe
+   Variant 4,8,10,13,18 is UNsafe
+   ----The line 4 8 10 13 14 18 is unsafe (0 safe options)
+Testing 80 84 86 88 90 91 96:
+   Variant 84,86,88,90,91,96 is UNsafe
+   Variant 80,86,88,90,91,96 is UNsafe
+   Variant 80,84,88,90,91,96 is UNsafe
+   Variant 80,84,86,90,91,96 is UNsafe
+   Variant 80,84,86,88,91,96 is UNsafe
+   Variant 80,84,86,88,90,96 is UNsafe
+   ----The line 80 84 86 88 90 91 96 is unsafe (0 safe options)
+Testing 31 35 34 36 38 39:
+   Variant 35,34,36,38,39 is UNsafe
+   Variant 31,34,36,38,39 is safe
+   Variant 31,35,36,38,39 is UNsafe
+   Variant 31,35,34,38,39 is UNsafe
+   Variant 31,35,34,36,39 is UNsafe
+   ----The line 31 35 34 36 38 39 is safe (1 safe options)
+Testing 33 37 40 43 44 46 43 40:
+   Variant 37,40,43,44,46,43,40 is UNsafe
+   Variant 33,40,43,44,46,43,40 is UNsafe
+   Variant 33,37,43,44,46,43,40 is UNsafe
+   Variant 33,37,40,44,46,43,40 is UNsafe
+   Variant 33,37,40,43,46,43,40 is UNsafe
+   Variant 33,37,40,43,44,43,40 is UNsafe
+   Variant 33,37,40,43,44,46,40 is UNsafe
+   ----The line 33 37 40 43 44 46 43 40 is unsafe (0 safe options)
+Testing 48 52 53 55 56 55 57 57:
+   Variant 52,53,55,56,55,57,57 is UNsafe
+   Variant 48,53,55,56,55,57,57 is UNsafe
+   Variant 48,52,55,56,55,57,57 is UNsafe
+   Variant 48,52,53,56,55,57,57 is UNsafe
+   Variant 48,52,53,55,55,57,57 is UNsafe
+   Variant 48,52,53,55,56,57,57 is UNsafe
+   Variant 48,52,53,55,56,55,57 is UNsafe
+   ----The line 48 52 53 55 56 55 57 57 is unsafe (0 safe options)
+Testing 66 70 67 68 69 72 76:
+   Variant 70,67,68,69,72,76 is UNsafe
+   Variant 66,67,68,69,72,76 is UNsafe
+   Variant 66,70,68,69,72,76 is UNsafe
+   Variant 66,70,67,69,72,76 is UNsafe
+   Variant 66,70,67,68,72,76 is UNsafe
+   Variant 66,70,67,68,69,76 is UNsafe
+   ----The line 66 70 67 68 69 72 76 is unsafe (0 safe options)
+Testing 63 67 70 71 73 74 72 78:
+   Variant 67,70,71,73,74,72,78 is UNsafe
+   Variant 63,70,71,73,74,72,78 is UNsafe
+   Variant 63,67,71,73,74,72,78 is UNsafe
+   Variant 63,67,70,73,74,72,78 is UNsafe
+   Variant 63,67,70,71,74,72,78 is UNsafe
+   Variant 63,67,70,71,73,72,78 is UNsafe
+   Variant 63,67,70,71,73,74,78 is UNsafe
+   ----The line 63 67 70 71 73 74 72 78 is unsafe (0 safe options)
+Testing 36 40 40 43 45:
+   Variant 40,40,43,45 is UNsafe
+   Variant 36,40,43,45 is UNsafe
+   Variant 36,40,43,45 is UNsafe
+   Variant 36,40,40,45 is UNsafe
+   ----The line 36 40 40 43 45 is unsafe (0 safe options)
+Testing 1 5 5 7 6:
+   Variant 5,5,7,6 is UNsafe
+   Variant 1,5,7,6 is UNsafe
+   Variant 1,5,7,6 is UNsafe
+   Variant 1,5,5,6 is UNsafe
+   ----The line 1 5 5 7 6 is unsafe (0 safe options)
+Testing 61 65 67 68 71 74 74 74:
+   Variant 65,67,68,71,74,74,74 is UNsafe
+   Variant 61,67,68,71,74,74,74 is UNsafe
+   Variant 61,65,68,71,74,74,74 is UNsafe
+   Variant 61,65,67,71,74,74,74 is UNsafe
+   Variant 61,65,67,68,74,74,74 is UNsafe
+   Variant 61,65,67,68,71,74,74 is UNsafe
+   Variant 61,65,67,68,71,74,74 is UNsafe
+   ----The line 61 65 67 68 71 74 74 74 is unsafe (0 safe options)
+Testing 68 72 73 73 74 78:
+   Variant 72,73,73,74,78 is UNsafe
+   Variant 68,73,73,74,78 is UNsafe
+   Variant 68,72,73,74,78 is UNsafe
+   Variant 68,72,73,74,78 is UNsafe
+   Variant 68,72,73,73,78 is UNsafe
+   ----The line 68 72 73 73 74 78 is unsafe (0 safe options)
+Testing 37 41 42 44 44 47 48 53:
+   Variant 41,42,44,44,47,48,53 is UNsafe
+   Variant 37,42,44,44,47,48,53 is UNsafe
+   Variant 37,41,44,44,47,48,53 is UNsafe
+   Variant 37,41,42,44,47,48,53 is UNsafe
+   Variant 37,41,42,44,47,48,53 is UNsafe
+   Variant 37,41,42,44,44,48,53 is UNsafe
+   Variant 37,41,42,44,44,47,53 is UNsafe
+   ----The line 37 41 42 44 44 47 48 53 is unsafe (0 safe options)
+Testing 65 69 70 71 75 76:
+   Variant 69,70,71,75,76 is UNsafe
+   Variant 65,70,71,75,76 is UNsafe
+   Variant 65,69,71,75,76 is UNsafe
+   Variant 65,69,70,75,76 is UNsafe
+   Variant 65,69,70,71,76 is UNsafe
+   ----The line 65 69 70 71 75 76 is unsafe (0 safe options)
+Testing 13 17 18 20 23 27 30 27:
+   Variant 17,18,20,23,27,30,27 is UNsafe
+   Variant 13,18,20,23,27,30,27 is UNsafe
+   Variant 13,17,20,23,27,30,27 is UNsafe
+   Variant 13,17,18,23,27,30,27 is UNsafe
+   Variant 13,17,18,20,27,30,27 is UNsafe
+   Variant 13,17,18,20,23,30,27 is UNsafe
+   Variant 13,17,18,20,23,27,27 is UNsafe
+   ----The line 13 17 18 20 23 27 30 27 is unsafe (0 safe options)
+Testing 8 12 14 18 21 22 22:
+   Variant 12,14,18,21,22,22 is UNsafe
+   Variant 8,14,18,21,22,22 is UNsafe
+   Variant 8,12,18,21,22,22 is UNsafe
+   Variant 8,12,14,21,22,22 is UNsafe
+   Variant 8,12,14,18,22,22 is UNsafe
+   Variant 8,12,14,18,21,22 is UNsafe
+   ----The line 8 12 14 18 21 22 22 is unsafe (0 safe options)
+Testing 7 11 12 15 19 21 24 28:
+   Variant 11,12,15,19,21,24,28 is UNsafe
+   Variant 7,12,15,19,21,24,28 is UNsafe
+   Variant 7,11,15,19,21,24,28 is UNsafe
+   Variant 7,11,12,19,21,24,28 is UNsafe
+   Variant 7,11,12,15,21,24,28 is UNsafe
+   Variant 7,11,12,15,19,24,28 is UNsafe
+   Variant 7,11,12,15,19,21,28 is UNsafe
+   ----The line 7 11 12 15 19 21 24 28 is unsafe (0 safe options)
+Testing 24 28 32 35 36 41:
+   Variant 28,32,35,36,41 is UNsafe
+   Variant 24,32,35,36,41 is UNsafe
+   Variant 24,28,35,36,41 is UNsafe
+   Variant 24,28,32,36,41 is UNsafe
+   Variant 24,28,32,35,41 is UNsafe
+   ----The line 24 28 32 35 36 41 is unsafe (0 safe options)
+Testing 59 63 66 71 72:
+   Variant 63,66,71,72 is UNsafe
+   Variant 59,66,71,72 is UNsafe
+   Variant 59,63,71,72 is UNsafe
+   Variant 59,63,66,72 is UNsafe
+   ----The line 59 63 66 71 72 is unsafe (0 safe options)
+Testing 15 19 20 26 25:
+   Variant 19,20,26,25 is UNsafe
+   Variant 15,20,26,25 is UNsafe
+   Variant 15,19,26,25 is UNsafe
+   Variant 15,19,20,25 is UNsafe
+   ----The line 15 19 20 26 25 is unsafe (0 safe options)
+Testing 25 29 34 36 36:
+   Variant 29,34,36,36 is UNsafe
+   Variant 25,34,36,36 is UNsafe
+   Variant 25,29,36,36 is UNsafe
+   Variant 25,29,34,36 is UNsafe
+   ----The line 25 29 34 36 36 is unsafe (0 safe options)
+Testing 32 36 37 42 43 46 48 52:
+   Variant 36,37,42,43,46,48,52 is UNsafe
+   Variant 32,37,42,43,46,48,52 is UNsafe
+   Variant 32,36,42,43,46,48,52 is UNsafe
+   Variant 32,36,37,43,46,48,52 is UNsafe
+   Variant 32,36,37,42,46,48,52 is UNsafe
+   Variant 32,36,37,42,43,48,52 is UNsafe
+   Variant 32,36,37,42,43,46,52 is UNsafe
+   ----The line 32 36 37 42 43 46 48 52 is unsafe (0 safe options)
+Testing 8 12 19 20 22 28:
+   Variant 12,19,20,22,28 is UNsafe
+   Variant 8,19,20,22,28 is UNsafe
+   Variant 8,12,20,22,28 is UNsafe
+   Variant 8,12,19,22,28 is UNsafe
+   Variant 8,12,19,20,28 is UNsafe
+   ----The line 8 12 19 20 22 28 is unsafe (0 safe options)
+Testing 17 24 25 28 29 31 34:
+   Variant 24,25,28,29,31,34 is safe
+   Variant 17,25,28,29,31,34 is UNsafe
+   Variant 17,24,28,29,31,34 is UNsafe
+   Variant 17,24,25,29,31,34 is UNsafe
+   Variant 17,24,25,28,31,34 is UNsafe
+   Variant 17,24,25,28,29,34 is UNsafe
+   ----The line 17 24 25 28 29 31 34 is safe (1 safe options)
+Testing 74 81 82 85 83:
+   Variant 81,82,85,83 is UNsafe
+   Variant 74,82,85,83 is UNsafe
+   Variant 74,81,85,83 is UNsafe
+   Variant 74,81,82,83 is UNsafe
+   ----The line 74 81 82 85 83 is unsafe (0 safe options)
+Testing 67 72 73 76 77 77:
+   Variant 72,73,76,77,77 is UNsafe
+   Variant 67,73,76,77,77 is UNsafe
+   Variant 67,72,76,77,77 is UNsafe
+   Variant 67,72,73,77,77 is UNsafe
+   Variant 67,72,73,76,77 is UNsafe
+   ----The line 67 72 73 76 77 77 is unsafe (0 safe options)
+Testing 22 27 30 33 34 37 38 42:
+   Variant 27,30,33,34,37,38,42 is UNsafe
+   Variant 22,30,33,34,37,38,42 is UNsafe
+   Variant 22,27,33,34,37,38,42 is UNsafe
+   Variant 22,27,30,34,37,38,42 is UNsafe
+   Variant 22,27,30,33,37,38,42 is UNsafe
+   Variant 22,27,30,33,34,38,42 is UNsafe
+   Variant 22,27,30,33,34,37,42 is UNsafe
+   ----The line 22 27 30 33 34 37 38 42 is unsafe (0 safe options)
+Testing 13 19 21 24 26 28 33:
+   Variant 19,21,24,26,28,33 is UNsafe
+   Variant 13,21,24,26,28,33 is UNsafe
+   Variant 13,19,24,26,28,33 is UNsafe
+   Variant 13,19,21,26,28,33 is UNsafe
+   Variant 13,19,21,24,28,33 is UNsafe
+   Variant 13,19,21,24,26,33 is UNsafe
+   ----The line 13 19 21 24 26 28 33 is unsafe (0 safe options)
+Testing 50 57 58 57 60 63:
+   Variant 57,58,57,60,63 is UNsafe
+   Variant 50,58,57,60,63 is UNsafe
+   Variant 50,57,57,60,63 is UNsafe
+   Variant 50,57,58,60,63 is UNsafe
+   Variant 50,57,58,57,63 is UNsafe
+   ----The line 50 57 58 57 60 63 is unsafe (0 safe options)
+Testing 16 21 24 26 27 25 28 27:
+   Variant 21,24,26,27,25,28,27 is UNsafe
+   Variant 16,24,26,27,25,28,27 is UNsafe
+   Variant 16,21,26,27,25,28,27 is UNsafe
+   Variant 16,21,24,27,25,28,27 is UNsafe
+   Variant 16,21,24,26,25,28,27 is UNsafe
+   Variant 16,21,24,26,27,28,27 is UNsafe
+   Variant 16,21,24,26,27,25,27 is UNsafe
+   ----The line 16 21 24 26 27 25 28 27 is unsafe (0 safe options)
+Testing 84 91 89 91 92 95 95:
+   Variant 91,89,91,92,95,95 is UNsafe
+   Variant 84,89,91,92,95,95 is UNsafe
+   Variant 84,91,91,92,95,95 is UNsafe
+   Variant 84,91,89,92,95,95 is UNsafe
+   Variant 84,91,89,91,95,95 is UNsafe
+   Variant 84,91,89,91,92,95 is UNsafe
+   ----The line 84 91 89 91 92 95 95 is unsafe (0 safe options)
+Testing 50 56 54 57 59 60 64:
+   Variant 56,54,57,59,60,64 is UNsafe
+   Variant 50,54,57,59,60,64 is UNsafe
+   Variant 50,56,57,59,60,64 is UNsafe
+   Variant 50,56,54,59,60,64 is UNsafe
+   Variant 50,56,54,57,60,64 is UNsafe
+   Variant 50,56,54,57,59,64 is UNsafe
+   ----The line 50 56 54 57 59 60 64 is unsafe (0 safe options)
+Testing 4 9 11 13 16 14 19:
+   Variant 9,11,13,16,14,19 is UNsafe
+   Variant 4,11,13,16,14,19 is UNsafe
+   Variant 4,9,13,16,14,19 is UNsafe
+   Variant 4,9,11,16,14,19 is UNsafe
+   Variant 4,9,11,13,14,19 is UNsafe
+   Variant 4,9,11,13,16,19 is UNsafe
+   ----The line 4 9 11 13 16 14 19 is unsafe (0 safe options)
+Testing 14 20 23 24 24 27:
+   Variant 20,23,24,24,27 is UNsafe
+   Variant 14,23,24,24,27 is UNsafe
+   Variant 14,20,24,24,27 is UNsafe
+   Variant 14,20,23,24,27 is UNsafe
+   Variant 14,20,23,24,27 is UNsafe
+   ----The line 14 20 23 24 24 27 is unsafe (0 safe options)
+Testing 64 70 73 73 72:
+   Variant 70,73,73,72 is UNsafe
+   Variant 64,73,73,72 is UNsafe
+   Variant 64,70,73,72 is UNsafe
+   Variant 64,70,73,72 is UNsafe
+   ----The line 64 70 73 73 72 is unsafe (0 safe options)
+Testing 40 47 48 48 51 52 55 55:
+   Variant 47,48,48,51,52,55,55 is UNsafe
+   Variant 40,48,48,51,52,55,55 is UNsafe
+   Variant 40,47,48,51,52,55,55 is UNsafe
+   Variant 40,47,48,51,52,55,55 is UNsafe
+   Variant 40,47,48,48,52,55,55 is UNsafe
+   Variant 40,47,48,48,51,55,55 is UNsafe
+   Variant 40,47,48,48,51,52,55 is UNsafe
+   ----The line 40 47 48 48 51 52 55 55 is unsafe (0 safe options)
+Testing 80 86 86 88 91 93 95 99:
+   Variant 86,86,88,91,93,95,99 is UNsafe
+   Variant 80,86,88,91,93,95,99 is UNsafe
+   Variant 80,86,88,91,93,95,99 is UNsafe
+   Variant 80,86,86,91,93,95,99 is UNsafe
+   Variant 80,86,86,88,93,95,99 is UNsafe
+   Variant 80,86,86,88,91,95,99 is UNsafe
+   Variant 80,86,86,88,91,93,99 is UNsafe
+   ----The line 80 86 86 88 91 93 95 99 is unsafe (0 safe options)
+Testing 63 70 71 71 78:
+   Variant 70,71,71,78 is UNsafe
+   Variant 63,71,71,78 is UNsafe
+   Variant 63,70,71,78 is UNsafe
+   Variant 63,70,71,78 is UNsafe
+   ----The line 63 70 71 71 78 is unsafe (0 safe options)
+Testing 20 26 30 31 34 37 39 40:
+   Variant 26,30,31,34,37,39,40 is UNsafe
+   Variant 20,30,31,34,37,39,40 is UNsafe
+   Variant 20,26,31,34,37,39,40 is UNsafe
+   Variant 20,26,30,34,37,39,40 is UNsafe
+   Variant 20,26,30,31,37,39,40 is UNsafe
+   Variant 20,26,30,31,34,39,40 is UNsafe
+   Variant 20,26,30,31,34,37,40 is UNsafe
+   ----The line 20 26 30 31 34 37 39 40 is unsafe (0 safe options)
+Testing 61 68 69 73 74 77 78 77:
+   Variant 68,69,73,74,77,78,77 is UNsafe
+   Variant 61,69,73,74,77,78,77 is UNsafe
+   Variant 61,68,73,74,77,78,77 is UNsafe
+   Variant 61,68,69,74,77,78,77 is UNsafe
+   Variant 61,68,69,73,77,78,77 is UNsafe
+   Variant 61,68,69,73,74,78,77 is UNsafe
+   Variant 61,68,69,73,74,77,77 is UNsafe
+   ----The line 61 68 69 73 74 77 78 77 is unsafe (0 safe options)
+Testing 64 71 74 76 79 81 85 85:
+   Variant 71,74,76,79,81,85,85 is UNsafe
+   Variant 64,74,76,79,81,85,85 is UNsafe
+   Variant 64,71,76,79,81,85,85 is UNsafe
+   Variant 64,71,74,79,81,85,85 is UNsafe
+   Variant 64,71,74,76,81,85,85 is UNsafe
+   Variant 64,71,74,76,79,85,85 is UNsafe
+   Variant 64,71,74,76,79,81,85 is UNsafe
+   ----The line 64 71 74 76 79 81 85 85 is unsafe (0 safe options)
+Testing 14 19 21 24 28 32:
+   Variant 19,21,24,28,32 is UNsafe
+   Variant 14,21,24,28,32 is UNsafe
+   Variant 14,19,24,28,32 is UNsafe
+   Variant 14,19,21,28,32 is UNsafe
+   Variant 14,19,21,24,32 is UNsafe
+   ----The line 14 19 21 24 28 32 is unsafe (0 safe options)
+Testing 3 10 12 14 16 18 22 29:
+   Variant 10,12,14,16,18,22,29 is UNsafe
+   Variant 3,12,14,16,18,22,29 is UNsafe
+   Variant 3,10,14,16,18,22,29 is UNsafe
+   Variant 3,10,12,16,18,22,29 is UNsafe
+   Variant 3,10,12,14,18,22,29 is UNsafe
+   Variant 3,10,12,14,16,22,29 is UNsafe
+   Variant 3,10,12,14,16,18,29 is UNsafe
+   ----The line 3 10 12 14 16 18 22 29 is unsafe (0 safe options)
+Testing 7 12 14 17 20 23 29 31:
+   Variant 12,14,17,20,23,29,31 is UNsafe
+   Variant 7,14,17,20,23,29,31 is UNsafe
+   Variant 7,12,17,20,23,29,31 is UNsafe
+   Variant 7,12,14,20,23,29,31 is UNsafe
+   Variant 7,12,14,17,23,29,31 is UNsafe
+   Variant 7,12,14,17,20,29,31 is UNsafe
+   Variant 7,12,14,17,20,23,31 is UNsafe
+   ----The line 7 12 14 17 20 23 29 31 is unsafe (0 safe options)
+Testing 49 56 62 65 67 65:
+   Variant 56,62,65,67,65 is UNsafe
+   Variant 49,62,65,67,65 is UNsafe
+   Variant 49,56,65,67,65 is UNsafe
+   Variant 49,56,62,67,65 is UNsafe
+   Variant 49,56,62,65,65 is UNsafe
+   ----The line 49 56 62 65 67 65 is unsafe (0 safe options)
+Testing 68 75 80 83 85 86 89 89:
+   Variant 75,80,83,85,86,89,89 is UNsafe
+   Variant 68,80,83,85,86,89,89 is UNsafe
+   Variant 68,75,83,85,86,89,89 is UNsafe
+   Variant 68,75,80,85,86,89,89 is UNsafe
+   Variant 68,75,80,83,86,89,89 is UNsafe
+   Variant 68,75,80,83,85,89,89 is UNsafe
+   Variant 68,75,80,83,85,86,89 is UNsafe
+   ----The line 68 75 80 83 85 86 89 89 is unsafe (0 safe options)
+Testing 51 58 59 65 68 70 74:
+   Variant 58,59,65,68,70,74 is UNsafe
+   Variant 51,59,65,68,70,74 is UNsafe
+   Variant 51,58,65,68,70,74 is UNsafe
+   Variant 51,58,59,68,70,74 is UNsafe
+   Variant 51,58,59,65,70,74 is UNsafe
+   Variant 51,58,59,65,68,74 is UNsafe
+   ----The line 51 58 59 65 68 70 74 is unsafe (0 safe options)
+Testing 44 51 54 60 62 63 66 73:
+   Variant 51,54,60,62,63,66,73 is UNsafe
+   Variant 44,54,60,62,63,66,73 is UNsafe
+   Variant 44,51,60,62,63,66,73 is UNsafe
+   Variant 44,51,54,62,63,66,73 is UNsafe
+   Variant 44,51,54,60,63,66,73 is UNsafe
+   Variant 44,51,54,60,62,66,73 is UNsafe
+   Variant 44,51,54,60,62,63,73 is UNsafe
+   ----The line 44 51 54 60 62 63 66 73 is unsafe (0 safe options)
+Testing 33 32 29 26 29:
+   Variant 32,29,26,29 is UNsafe
+   Variant 33,29,26,29 is UNsafe
+   Variant 33,32,26,29 is UNsafe
+   Variant 33,32,29,29 is UNsafe
+   ----The line 33 32 29 26 29 is unsafe (0 safe options)
+Testing 53 50 49 46 46:
+   Variant 50,49,46,46 is UNsafe
+   Variant 53,49,46,46 is UNsafe
+   Variant 53,50,46,46 is UNsafe
+   Variant 53,50,49,46 is safe
+   ----The line 53 50 49 46 46 is safe (1 safe options)
+Testing 55 54 53 52 50 49 46 42:
+   Variant 54,53,52,50,49,46,42 is UNsafe
+   Variant 55,53,52,50,49,46,42 is UNsafe
+   Variant 55,54,52,50,49,46,42 is UNsafe
+   Variant 55,54,53,50,49,46,42 is UNsafe
+   Variant 55,54,53,52,49,46,42 is UNsafe
+   Variant 55,54,53,52,50,46,42 is UNsafe
+   Variant 55,54,53,52,50,49,42 is UNsafe
+   ----The line 55 54 53 52 50 49 46 42 is unsafe (0 safe options)
+Testing 18 15 14 11 8 7 1:
+   Variant 15,14,11,8,7,1 is UNsafe
+   Variant 18,14,11,8,7,1 is UNsafe
+   Variant 18,15,11,8,7,1 is UNsafe
+   Variant 18,15,14,8,7,1 is UNsafe
+   Variant 18,15,14,11,7,1 is UNsafe
+   Variant 18,15,14,11,8,1 is UNsafe
+   ----The line 18 15 14 11 8 7 1 is unsafe (0 safe options)
+Testing 52 50 47 49 47 46 45 42:
+   Variant 50,47,49,47,46,45,42 is UNsafe
+   Variant 52,47,49,47,46,45,42 is UNsafe
+   Variant 52,50,49,47,46,45,42 is safe
+   Variant 52,50,47,47,46,45,42 is UNsafe
+   Variant 52,50,47,49,46,45,42 is UNsafe
+   Variant 52,50,47,49,47,45,42 is UNsafe
+   Variant 52,50,47,49,47,46,42 is UNsafe
+   ----The line 52 50 47 49 47 46 45 42 is safe (1 safe options)
+Testing 11 10 7 6 9 6 4 5:
+   Variant 10,7,6,9,6,4,5 is UNsafe
+   Variant 11,7,6,9,6,4,5 is UNsafe
+   Variant 11,10,6,9,6,4,5 is UNsafe
+   Variant 11,10,7,9,6,4,5 is UNsafe
+   Variant 11,10,7,6,6,4,5 is UNsafe
+   Variant 11,10,7,6,9,4,5 is UNsafe
+   Variant 11,10,7,6,9,6,5 is UNsafe
+   ----The line 11 10 7 6 9 6 4 5 is unsafe (0 safe options)
+Testing 90 89 88 90 88 88:
+   Variant 89,88,90,88,88 is UNsafe
+   Variant 90,88,90,88,88 is UNsafe
+   Variant 90,89,90,88,88 is UNsafe
+   Variant 90,89,88,88,88 is UNsafe
+   Variant 90,89,88,90,88 is UNsafe
+   ----The line 90 89 88 90 88 88 is unsafe (0 safe options)
+Testing 86 85 84 81 80 81 77:
+   Variant 85,84,81,80,81,77 is UNsafe
+   Variant 86,84,81,80,81,77 is UNsafe
+   Variant 86,85,81,80,81,77 is UNsafe
+   Variant 86,85,84,80,81,77 is UNsafe
+   Variant 86,85,84,81,81,77 is UNsafe
+   Variant 86,85,84,81,80,77 is safe
+   ----The line 86 85 84 81 80 81 77 is safe (1 safe options)
+Testing 26 24 26 25 24 22 17:
+   Variant 24,26,25,24,22,17 is UNsafe
+   Variant 26,26,25,24,22,17 is UNsafe
+   Variant 26,24,25,24,22,17 is UNsafe
+   Variant 26,24,26,24,22,17 is UNsafe
+   Variant 26,24,26,25,22,17 is UNsafe
+   Variant 26,24,26,25,24,17 is UNsafe
+   ----The line 26 24 26 25 24 22 17 is unsafe (0 safe options)
+Testing 34 33 30 28 28 27 24 22:
+   Variant 33,30,28,28,27,24,22 is UNsafe
+   Variant 34,30,28,28,27,24,22 is UNsafe
+   Variant 34,33,28,28,27,24,22 is UNsafe
+   Variant 34,33,30,28,27,24,22 is safe
+   Variant 34,33,30,28,27,24,22 is safe
+   Variant 34,33,30,28,28,24,22 is UNsafe
+   Variant 34,33,30,28,28,27,22 is UNsafe
+   ----The line 34 33 30 28 28 27 24 22 is safe (2 safe options)
+Testing 34 32 29 27 27 30:
+   Variant 32,29,27,27,30 is UNsafe
+   Variant 34,29,27,27,30 is UNsafe
+   Variant 34,32,27,27,30 is UNsafe
+   Variant 34,32,29,27,30 is UNsafe
+   Variant 34,32,29,27,30 is UNsafe
+   ----The line 34 32 29 27 27 30 is unsafe (0 safe options)
+Testing 5 4 2 1 1 1:
+   Variant 4,2,1,1,1 is UNsafe
+   Variant 5,2,1,1,1 is UNsafe
+   Variant 5,4,1,1,1 is UNsafe
+   Variant 5,4,2,1,1 is UNsafe
+   Variant 5,4,2,1,1 is UNsafe
+   ----The line 5 4 2 1 1 1 is unsafe (0 safe options)
+Testing 41 38 36 35 35 32 31 27:
+   Variant 38,36,35,35,32,31,27 is UNsafe
+   Variant 41,36,35,35,32,31,27 is UNsafe
+   Variant 41,38,35,35,32,31,27 is UNsafe
+   Variant 41,38,36,35,32,31,27 is UNsafe
+   Variant 41,38,36,35,32,31,27 is UNsafe
+   Variant 41,38,36,35,35,31,27 is UNsafe
+   Variant 41,38,36,35,35,32,27 is UNsafe
+   ----The line 41 38 36 35 35 32 31 27 is unsafe (0 safe options)
+Testing 90 89 89 87 86 80:
+   Variant 89,89,87,86,80 is UNsafe
+   Variant 90,89,87,86,80 is UNsafe
+   Variant 90,89,87,86,80 is UNsafe
+   Variant 90,89,89,86,80 is UNsafe
+   Variant 90,89,89,87,80 is UNsafe
+   ----The line 90 89 89 87 86 80 is unsafe (0 safe options)
+Testing 81 80 77 73 72:
+   Variant 80,77,73,72 is UNsafe
+   Variant 81,77,73,72 is UNsafe
+   Variant 81,80,73,72 is UNsafe
+   Variant 81,80,77,72 is UNsafe
+   ----The line 81 80 77 73 72 is unsafe (0 safe options)
+Testing 60 58 57 53 51 52:
+   Variant 58,57,53,51,52 is UNsafe
+   Variant 60,57,53,51,52 is UNsafe
+   Variant 60,58,53,51,52 is UNsafe
+   Variant 60,58,57,51,52 is UNsafe
+   Variant 60,58,57,53,52 is UNsafe
+   ----The line 60 58 57 53 51 52 is unsafe (0 safe options)
+Testing 98 96 95 92 88 88:
+   Variant 96,95,92,88,88 is UNsafe
+   Variant 98,95,92,88,88 is UNsafe
+   Variant 98,96,92,88,88 is UNsafe
+   Variant 98,96,95,88,88 is UNsafe
+   Variant 98,96,95,92,88 is UNsafe
+   ----The line 98 96 95 92 88 88 is unsafe (0 safe options)
+Testing 60 59 55 54 53 51 47:
+   Variant 59,55,54,53,51,47 is UNsafe
+   Variant 60,55,54,53,51,47 is UNsafe
+   Variant 60,59,54,53,51,47 is UNsafe
+   Variant 60,59,55,53,51,47 is UNsafe
+   Variant 60,59,55,54,51,47 is UNsafe
+   Variant 60,59,55,54,53,47 is UNsafe
+   ----The line 60 59 55 54 53 51 47 is unsafe (0 safe options)
+Testing 68 66 62 59 52:
+   Variant 66,62,59,52 is UNsafe
+   Variant 68,62,59,52 is UNsafe
+   Variant 68,66,59,52 is UNsafe
+   Variant 68,66,62,52 is UNsafe
+   ----The line 68 66 62 59 52 is unsafe (0 safe options)
+Testing 34 33 28 25 22:
+   Variant 33,28,25,22 is UNsafe
+   Variant 34,28,25,22 is UNsafe
+   Variant 34,33,25,22 is UNsafe
+   Variant 34,33,28,22 is UNsafe
+   ----The line 34 33 28 25 22 is unsafe (0 safe options)
+Testing 37 34 31 26 24 22 20 21:
+   Variant 34,31,26,24,22,20,21 is UNsafe
+   Variant 37,31,26,24,22,20,21 is UNsafe
+   Variant 37,34,26,24,22,20,21 is UNsafe
+   Variant 37,34,31,24,22,20,21 is UNsafe
+   Variant 37,34,31,26,22,20,21 is UNsafe
+   Variant 37,34,31,26,24,20,21 is UNsafe
+   Variant 37,34,31,26,24,22,21 is UNsafe
+   ----The line 37 34 31 26 24 22 20 21 is unsafe (0 safe options)
+Testing 90 88 87 81 81:
+   Variant 88,87,81,81 is UNsafe
+   Variant 90,87,81,81 is UNsafe
+   Variant 90,88,81,81 is UNsafe
+   Variant 90,88,87,81 is UNsafe
+   ----The line 90 88 87 81 81 is unsafe (0 safe options)
+Testing 51 49 43 40 38 34:
+   Variant 49,43,40,38,34 is UNsafe
+   Variant 51,43,40,38,34 is UNsafe
+   Variant 51,49,40,38,34 is UNsafe
+   Variant 51,49,43,38,34 is UNsafe
+   Variant 51,49,43,40,34 is UNsafe
+   ----The line 51 49 43 40 38 34 is unsafe (0 safe options)
+Testing 41 38 37 34 32 30 23 17:
+   Variant 38,37,34,32,30,23,17 is UNsafe
+   Variant 41,37,34,32,30,23,17 is UNsafe
+   Variant 41,38,34,32,30,23,17 is UNsafe
+   Variant 41,38,37,32,30,23,17 is UNsafe
+   Variant 41,38,37,34,30,23,17 is UNsafe
+   Variant 41,38,37,34,32,23,17 is UNsafe
+   Variant 41,38,37,34,32,30,17 is UNsafe
+   ----The line 41 38 37 34 32 30 23 17 is unsafe (0 safe options)
+Testing 53 56 54 53 52 50 48 45:
+   Variant 56,54,53,52,50,48,45 is safe
+   Variant 53,54,53,52,50,48,45 is UNsafe
+   Variant 53,56,53,52,50,48,45 is UNsafe
+   Variant 53,56,54,52,50,48,45 is UNsafe
+   Variant 53,56,54,53,50,48,45 is UNsafe
+   Variant 53,56,54,53,52,48,45 is UNsafe
+   Variant 53,56,54,53,52,50,45 is UNsafe
+   ----The line 53 56 54 53 52 50 48 45 is safe (1 safe options)
+Testing 36 37 35 34 33 32 31 33:
+   Variant 37,35,34,33,32,31,33 is UNsafe
+   Variant 36,35,34,33,32,31,33 is UNsafe
+   Variant 36,37,34,33,32,31,33 is UNsafe
+   Variant 36,37,35,33,32,31,33 is UNsafe
+   Variant 36,37,35,34,32,31,33 is UNsafe
+   Variant 36,37,35,34,33,31,33 is UNsafe
+   Variant 36,37,35,34,33,32,33 is UNsafe
+   ----The line 36 37 35 34 33 32 31 33 is unsafe (0 safe options)
+Testing 83 84 83 82 82:
+   Variant 84,83,82,82 is UNsafe
+   Variant 83,83,82,82 is UNsafe
+   Variant 83,84,82,82 is UNsafe
+   Variant 83,84,83,82 is UNsafe
+   ----The line 83 84 83 82 82 is unsafe (0 safe options)
+Testing 89 90 87 86 82:
+   Variant 90,87,86,82 is UNsafe
+   Variant 89,87,86,82 is UNsafe
+   Variant 89,90,86,82 is UNsafe
+   Variant 89,90,87,82 is UNsafe
+   ----The line 89 90 87 86 82 is unsafe (0 safe options)
+Testing 72 75 72 69 66 63 58:
+   Variant 75,72,69,66,63,58 is UNsafe
+   Variant 72,72,69,66,63,58 is UNsafe
+   Variant 72,75,69,66,63,58 is UNsafe
+   Variant 72,75,72,66,63,58 is UNsafe
+   Variant 72,75,72,69,63,58 is UNsafe
+   Variant 72,75,72,69,66,58 is UNsafe
+   ----The line 72 75 72 69 66 63 58 is unsafe (0 safe options)
+Testing 19 21 20 19 17 19 16:
+   Variant 21,20,19,17,19,16 is UNsafe
+   Variant 19,20,19,17,19,16 is UNsafe
+   Variant 19,21,19,17,19,16 is UNsafe
+   Variant 19,21,20,17,19,16 is UNsafe
+   Variant 19,21,20,19,19,16 is UNsafe
+   Variant 19,21,20,19,17,16 is UNsafe
+   ----The line 19 21 20 19 17 19 16 is unsafe (0 safe options)
+Testing 91 94 93 96 97:
+   Variant 94,93,96,97 is UNsafe
+   Variant 91,93,96,97 is safe
+   Variant 91,94,96,97 is safe
+   Variant 91,94,93,97 is UNsafe
+   ----The line 91 94 93 96 97 is safe (2 safe options)
+Testing 57 59 57 54 53 55 54 54:
+   Variant 59,57,54,53,55,54,54 is UNsafe
+   Variant 57,57,54,53,55,54,54 is UNsafe
+   Variant 57,59,54,53,55,54,54 is UNsafe
+   Variant 57,59,57,53,55,54,54 is UNsafe
+   Variant 57,59,57,54,55,54,54 is UNsafe
+   Variant 57,59,57,54,53,54,54 is UNsafe
+   Variant 57,59,57,54,53,55,54 is UNsafe
+   ----The line 57 59 57 54 53 55 54 54 is unsafe (0 safe options)
+Testing 77 80 81 80 78 75 74 70:
+   Variant 80,81,80,78,75,74,70 is UNsafe
+   Variant 77,81,80,78,75,74,70 is UNsafe
+   Variant 77,80,80,78,75,74,70 is UNsafe
+   Variant 77,80,81,78,75,74,70 is UNsafe
+   Variant 77,80,81,80,75,74,70 is UNsafe
+   Variant 77,80,81,80,78,74,70 is UNsafe
+   Variant 77,80,81,80,78,75,70 is UNsafe
+   ----The line 77 80 81 80 78 75 74 70 is unsafe (0 safe options)
+Testing 81 82 79 77 76 77 71:
+   Variant 82,79,77,76,77,71 is UNsafe
+   Variant 81,79,77,76,77,71 is UNsafe
+   Variant 81,82,77,76,77,71 is UNsafe
+   Variant 81,82,79,76,77,71 is UNsafe
+   Variant 81,82,79,77,77,71 is UNsafe
+   Variant 81,82,79,77,76,71 is UNsafe
+   ----The line 81 82 79 77 76 77 71 is unsafe (0 safe options)
+Testing 83 84 83 83 81 79 76:
+   Variant 84,83,83,81,79,76 is UNsafe
+   Variant 83,83,83,81,79,76 is UNsafe
+   Variant 83,84,83,81,79,76 is UNsafe
+   Variant 83,84,83,81,79,76 is UNsafe
+   Variant 83,84,83,83,79,76 is UNsafe
+   Variant 83,84,83,83,81,76 is UNsafe
+   ----The line 83 84 83 83 81 79 76 is unsafe (0 safe options)
+Testing 59 62 59 57 57 60:
+   Variant 62,59,57,57,60 is UNsafe
+   Variant 59,59,57,57,60 is UNsafe
+   Variant 59,62,57,57,60 is UNsafe
+   Variant 59,62,59,57,60 is UNsafe
+   Variant 59,62,59,57,60 is UNsafe
+   ----The line 59 62 59 57 57 60 is unsafe (0 safe options)
+Testing 84 87 86 84 84 83 83:
+   Variant 87,86,84,84,83,83 is UNsafe
+   Variant 84,86,84,84,83,83 is UNsafe
+   Variant 84,87,84,84,83,83 is UNsafe
+   Variant 84,87,86,84,83,83 is UNsafe
+   Variant 84,87,86,84,83,83 is UNsafe
+   Variant 84,87,86,84,84,83 is UNsafe
+   ----The line 84 87 86 84 84 83 83 is unsafe (0 safe options)
+Testing 41 43 41 38 38 34:
+   Variant 43,41,38,38,34 is UNsafe
+   Variant 41,41,38,38,34 is UNsafe
+   Variant 41,43,38,38,34 is UNsafe
+   Variant 41,43,41,38,34 is UNsafe
+   Variant 41,43,41,38,34 is UNsafe
+   ----The line 41 43 41 38 38 34 is unsafe (0 safe options)
+Testing 74 75 73 73 67:
+   Variant 75,73,73,67 is UNsafe
+   Variant 74,73,73,67 is UNsafe
+   Variant 74,75,73,67 is UNsafe
+   Variant 74,75,73,67 is UNsafe
+   ----The line 74 75 73 73 67 is unsafe (0 safe options)
+Testing 79 82 79 77 76 75 71 69:
+   Variant 82,79,77,76,75,71,69 is UNsafe
+   Variant 79,79,77,76,75,71,69 is UNsafe
+   Variant 79,82,77,76,75,71,69 is UNsafe
+   Variant 79,82,79,76,75,71,69 is UNsafe
+   Variant 79,82,79,77,75,71,69 is UNsafe
+   Variant 79,82,79,77,76,71,69 is UNsafe
+   Variant 79,82,79,77,76,75,69 is UNsafe
+   ----The line 79 82 79 77 76 75 71 69 is unsafe (0 safe options)
+Testing 46 49 45 44 45:
+   Variant 49,45,44,45 is UNsafe
+   Variant 46,45,44,45 is UNsafe
+   Variant 46,49,44,45 is UNsafe
+   Variant 46,49,45,45 is UNsafe
+   ----The line 46 49 45 44 45 is unsafe (0 safe options)
+Testing 70 71 70 66 66:
+   Variant 71,70,66,66 is UNsafe
+   Variant 70,70,66,66 is UNsafe
+   Variant 70,71,66,66 is UNsafe
+   Variant 70,71,70,66 is UNsafe
+   ----The line 70 71 70 66 66 is unsafe (0 safe options)
+Testing 34 36 35 32 28 24:
+   Variant 36,35,32,28,24 is UNsafe
+   Variant 34,35,32,28,24 is UNsafe
+   Variant 34,36,32,28,24 is UNsafe
+   Variant 34,36,35,28,24 is UNsafe
+   Variant 34,36,35,32,24 is UNsafe
+   ----The line 34 36 35 32 28 24 is unsafe (0 safe options)
+Testing 60 61 57 54 49:
+   Variant 61,57,54,49 is UNsafe
+   Variant 60,57,54,49 is UNsafe
+   Variant 60,61,54,49 is UNsafe
+   Variant 60,61,57,49 is UNsafe
+   ----The line 60 61 57 54 49 is unsafe (0 safe options)
+Testing 15 17 14 8 7 6 5:
+   Variant 17,14,8,7,6,5 is UNsafe
+   Variant 15,14,8,7,6,5 is UNsafe
+   Variant 15,17,8,7,6,5 is UNsafe
+   Variant 15,17,14,7,6,5 is UNsafe
+   Variant 15,17,14,8,6,5 is UNsafe
+   Variant 15,17,14,8,7,5 is UNsafe
+   ----The line 15 17 14 8 7 6 5 is unsafe (0 safe options)
+Testing 17 18 16 11 14:
+   Variant 18,16,11,14 is UNsafe
+   Variant 17,16,11,14 is UNsafe
+   Variant 17,18,11,14 is UNsafe
+   Variant 17,18,16,14 is UNsafe
+   ----The line 17 18 16 11 14 is unsafe (0 safe options)
+Testing 91 93 86 83 81 80 80:
+   Variant 93,86,83,81,80,80 is UNsafe
+   Variant 91,86,83,81,80,80 is UNsafe
+   Variant 91,93,83,81,80,80 is UNsafe
+   Variant 91,93,86,81,80,80 is UNsafe
+   Variant 91,93,86,83,80,80 is UNsafe
+   Variant 91,93,86,83,81,80 is UNsafe
+   ----The line 91 93 86 83 81 80 80 is unsafe (0 safe options)
+Testing 40 41 35 33 29:
+   Variant 41,35,33,29 is UNsafe
+   Variant 40,35,33,29 is UNsafe
+   Variant 40,41,33,29 is UNsafe
+   Variant 40,41,35,29 is UNsafe
+   ----The line 40 41 35 33 29 is unsafe (0 safe options)
+Testing 31 34 32 30 25 24 17:
+   Variant 34,32,30,25,24,17 is UNsafe
+   Variant 31,32,30,25,24,17 is UNsafe
+   Variant 31,34,30,25,24,17 is UNsafe
+   Variant 31,34,32,25,24,17 is UNsafe
+   Variant 31,34,32,30,24,17 is UNsafe
+   Variant 31,34,32,30,25,17 is UNsafe
+   ----The line 31 34 32 30 25 24 17 is unsafe (0 safe options)
+Testing 71 71 70 68 67 66:
+   Variant 71,70,68,67,66 is safe
+   Variant 71,70,68,67,66 is safe
+   Variant 71,71,68,67,66 is UNsafe
+   Variant 71,71,70,67,66 is UNsafe
+   Variant 71,71,70,68,66 is UNsafe
+   ----The line 71 71 70 68 67 66 is safe (2 safe options)
+Testing 65 65 64 61 58 57 60:
+   Variant 65,64,61,58,57,60 is UNsafe
+   Variant 65,64,61,58,57,60 is UNsafe
+   Variant 65,65,61,58,57,60 is UNsafe
+   Variant 65,65,64,58,57,60 is UNsafe
+   Variant 65,65,64,61,57,60 is UNsafe
+   Variant 65,65,64,61,58,60 is UNsafe
+   ----The line 65 65 64 61 58 57 60 is unsafe (0 safe options)
+Testing 37 37 35 33 30 27 26 26:
+   Variant 37,35,33,30,27,26,26 is UNsafe
+   Variant 37,35,33,30,27,26,26 is UNsafe
+   Variant 37,37,33,30,27,26,26 is UNsafe
+   Variant 37,37,35,30,27,26,26 is UNsafe
+   Variant 37,37,35,33,27,26,26 is UNsafe
+   Variant 37,37,35,33,30,26,26 is UNsafe
+   Variant 37,37,35,33,30,27,26 is UNsafe
+   ----The line 37 37 35 33 30 27 26 26 is unsafe (0 safe options)
+Testing 67 67 66 65 61:
+   Variant 67,66,65,61 is UNsafe
+   Variant 67,66,65,61 is UNsafe
+   Variant 67,67,65,61 is UNsafe
+   Variant 67,67,66,61 is UNsafe
+   ----The line 67 67 66 65 61 is unsafe (0 safe options)
+Testing 86 86 85 82 81 74:
+   Variant 86,85,82,81,74 is UNsafe
+   Variant 86,85,82,81,74 is UNsafe
+   Variant 86,86,82,81,74 is UNsafe
+   Variant 86,86,85,81,74 is UNsafe
+   Variant 86,86,85,82,74 is UNsafe
+   ----The line 86 86 85 82 81 74 is unsafe (0 safe options)
+Testing 95 95 92 95 92:
+   Variant 95,92,95,92 is UNsafe
+   Variant 95,92,95,92 is UNsafe
+   Variant 95,95,95,92 is UNsafe
+   Variant 95,95,92,92 is UNsafe
+   ----The line 95 95 92 95 92 is unsafe (0 safe options)
+Testing 58 58 55 54 56 53 54:
+   Variant 58,55,54,56,53,54 is UNsafe
+   Variant 58,55,54,56,53,54 is UNsafe
+   Variant 58,58,54,56,53,54 is UNsafe
+   Variant 58,58,55,56,53,54 is UNsafe
+   Variant 58,58,55,54,53,54 is UNsafe
+   Variant 58,58,55,54,56,54 is UNsafe
+   ----The line 58 58 55 54 56 53 54 is unsafe (0 safe options)
+Testing 37 37 35 32 33 30 28 28:
+   Variant 37,35,32,33,30,28,28 is UNsafe
+   Variant 37,35,32,33,30,28,28 is UNsafe
+   Variant 37,37,32,33,30,28,28 is UNsafe
+   Variant 37,37,35,33,30,28,28 is UNsafe
+   Variant 37,37,35,32,30,28,28 is UNsafe
+   Variant 37,37,35,32,33,28,28 is UNsafe
+   Variant 37,37,35,32,33,30,28 is UNsafe
+   ----The line 37 37 35 32 33 30 28 28 is unsafe (0 safe options)
+Testing 56 56 53 51 48 49 45:
+   Variant 56,53,51,48,49,45 is UNsafe
+   Variant 56,53,51,48,49,45 is UNsafe
+   Variant 56,56,51,48,49,45 is UNsafe
+   Variant 56,56,53,48,49,45 is UNsafe
+   Variant 56,56,53,51,49,45 is UNsafe
+   Variant 56,56,53,51,48,45 is UNsafe
+   ----The line 56 56 53 51 48 49 45 is unsafe (0 safe options)
+Testing 33 33 30 29 28 31 26:
+   Variant 33,30,29,28,31,26 is UNsafe
+   Variant 33,30,29,28,31,26 is UNsafe
+   Variant 33,33,29,28,31,26 is UNsafe
+   Variant 33,33,30,28,31,26 is UNsafe
+   Variant 33,33,30,29,31,26 is UNsafe
+   Variant 33,33,30,29,28,26 is UNsafe
+   ----The line 33 33 30 29 28 31 26 is unsafe (0 safe options)
+Testing 37 37 37 35 34 31 29:
+   Variant 37,37,35,34,31,29 is UNsafe
+   Variant 37,37,35,34,31,29 is UNsafe
+   Variant 37,37,35,34,31,29 is UNsafe
+   Variant 37,37,37,34,31,29 is UNsafe
+   Variant 37,37,37,35,31,29 is UNsafe
+   Variant 37,37,37,35,34,29 is UNsafe
+   ----The line 37 37 37 35 34 31 29 is unsafe (0 safe options)
+Testing 26 26 26 25 28:
+   Variant 26,26,25,28 is UNsafe
+   Variant 26,26,25,28 is UNsafe
+   Variant 26,26,25,28 is UNsafe
+   Variant 26,26,26,28 is UNsafe
+   ----The line 26 26 26 25 28 is unsafe (0 safe options)
+Testing 67 67 67 64 64:
+   Variant 67,67,64,64 is UNsafe
+   Variant 67,67,64,64 is UNsafe
+   Variant 67,67,64,64 is UNsafe
+   Variant 67,67,67,64 is UNsafe
+   ----The line 67 67 67 64 64 is unsafe (0 safe options)
+Testing 80 80 77 77 73:
+   Variant 80,77,77,73 is UNsafe
+   Variant 80,77,77,73 is UNsafe
+   Variant 80,80,77,73 is UNsafe
+   Variant 80,80,77,73 is UNsafe
+   ----The line 80 80 77 77 73 is unsafe (0 safe options)
+Testing 47 47 47 44 41 36:
+   Variant 47,47,44,41,36 is UNsafe
+   Variant 47,47,44,41,36 is UNsafe
+   Variant 47,47,44,41,36 is UNsafe
+   Variant 47,47,47,41,36 is UNsafe
+   Variant 47,47,47,44,36 is UNsafe
+   ----The line 47 47 47 44 41 36 is unsafe (0 safe options)
+Testing 54 54 52 50 46 45 42 41:
+   Variant 54,52,50,46,45,42,41 is UNsafe
+   Variant 54,52,50,46,45,42,41 is UNsafe
+   Variant 54,54,50,46,45,42,41 is UNsafe
+   Variant 54,54,52,46,45,42,41 is UNsafe
+   Variant 54,54,52,50,45,42,41 is UNsafe
+   Variant 54,54,52,50,46,42,41 is UNsafe
+   Variant 54,54,52,50,46,45,41 is UNsafe
+   ----The line 54 54 52 50 46 45 42 41 is unsafe (0 safe options)
+Testing 52 52 50 46 43 46:
+   Variant 52,50,46,43,46 is UNsafe
+   Variant 52,50,46,43,46 is UNsafe
+   Variant 52,52,46,43,46 is UNsafe
+   Variant 52,52,50,43,46 is UNsafe
+   Variant 52,52,50,46,46 is UNsafe
+   ----The line 52 52 50 46 43 46 is unsafe (0 safe options)
+Testing 38 38 34 32 31 29 29:
+   Variant 38,34,32,31,29,29 is UNsafe
+   Variant 38,34,32,31,29,29 is UNsafe
+   Variant 38,38,32,31,29,29 is UNsafe
+   Variant 38,38,34,31,29,29 is UNsafe
+   Variant 38,38,34,32,29,29 is UNsafe
+   Variant 38,38,34,32,31,29 is UNsafe
+   ----The line 38 38 34 32 31 29 29 is unsafe (0 safe options)
+Testing 99 99 97 95 91 90 89 85:
+   Variant 99,97,95,91,90,89,85 is UNsafe
+   Variant 99,97,95,91,90,89,85 is UNsafe
+   Variant 99,99,95,91,90,89,85 is UNsafe
+   Variant 99,99,97,91,90,89,85 is UNsafe
+   Variant 99,99,97,95,90,89,85 is UNsafe
+   Variant 99,99,97,95,91,89,85 is UNsafe
+   Variant 99,99,97,95,91,90,85 is UNsafe
+   ----The line 99 99 97 95 91 90 89 85 is unsafe (0 safe options)
+Testing 26 26 24 20 18 16 14 8:
+   Variant 26,24,20,18,16,14,8 is UNsafe
+   Variant 26,24,20,18,16,14,8 is UNsafe
+   Variant 26,26,20,18,16,14,8 is UNsafe
+   Variant 26,26,24,18,16,14,8 is UNsafe
+   Variant 26,26,24,20,16,14,8 is UNsafe
+   Variant 26,26,24,20,18,14,8 is UNsafe
+   Variant 26,26,24,20,18,16,8 is UNsafe
+   ----The line 26 26 24 20 18 16 14 8 is unsafe (0 safe options)
+Testing 16 16 14 11 9 4 2:
+   Variant 16,14,11,9,4,2 is UNsafe
+   Variant 16,14,11,9,4,2 is UNsafe
+   Variant 16,16,11,9,4,2 is UNsafe
+   Variant 16,16,14,9,4,2 is UNsafe
+   Variant 16,16,14,11,4,2 is UNsafe
+   Variant 16,16,14,11,9,2 is UNsafe
+   ----The line 16 16 14 11 9 4 2 is unsafe (0 safe options)
+Testing 78 78 75 73 67 69:
+   Variant 78,75,73,67,69 is UNsafe
+   Variant 78,75,73,67,69 is UNsafe
+   Variant 78,78,73,67,69 is UNsafe
+   Variant 78,78,75,67,69 is UNsafe
+   Variant 78,78,75,73,69 is UNsafe
+   ----The line 78 78 75 73 67 69 is unsafe (0 safe options)
+Testing 37 37 35 28 28:
+   Variant 37,35,28,28 is UNsafe
+   Variant 37,35,28,28 is UNsafe
+   Variant 37,37,28,28 is UNsafe
+   Variant 37,37,35,28 is UNsafe
+   ----The line 37 37 35 28 28 is unsafe (0 safe options)
+Testing 83 83 80 79 73 69:
+   Variant 83,80,79,73,69 is UNsafe
+   Variant 83,80,79,73,69 is UNsafe
+   Variant 83,83,79,73,69 is UNsafe
+   Variant 83,83,80,73,69 is UNsafe
+   Variant 83,83,80,79,69 is UNsafe
+   ----The line 83 83 80 79 73 69 is unsafe (0 safe options)
+Testing 59 59 57 55 52 47 40:
+   Variant 59,57,55,52,47,40 is UNsafe
+   Variant 59,57,55,52,47,40 is UNsafe
+   Variant 59,59,55,52,47,40 is UNsafe
+   Variant 59,59,57,52,47,40 is UNsafe
+   Variant 59,59,57,55,47,40 is UNsafe
+   Variant 59,59,57,55,52,40 is UNsafe
+   ----The line 59 59 57 55 52 47 40 is unsafe (0 safe options)
+Testing 57 53 52 51 49:
+   Variant 53,52,51,49 is safe
+   Variant 57,52,51,49 is UNsafe
+   Variant 57,53,51,49 is UNsafe
+   Variant 57,53,52,49 is UNsafe
+   ----The line 57 53 52 51 49 is safe (1 safe options)
+Testing 45 41 40 39 37 39:
+   Variant 41,40,39,37,39 is UNsafe
+   Variant 45,40,39,37,39 is UNsafe
+   Variant 45,41,39,37,39 is UNsafe
+   Variant 45,41,40,37,39 is UNsafe
+   Variant 45,41,40,39,39 is UNsafe
+   ----The line 45 41 40 39 37 39 is unsafe (0 safe options)
+Testing 99 95 93 92 90 89 86 86:
+   Variant 95,93,92,90,89,86,86 is UNsafe
+   Variant 99,93,92,90,89,86,86 is UNsafe
+   Variant 99,95,92,90,89,86,86 is UNsafe
+   Variant 99,95,93,90,89,86,86 is UNsafe
+   Variant 99,95,93,92,89,86,86 is UNsafe
+   Variant 99,95,93,92,90,86,86 is UNsafe
+   Variant 99,95,93,92,90,89,86 is UNsafe
+   ----The line 99 95 93 92 90 89 86 86 is unsafe (0 safe options)
+Testing 59 55 53 50 47 43:
+   Variant 55,53,50,47,43 is UNsafe
+   Variant 59,53,50,47,43 is UNsafe
+   Variant 59,55,50,47,43 is UNsafe
+   Variant 59,55,53,47,43 is UNsafe
+   Variant 59,55,53,50,43 is UNsafe
+   ----The line 59 55 53 50 47 43 is unsafe (0 safe options)
+Testing 59 55 52 49 44:
+   Variant 55,52,49,44 is UNsafe
+   Variant 59,52,49,44 is UNsafe
+   Variant 59,55,49,44 is UNsafe
+   Variant 59,55,52,44 is UNsafe
+   ----The line 59 55 52 49 44 is unsafe (0 safe options)
+Testing 52 48 50 48 46:
+   Variant 48,50,48,46 is UNsafe
+   Variant 52,50,48,46 is safe
+   Variant 52,48,48,46 is UNsafe
+   Variant 52,48,50,46 is UNsafe
+   ----The line 52 48 50 48 46 is safe (1 safe options)
+Testing 96 92 90 87 90 89 91:
+   Variant 92,90,87,90,89,91 is UNsafe
+   Variant 96,90,87,90,89,91 is UNsafe
+   Variant 96,92,87,90,89,91 is UNsafe
+   Variant 96,92,90,90,89,91 is UNsafe
+   Variant 96,92,90,87,89,91 is UNsafe
+   Variant 96,92,90,87,90,91 is UNsafe
+   ----The line 96 92 90 87 90 89 91 is unsafe (0 safe options)
+Testing 60 56 54 51 52 52:
+   Variant 56,54,51,52,52 is UNsafe
+   Variant 60,54,51,52,52 is UNsafe
+   Variant 60,56,51,52,52 is UNsafe
+   Variant 60,56,54,52,52 is UNsafe
+   Variant 60,56,54,51,52 is UNsafe
+   ----The line 60 56 54 51 52 52 is unsafe (0 safe options)
+Testing 17 13 11 13 11 10 6:
+   Variant 13,11,13,11,10,6 is UNsafe
+   Variant 17,11,13,11,10,6 is UNsafe
+   Variant 17,13,13,11,10,6 is UNsafe
+   Variant 17,13,11,11,10,6 is UNsafe
+   Variant 17,13,11,13,10,6 is UNsafe
+   Variant 17,13,11,13,11,6 is UNsafe
+   ----The line 17 13 11 13 11 10 6 is unsafe (0 safe options)
+Testing 66 62 61 60 63 56:
+   Variant 62,61,60,63,56 is UNsafe
+   Variant 66,61,60,63,56 is UNsafe
+   Variant 66,62,60,63,56 is UNsafe
+   Variant 66,62,61,63,56 is UNsafe
+   Variant 66,62,61,60,56 is UNsafe
+   ----The line 66 62 61 60 63 56 is unsafe (0 safe options)
+Testing 72 68 65 65 62:
+   Variant 68,65,65,62 is UNsafe
+   Variant 72,65,65,62 is UNsafe
+   Variant 72,68,65,62 is UNsafe
+   Variant 72,68,65,62 is UNsafe
+   ----The line 72 68 65 65 62 is unsafe (0 safe options)
+Testing 45 41 38 38 39:
+   Variant 41,38,38,39 is UNsafe
+   Variant 45,38,38,39 is UNsafe
+   Variant 45,41,38,39 is UNsafe
+   Variant 45,41,38,39 is UNsafe
+   ----The line 45 41 38 38 39 is unsafe (0 safe options)
+Testing 56 52 49 48 48 48:
+   Variant 52,49,48,48,48 is UNsafe
+   Variant 56,49,48,48,48 is UNsafe
+   Variant 56,52,48,48,48 is UNsafe
+   Variant 56,52,49,48,48 is UNsafe
+   Variant 56,52,49,48,48 is UNsafe
+   ----The line 56 52 49 48 48 48 is unsafe (0 safe options)
+Testing 58 54 51 51 50 46:
+   Variant 54,51,51,50,46 is UNsafe
+   Variant 58,51,51,50,46 is UNsafe
+   Variant 58,54,51,50,46 is UNsafe
+   Variant 58,54,51,50,46 is UNsafe
+   Variant 58,54,51,51,46 is UNsafe
+   ----The line 58 54 51 51 50 46 is unsafe (0 safe options)
+Testing 69 65 62 59 59 58 53:
+   Variant 65,62,59,59,58,53 is UNsafe
+   Variant 69,62,59,59,58,53 is UNsafe
+   Variant 69,65,59,59,58,53 is UNsafe
+   Variant 69,65,62,59,58,53 is UNsafe
+   Variant 69,65,62,59,58,53 is UNsafe
+   Variant 69,65,62,59,59,53 is UNsafe
+   ----The line 69 65 62 59 59 58 53 is unsafe (0 safe options)
+Testing 93 89 88 85 81 80:
+   Variant 89,88,85,81,80 is UNsafe
+   Variant 93,88,85,81,80 is UNsafe
+   Variant 93,89,85,81,80 is UNsafe
+   Variant 93,89,88,81,80 is UNsafe
+   Variant 93,89,88,85,80 is UNsafe
+   ----The line 93 89 88 85 81 80 is unsafe (0 safe options)
+Testing 38 34 32 28 30:
+   Variant 34,32,28,30 is UNsafe
+   Variant 38,32,28,30 is UNsafe
+   Variant 38,34,28,30 is UNsafe
+   Variant 38,34,32,30 is UNsafe
+   ----The line 38 34 32 28 30 is unsafe (0 safe options)
+Testing 22 18 17 13 11 11:
+   Variant 18,17,13,11,11 is UNsafe
+   Variant 22,17,13,11,11 is UNsafe
+   Variant 22,18,13,11,11 is UNsafe
+   Variant 22,18,17,11,11 is UNsafe
+   Variant 22,18,17,13,11 is UNsafe
+   ----The line 22 18 17 13 11 11 is unsafe (0 safe options)
+Testing 49 45 42 40 37 35 31 27:
+   Variant 45,42,40,37,35,31,27 is UNsafe
+   Variant 49,42,40,37,35,31,27 is UNsafe
+   Variant 49,45,40,37,35,31,27 is UNsafe
+   Variant 49,45,42,37,35,31,27 is UNsafe
+   Variant 49,45,42,40,35,31,27 is UNsafe
+   Variant 49,45,42,40,37,31,27 is UNsafe
+   Variant 49,45,42,40,37,35,27 is UNsafe
+   ----The line 49 45 42 40 37 35 31 27 is unsafe (0 safe options)
+Testing 70 66 63 60 56 51:
+   Variant 66,63,60,56,51 is UNsafe
+   Variant 70,63,60,56,51 is UNsafe
+   Variant 70,66,60,56,51 is UNsafe
+   Variant 70,66,63,56,51 is UNsafe
+   Variant 70,66,63,60,51 is UNsafe
+   ----The line 70 66 63 60 56 51 is unsafe (0 safe options)
+Testing 71 67 64 58 57 56 54 51:
+   Variant 67,64,58,57,56,54,51 is UNsafe
+   Variant 71,64,58,57,56,54,51 is UNsafe
+   Variant 71,67,58,57,56,54,51 is UNsafe
+   Variant 71,67,64,57,56,54,51 is UNsafe
+   Variant 71,67,64,58,56,54,51 is UNsafe
+   Variant 71,67,64,58,57,54,51 is UNsafe
+   Variant 71,67,64,58,57,56,51 is UNsafe
+   ----The line 71 67 64 58 57 56 54 51 is unsafe (0 safe options)
+Testing 89 85 78 76 73 71 70 72:
+   Variant 85,78,76,73,71,70,72 is UNsafe
+   Variant 89,78,76,73,71,70,72 is UNsafe
+   Variant 89,85,76,73,71,70,72 is UNsafe
+   Variant 89,85,78,73,71,70,72 is UNsafe
+   Variant 89,85,78,76,71,70,72 is UNsafe
+   Variant 89,85,78,76,73,70,72 is UNsafe
+   Variant 89,85,78,76,73,71,72 is UNsafe
+   ----The line 89 85 78 76 73 71 70 72 is unsafe (0 safe options)
+Testing 67 63 62 59 56 49 47 47:
+   Variant 63,62,59,56,49,47,47 is UNsafe
+   Variant 67,62,59,56,49,47,47 is UNsafe
+   Variant 67,63,59,56,49,47,47 is UNsafe
+   Variant 67,63,62,56,49,47,47 is UNsafe
+   Variant 67,63,62,59,49,47,47 is UNsafe
+   Variant 67,63,62,59,56,47,47 is UNsafe
+   Variant 67,63,62,59,56,49,47 is UNsafe
+   ----The line 67 63 62 59 56 49 47 47 is unsafe (0 safe options)
+Testing 88 84 82 75 72 69 68 64:
+   Variant 84,82,75,72,69,68,64 is UNsafe
+   Variant 88,82,75,72,69,68,64 is UNsafe
+   Variant 88,84,75,72,69,68,64 is UNsafe
+   Variant 88,84,82,72,69,68,64 is UNsafe
+   Variant 88,84,82,75,69,68,64 is UNsafe
+   Variant 88,84,82,75,72,68,64 is UNsafe
+   Variant 88,84,82,75,72,69,64 is UNsafe
+   ----The line 88 84 82 75 72 69 68 64 is unsafe (0 safe options)
+Testing 46 42 40 37 35 28 25 20:
+   Variant 42,40,37,35,28,25,20 is UNsafe
+   Variant 46,40,37,35,28,25,20 is UNsafe
+   Variant 46,42,37,35,28,25,20 is UNsafe
+   Variant 46,42,40,35,28,25,20 is UNsafe
+   Variant 46,42,40,37,28,25,20 is UNsafe
+   Variant 46,42,40,37,35,25,20 is UNsafe
+   Variant 46,42,40,37,35,28,20 is UNsafe
+   ----The line 46 42 40 37 35 28 25 20 is unsafe (0 safe options)
+Testing 79 74 73 70 68 66 64:
+   Variant 74,73,70,68,66,64 is safe
+   Variant 79,73,70,68,66,64 is UNsafe
+   Variant 79,74,70,68,66,64 is UNsafe
+   Variant 79,74,73,68,66,64 is UNsafe
+   Variant 79,74,73,70,66,64 is UNsafe
+   Variant 79,74,73,70,68,64 is UNsafe
+   ----The line 79 74 73 70 68 66 64 is safe (1 safe options)
+Testing 58 53 52 49 51:
+   Variant 53,52,49,51 is UNsafe
+   Variant 58,52,49,51 is UNsafe
+   Variant 58,53,49,51 is UNsafe
+   Variant 58,53,52,51 is UNsafe
+   ----The line 58 53 52 49 51 is unsafe (0 safe options)
+Testing 30 24 22 19 19:
+   Variant 24,22,19,19 is UNsafe
+   Variant 30,22,19,19 is UNsafe
+   Variant 30,24,19,19 is UNsafe
+   Variant 30,24,22,19 is UNsafe
+   ----The line 30 24 22 19 19 is unsafe (0 safe options)
+Testing 61 54 53 50 47 45 41:
+   Variant 54,53,50,47,45,41 is UNsafe
+   Variant 61,53,50,47,45,41 is UNsafe
+   Variant 61,54,50,47,45,41 is UNsafe
+   Variant 61,54,53,47,45,41 is UNsafe
+   Variant 61,54,53,50,45,41 is UNsafe
+   Variant 61,54,53,50,47,41 is UNsafe
+   ----The line 61 54 53 50 47 45 41 is unsafe (0 safe options)
+Testing 75 70 67 65 59:
+   Variant 70,67,65,59 is UNsafe
+   Variant 75,67,65,59 is UNsafe
+   Variant 75,70,65,59 is UNsafe
+   Variant 75,70,67,59 is UNsafe
+   ----The line 75 70 67 65 59 is unsafe (0 safe options)
+Testing 89 83 86 84 81:
+   Variant 83,86,84,81 is UNsafe
+   Variant 89,86,84,81 is safe
+   Variant 89,83,84,81 is UNsafe
+   Variant 89,83,86,81 is UNsafe
+   ----The line 89 83 86 84 81 is safe (1 safe options)
+Testing 29 24 23 20 17 18 21:
+   Variant 24,23,20,17,18,21 is UNsafe
+   Variant 29,23,20,17,18,21 is UNsafe
+   Variant 29,24,20,17,18,21 is UNsafe
+   Variant 29,24,23,17,18,21 is UNsafe
+   Variant 29,24,23,20,18,21 is UNsafe
+   Variant 29,24,23,20,17,21 is UNsafe
+   ----The line 29 24 23 20 17 18 21 is unsafe (0 safe options)
+Testing 17 11 9 6 4 6 6:
+   Variant 11,9,6,4,6,6 is UNsafe
+   Variant 17,9,6,4,6,6 is UNsafe
+   Variant 17,11,6,4,6,6 is UNsafe
+   Variant 17,11,9,4,6,6 is UNsafe
+   Variant 17,11,9,6,6,6 is UNsafe
+   Variant 17,11,9,6,4,6 is UNsafe
+   ----The line 17 11 9 6 4 6 6 is unsafe (0 safe options)
+Testing 93 88 90 88 84:
+   Variant 88,90,88,84 is UNsafe
+   Variant 93,90,88,84 is UNsafe
+   Variant 93,88,88,84 is UNsafe
+   Variant 93,88,90,84 is UNsafe
+   ----The line 93 88 90 88 84 is unsafe (0 safe options)
+Testing 53 48 46 45 42 45 44 38:
+   Variant 48,46,45,42,45,44,38 is UNsafe
+   Variant 53,46,45,42,45,44,38 is UNsafe
+   Variant 53,48,45,42,45,44,38 is UNsafe
+   Variant 53,48,46,42,45,44,38 is UNsafe
+   Variant 53,48,46,45,45,44,38 is UNsafe
+   Variant 53,48,46,45,42,44,38 is UNsafe
+   Variant 53,48,46,45,42,45,38 is UNsafe
+   ----The line 53 48 46 45 42 45 44 38 is unsafe (0 safe options)
+Testing 22 17 14 13 10 10 9:
+   Variant 17,14,13,10,10,9 is UNsafe
+   Variant 22,14,13,10,10,9 is UNsafe
+   Variant 22,17,13,10,10,9 is UNsafe
+   Variant 22,17,14,10,10,9 is UNsafe
+   Variant 22,17,14,13,10,9 is UNsafe
+   Variant 22,17,14,13,10,9 is UNsafe
+   ----The line 22 17 14 13 10 10 9 is unsafe (0 safe options)
+Testing 65 58 57 56 56 55 53 55:
+   Variant 58,57,56,56,55,53,55 is UNsafe
+   Variant 65,57,56,56,55,53,55 is UNsafe
+   Variant 65,58,56,56,55,53,55 is UNsafe
+   Variant 65,58,57,56,55,53,55 is UNsafe
+   Variant 65,58,57,56,55,53,55 is UNsafe
+   Variant 65,58,57,56,56,53,55 is UNsafe
+   Variant 65,58,57,56,56,55,55 is UNsafe
+   ----The line 65 58 57 56 56 55 53 55 is unsafe (0 safe options)
+Testing 35 30 29 29 26 26:
+   Variant 30,29,29,26,26 is UNsafe
+   Variant 35,29,29,26,26 is UNsafe
+   Variant 35,30,29,26,26 is UNsafe
+   Variant 35,30,29,26,26 is UNsafe
+   Variant 35,30,29,29,26 is UNsafe
+   ----The line 35 30 29 29 26 26 is unsafe (0 safe options)
+Testing 19 14 12 11 10 10 8 4:
+   Variant 14,12,11,10,10,8,4 is UNsafe
+   Variant 19,12,11,10,10,8,4 is UNsafe
+   Variant 19,14,11,10,10,8,4 is UNsafe
+   Variant 19,14,12,10,10,8,4 is UNsafe
+   Variant 19,14,12,11,10,8,4 is UNsafe
+   Variant 19,14,12,11,10,8,4 is UNsafe
+   Variant 19,14,12,11,10,10,4 is UNsafe
+   ----The line 19 14 12 11 10 10 8 4 is unsafe (0 safe options)
+Testing 70 65 62 60 60 59 57 51:
+   Variant 65,62,60,60,59,57,51 is UNsafe
+   Variant 70,62,60,60,59,57,51 is UNsafe
+   Variant 70,65,60,60,59,57,51 is UNsafe
+   Variant 70,65,62,60,59,57,51 is UNsafe
+   Variant 70,65,62,60,59,57,51 is UNsafe
+   Variant 70,65,62,60,60,57,51 is UNsafe
+   Variant 70,65,62,60,60,59,51 is UNsafe
+   ----The line 70 65 62 60 60 59 57 51 is unsafe (0 safe options)
+Testing 98 91 88 86 84 80 78:
+   Variant 91,88,86,84,80,78 is UNsafe
+   Variant 98,88,86,84,80,78 is UNsafe
+   Variant 98,91,86,84,80,78 is UNsafe
+   Variant 98,91,88,84,80,78 is UNsafe
+   Variant 98,91,88,86,80,78 is UNsafe
+   Variant 98,91,88,86,84,78 is UNsafe
+   ----The line 98 91 88 86 84 80 78 is unsafe (0 safe options)
+Testing 41 36 34 30 29 31:
+   Variant 36,34,30,29,31 is UNsafe
+   Variant 41,34,30,29,31 is UNsafe
+   Variant 41,36,30,29,31 is UNsafe
+   Variant 41,36,34,29,31 is UNsafe
+   Variant 41,36,34,30,31 is UNsafe
+   ----The line 41 36 34 30 29 31 is unsafe (0 safe options)
+Testing 45 38 37 33 33:
+   Variant 38,37,33,33 is UNsafe
+   Variant 45,37,33,33 is UNsafe
+   Variant 45,38,33,33 is UNsafe
+   Variant 45,38,37,33 is UNsafe
+   ----The line 45 38 37 33 33 is unsafe (0 safe options)
+Testing 55 49 46 42 39 36 35 31:
+   Variant 49,46,42,39,36,35,31 is UNsafe
+   Variant 55,46,42,39,36,35,31 is UNsafe
+   Variant 55,49,42,39,36,35,31 is UNsafe
+   Variant 55,49,46,39,36,35,31 is UNsafe
+   Variant 55,49,46,42,36,35,31 is UNsafe
+   Variant 55,49,46,42,39,35,31 is UNsafe
+   Variant 55,49,46,42,39,36,31 is UNsafe
+   ----The line 55 49 46 42 39 36 35 31 is unsafe (0 safe options)
+Testing 78 72 69 65 64 62 55:
+   Variant 72,69,65,64,62,55 is UNsafe
+   Variant 78,69,65,64,62,55 is UNsafe
+   Variant 78,72,65,64,62,55 is UNsafe
+   Variant 78,72,69,64,62,55 is UNsafe
+   Variant 78,72,69,65,62,55 is UNsafe
+   Variant 78,72,69,65,64,55 is UNsafe
+   ----The line 78 72 69 65 64 62 55 is unsafe (0 safe options)
+Testing 97 91 84 82 79 77 76:
+   Variant 91,84,82,79,77,76 is UNsafe
+   Variant 97,84,82,79,77,76 is UNsafe
+   Variant 97,91,82,79,77,76 is UNsafe
+   Variant 97,91,84,79,77,76 is UNsafe
+   Variant 97,91,84,82,77,76 is UNsafe
+   Variant 97,91,84,82,79,76 is UNsafe
+   ----The line 97 91 84 82 79 77 76 is unsafe (0 safe options)
+Testing 95 89 82 81 83:
+   Variant 89,82,81,83 is UNsafe
+   Variant 95,82,81,83 is UNsafe
+   Variant 95,89,81,83 is UNsafe
+   Variant 95,89,82,83 is UNsafe
+   ----The line 95 89 82 81 83 is unsafe (0 safe options)
+Testing 43 37 35 34 28 25 24 24:
+   Variant 37,35,34,28,25,24,24 is UNsafe
+   Variant 43,35,34,28,25,24,24 is UNsafe
+   Variant 43,37,34,28,25,24,24 is UNsafe
+   Variant 43,37,35,28,25,24,24 is UNsafe
+   Variant 43,37,35,34,25,24,24 is UNsafe
+   Variant 43,37,35,34,28,24,24 is UNsafe
+   Variant 43,37,35,34,28,25,24 is UNsafe
+   ----The line 43 37 35 34 28 25 24 24 is unsafe (0 safe options)
+Testing 87 82 77 74 71 67:
+   Variant 82,77,74,71,67 is UNsafe
+   Variant 87,77,74,71,67 is UNsafe
+   Variant 87,82,74,71,67 is UNsafe
+   Variant 87,82,77,71,67 is UNsafe
+   Variant 87,82,77,74,67 is UNsafe
+   ----The line 87 82 77 74 71 67 is unsafe (0 safe options)
+Testing 56 49 48 45 40 39 34:
+   Variant 49,48,45,40,39,34 is UNsafe
+   Variant 56,48,45,40,39,34 is UNsafe
+   Variant 56,49,45,40,39,34 is UNsafe
+   Variant 56,49,48,40,39,34 is UNsafe
+   Variant 56,49,48,45,39,34 is UNsafe
+   Variant 56,49,48,45,40,34 is UNsafe
+   ----The line 56 49 48 45 40 39 34 is unsafe (0 safe options)
+Testing 89 90 88 85 84 84 77:
+   Variant 90,88,85,84,84,77 is UNsafe
+   Variant 89,88,85,84,84,77 is UNsafe
+   Variant 89,90,85,84,84,77 is UNsafe
+   Variant 89,90,88,84,84,77 is UNsafe
+   Variant 89,90,88,85,84,77 is UNsafe
+   Variant 89,90,88,85,84,77 is UNsafe
+   ----The line 89 90 88 85 84 84 77 is unsafe (0 safe options)
+Testing 35 39 41 42 43 44 41 47:
+   Variant 39,41,42,43,44,41,47 is UNsafe
+   Variant 35,41,42,43,44,41,47 is UNsafe
+   Variant 35,39,42,43,44,41,47 is UNsafe
+   Variant 35,39,41,43,44,41,47 is UNsafe
+   Variant 35,39,41,42,44,41,47 is UNsafe
+   Variant 35,39,41,42,43,41,47 is UNsafe
+   Variant 35,39,41,42,43,44,47 is UNsafe
+   ----The line 35 39 41 42 43 44 41 47 is unsafe (0 safe options)
+Testing 45 44 43 39 36 34 34:
+   Variant 44,43,39,36,34,34 is UNsafe
+   Variant 45,43,39,36,34,34 is UNsafe
+   Variant 45,44,39,36,34,34 is UNsafe
+   Variant 45,44,43,36,34,34 is UNsafe
+   Variant 45,44,43,39,34,34 is UNsafe
+   Variant 45,44,43,39,36,34 is UNsafe
+   ----The line 45 44 43 39 36 34 34 is unsafe (0 safe options)
+Testing 9 8 12 13 15 22:
+   Variant 8,12,13,15,22 is UNsafe
+   Variant 9,12,13,15,22 is UNsafe
+   Variant 9,8,13,15,22 is UNsafe
+   Variant 9,8,12,15,22 is UNsafe
+   Variant 9,8,12,13,22 is UNsafe
+   ----The line 9 8 12 13 15 22 is unsafe (0 safe options)
+Testing 74 72 73 75 76 78 81 85:
+   Variant 72,73,75,76,78,81,85 is UNsafe
+   Variant 74,73,75,76,78,81,85 is UNsafe
+   Variant 74,72,75,76,78,81,85 is UNsafe
+   Variant 74,72,73,76,78,81,85 is UNsafe
+   Variant 74,72,73,75,78,81,85 is UNsafe
+   Variant 74,72,73,75,76,81,85 is UNsafe
+   Variant 74,72,73,75,76,78,85 is UNsafe
+   ----The line 74 72 73 75 76 78 81 85 is unsafe (0 safe options)
+Testing 53 53 50 52 50 48 51:
+   Variant 53,50,52,50,48,51 is UNsafe
+   Variant 53,50,52,50,48,51 is UNsafe
+   Variant 53,53,52,50,48,51 is UNsafe
+   Variant 53,53,50,50,48,51 is UNsafe
+   Variant 53,53,50,52,48,51 is UNsafe
+   Variant 53,53,50,52,50,51 is UNsafe
+   ----The line 53 53 50 52 50 48 51 is unsafe (0 safe options)
+Testing 98 98 96 92 88:
+   Variant 98,96,92,88 is UNsafe
+   Variant 98,96,92,88 is UNsafe
+   Variant 98,98,92,88 is UNsafe
+   Variant 98,98,96,88 is UNsafe
+   ----The line 98 98 96 92 88 is unsafe (0 safe options)
+Testing 87 87 84 82 83 80 78 74:
+   Variant 87,84,82,83,80,78,74 is UNsafe
+   Variant 87,84,82,83,80,78,74 is UNsafe
+   Variant 87,87,82,83,80,78,74 is UNsafe
+   Variant 87,87,84,83,80,78,74 is UNsafe
+   Variant 87,87,84,82,80,78,74 is UNsafe
+   Variant 87,87,84,82,83,78,74 is UNsafe
+   Variant 87,87,84,82,83,80,74 is UNsafe
+   ----The line 87 87 84 82 83 80 78 74 is unsafe (0 safe options)
+Testing 74 70 67 70 68 66 68:
+   Variant 70,67,70,68,66,68 is UNsafe
+   Variant 74,67,70,68,66,68 is UNsafe
+   Variant 74,70,70,68,66,68 is UNsafe
+   Variant 74,70,67,68,66,68 is UNsafe
+   Variant 74,70,67,70,66,68 is UNsafe
+   Variant 74,70,67,70,68,68 is UNsafe
+   ----The line 74 70 67 70 68 66 68 is unsafe (0 safe options)
+Testing 78 74 71 68 64 61 56:
+   Variant 74,71,68,64,61,56 is UNsafe
+   Variant 78,71,68,64,61,56 is UNsafe
+   Variant 78,74,68,64,61,56 is UNsafe
+   Variant 78,74,71,64,61,56 is UNsafe
+   Variant 78,74,71,68,61,56 is UNsafe
+   Variant 78,74,71,68,64,56 is UNsafe
+   ----The line 78 74 71 68 64 61 56 is unsafe (0 safe options)
+Testing 53 53 50 48 47:
+   Variant 53,50,48,47 is safe
+   Variant 53,50,48,47 is safe
+   Variant 53,53,48,47 is UNsafe
+   Variant 53,53,50,47 is UNsafe
+   ----The line 53 53 50 48 47 is safe (2 safe options)
+Testing 52 47 47 44 41 40 37 37:
+   Variant 47,47,44,41,40,37,37 is UNsafe
+   Variant 52,47,44,41,40,37,37 is UNsafe
+   Variant 52,47,44,41,40,37,37 is UNsafe
+   Variant 52,47,47,41,40,37,37 is UNsafe
+   Variant 52,47,47,44,40,37,37 is UNsafe
+   Variant 52,47,47,44,41,37,37 is UNsafe
+   Variant 52,47,47,44,41,40,37 is UNsafe
+   ----The line 52 47 47 44 41 40 37 37 is unsafe (0 safe options)
+Testing 78 78 79 80 81 83:
+   Variant 78,79,80,81,83 is safe
+   Variant 78,79,80,81,83 is safe
+   Variant 78,78,80,81,83 is UNsafe
+   Variant 78,78,79,81,83 is UNsafe
+   Variant 78,78,79,80,83 is UNsafe
+   ----The line 78 78 79 80 81 83 is safe (2 safe options)
+Testing 76 80 79 82 83 84 88:
+   Variant 80,79,82,83,84,88 is UNsafe
+   Variant 76,79,82,83,84,88 is UNsafe
+   Variant 76,80,82,83,84,88 is UNsafe
+   Variant 76,80,79,83,84,88 is UNsafe
+   Variant 76,80,79,82,84,88 is UNsafe
+   Variant 76,80,79,82,83,88 is UNsafe
+   ----The line 76 80 79 82 83 84 88 is unsafe (0 safe options)
+Testing 47 43 41 38 34 32 30 27:
+   Variant 43,41,38,34,32,30,27 is UNsafe
+   Variant 47,41,38,34,32,30,27 is UNsafe
+   Variant 47,43,38,34,32,30,27 is UNsafe
+   Variant 47,43,41,34,32,30,27 is UNsafe
+   Variant 47,43,41,38,32,30,27 is UNsafe
+   Variant 47,43,41,38,34,30,27 is UNsafe
+   Variant 47,43,41,38,34,32,27 is UNsafe
+   ----The line 47 43 41 38 34 32 30 27 is unsafe (0 safe options)
+Testing 43 43 42 37 36:
+   Variant 43,42,37,36 is UNsafe
+   Variant 43,42,37,36 is UNsafe
+   Variant 43,43,37,36 is UNsafe
+   Variant 43,43,42,36 is UNsafe
+   ----The line 43 43 42 37 36 is unsafe (0 safe options)
+Testing 30 37 40 44 51:
+   Variant 37,40,44,51 is UNsafe
+   Variant 30,40,44,51 is UNsafe
+   Variant 30,37,44,51 is UNsafe
+   Variant 30,37,40,51 is UNsafe
+   ----The line 30 37 40 44 51 is unsafe (0 safe options)
+Testing 76 82 85 89 93:
+   Variant 82,85,89,93 is UNsafe
+   Variant 76,85,89,93 is UNsafe
+   Variant 76,82,89,93 is UNsafe
+   Variant 76,82,85,93 is UNsafe
+   ----The line 76 82 85 89 93 is unsafe (0 safe options)
+Testing 63 58 57 54 53 52 54:
+   Variant 58,57,54,53,52,54 is UNsafe
+   Variant 63,57,54,53,52,54 is UNsafe
+   Variant 63,58,54,53,52,54 is UNsafe
+   Variant 63,58,57,53,52,54 is UNsafe
+   Variant 63,58,57,54,52,54 is UNsafe
+   Variant 63,58,57,54,53,54 is UNsafe
+   ----The line 63 58 57 54 53 52 54 is unsafe (0 safe options)
+Testing 40 40 40 43 46 49 49:
+   Variant 40,40,43,46,49,49 is UNsafe
+   Variant 40,40,43,46,49,49 is UNsafe
+   Variant 40,40,43,46,49,49 is UNsafe
+   Variant 40,40,40,46,49,49 is UNsafe
+   Variant 40,40,40,43,49,49 is UNsafe
+   Variant 40,40,40,43,46,49 is UNsafe
+   ----The line 40 40 40 43 46 49 49 is unsafe (0 safe options)
+Testing 66 68 66 65 64 63 63:
+   Variant 68,66,65,64,63,63 is UNsafe
+   Variant 66,66,65,64,63,63 is UNsafe
+   Variant 66,68,65,64,63,63 is UNsafe
+   Variant 66,68,66,64,63,63 is UNsafe
+   Variant 66,68,66,65,63,63 is UNsafe
+   Variant 66,68,66,65,64,63 is UNsafe
+   ----The line 66 68 66 65 64 63 63 is unsafe (0 safe options)
+Testing 69 69 69 72 69:
+   Variant 69,69,72,69 is UNsafe
+   Variant 69,69,72,69 is UNsafe
+   Variant 69,69,72,69 is UNsafe
+   Variant 69,69,69,69 is UNsafe
+   ----The line 69 69 69 72 69 is unsafe (0 safe options)
+Testing 52 59 60 61 63 68:
+   Variant 59,60,61,63,68 is UNsafe
+   Variant 52,60,61,63,68 is UNsafe
+   Variant 52,59,61,63,68 is UNsafe
+   Variant 52,59,60,63,68 is UNsafe
+   Variant 52,59,60,61,68 is UNsafe
+   ----The line 52 59 60 61 63 68 is unsafe (0 safe options)
+Testing 69 64 62 60 59 54 52 45:
+   Variant 64,62,60,59,54,52,45 is UNsafe
+   Variant 69,62,60,59,54,52,45 is UNsafe
+   Variant 69,64,60,59,54,52,45 is UNsafe
+   Variant 69,64,62,59,54,52,45 is UNsafe
+   Variant 69,64,62,60,54,52,45 is UNsafe
+   Variant 69,64,62,60,59,52,45 is UNsafe
+   Variant 69,64,62,60,59,54,45 is UNsafe
+   ----The line 69 64 62 60 59 54 52 45 is unsafe (0 safe options)
+Testing 86 81 79 77 77 73:
+   Variant 81,79,77,77,73 is UNsafe
+   Variant 86,79,77,77,73 is UNsafe
+   Variant 86,81,77,77,73 is UNsafe
+   Variant 86,81,79,77,73 is UNsafe
+   Variant 86,81,79,77,73 is UNsafe
+   ----The line 86 81 79 77 77 73 is unsafe (0 safe options)
+Testing 63 58 56 54 53 49:
+   Variant 58,56,54,53,49 is UNsafe
+   Variant 63,56,54,53,49 is UNsafe
+   Variant 63,58,54,53,49 is UNsafe
+   Variant 63,58,56,53,49 is UNsafe
+   Variant 63,58,56,54,49 is UNsafe
+   ----The line 63 58 56 54 53 49 is unsafe (0 safe options)
+Testing 55 53 50 53 55 58 60 57:
+   Variant 53,50,53,55,58,60,57 is UNsafe
+   Variant 55,50,53,55,58,60,57 is UNsafe
+   Variant 55,53,53,55,58,60,57 is UNsafe
+   Variant 55,53,50,55,58,60,57 is UNsafe
+   Variant 55,53,50,53,58,60,57 is UNsafe
+   Variant 55,53,50,53,55,60,57 is UNsafe
+   Variant 55,53,50,53,55,58,57 is UNsafe
+   ----The line 55 53 50 53 55 58 60 57 is unsafe (0 safe options)
+Testing 56 62 65 63 66 67:
+   Variant 62,65,63,66,67 is UNsafe
+   Variant 56,65,63,66,67 is UNsafe
+   Variant 56,62,63,66,67 is UNsafe
+   Variant 56,62,65,66,67 is UNsafe
+   Variant 56,62,65,63,67 is UNsafe
+   ----The line 56 62 65 63 66 67 is unsafe (0 safe options)
+Testing 63 64 61 55 52 51 48 48:
+   Variant 64,61,55,52,51,48,48 is UNsafe
+   Variant 63,61,55,52,51,48,48 is UNsafe
+   Variant 63,64,55,52,51,48,48 is UNsafe
+   Variant 63,64,61,52,51,48,48 is UNsafe
+   Variant 63,64,61,55,51,48,48 is UNsafe
+   Variant 63,64,61,55,52,48,48 is UNsafe
+   Variant 63,64,61,55,52,51,48 is UNsafe
+   ----The line 63 64 61 55 52 51 48 48 is unsafe (0 safe options)
+Testing 67 64 67 74 78:
+   Variant 64,67,74,78 is UNsafe
+   Variant 67,67,74,78 is UNsafe
+   Variant 67,64,74,78 is UNsafe
+   Variant 67,64,67,78 is UNsafe
+   ----The line 67 64 67 74 78 is unsafe (0 safe options)
+Testing 23 19 16 12 9 5:
+   Variant 19,16,12,9,5 is UNsafe
+   Variant 23,16,12,9,5 is UNsafe
+   Variant 23,19,12,9,5 is UNsafe
+   Variant 23,19,16,9,5 is UNsafe
+   Variant 23,19,16,12,5 is UNsafe
+   ----The line 23 19 16 12 9 5 is unsafe (0 safe options)
+Testing 17 17 14 12 9 2:
+   Variant 17,14,12,9,2 is UNsafe
+   Variant 17,14,12,9,2 is UNsafe
+   Variant 17,17,12,9,2 is UNsafe
+   Variant 17,17,14,9,2 is UNsafe
+   Variant 17,17,14,12,2 is UNsafe
+   ----The line 17 17 14 12 9 2 is unsafe (0 safe options)
+Testing 20 13 11 7 4 6:
+   Variant 13,11,7,4,6 is UNsafe
+   Variant 20,11,7,4,6 is UNsafe
+   Variant 20,13,7,4,6 is UNsafe
+   Variant 20,13,11,4,6 is UNsafe
+   Variant 20,13,11,7,6 is UNsafe
+   ----The line 20 13 11 7 4 6 is unsafe (0 safe options)
+Testing 41 37 35 30 28 25:
+   Variant 37,35,30,28,25 is UNsafe
+   Variant 41,35,30,28,25 is UNsafe
+   Variant 41,37,30,28,25 is UNsafe
+   Variant 41,37,35,28,25 is UNsafe
+   Variant 41,37,35,30,25 is UNsafe
+   ----The line 41 37 35 30 28 25 is unsafe (0 safe options)
+Testing 13 13 12 10 6 6:
+   Variant 13,12,10,6,6 is UNsafe
+   Variant 13,12,10,6,6 is UNsafe
+   Variant 13,13,10,6,6 is UNsafe
+   Variant 13,13,12,6,6 is UNsafe
+   Variant 13,13,12,10,6 is UNsafe
+   ----The line 13 13 12 10 6 6 is unsafe (0 safe options)
+Testing 34 30 28 26 24 19:
+   Variant 30,28,26,24,19 is UNsafe
+   Variant 34,28,26,24,19 is UNsafe
+   Variant 34,30,26,24,19 is UNsafe
+   Variant 34,30,28,24,19 is UNsafe
+   Variant 34,30,28,26,19 is UNsafe
+   ----The line 34 30 28 26 24 19 is unsafe (0 safe options)
+Testing 69 71 70 68 68 66 62:
+   Variant 71,70,68,68,66,62 is UNsafe
+   Variant 69,70,68,68,66,62 is UNsafe
+   Variant 69,71,68,68,66,62 is UNsafe
+   Variant 69,71,70,68,66,62 is UNsafe
+   Variant 69,71,70,68,66,62 is UNsafe
+   Variant 69,71,70,68,68,62 is UNsafe
+   ----The line 69 71 70 68 68 66 62 is unsafe (0 safe options)
+Testing 93 93 92 89 88 86 81 77:
+   Variant 93,92,89,88,86,81,77 is UNsafe
+   Variant 93,92,89,88,86,81,77 is UNsafe
+   Variant 93,93,89,88,86,81,77 is UNsafe
+   Variant 93,93,92,88,86,81,77 is UNsafe
+   Variant 93,93,92,89,86,81,77 is UNsafe
+   Variant 93,93,92,89,88,81,77 is UNsafe
+   Variant 93,93,92,89,88,86,77 is UNsafe
+   ----The line 93 93 92 89 88 86 81 77 is unsafe (0 safe options)
+Testing 52 53 57 59 60 61 63 63:
+   Variant 53,57,59,60,61,63,63 is UNsafe
+   Variant 52,57,59,60,61,63,63 is UNsafe
+   Variant 52,53,59,60,61,63,63 is UNsafe
+   Variant 52,53,57,60,61,63,63 is UNsafe
+   Variant 52,53,57,59,61,63,63 is UNsafe
+   Variant 52,53,57,59,60,63,63 is UNsafe
+   Variant 52,53,57,59,60,61,63 is UNsafe
+   ----The line 52 53 57 59 60 61 63 63 is unsafe (0 safe options)
+Testing 92 91 90 87 87 84 77:
+   Variant 91,90,87,87,84,77 is UNsafe
+   Variant 92,90,87,87,84,77 is UNsafe
+   Variant 92,91,87,87,84,77 is UNsafe
+   Variant 92,91,90,87,84,77 is UNsafe
+   Variant 92,91,90,87,84,77 is UNsafe
+   Variant 92,91,90,87,87,77 is UNsafe
+   ----The line 92 91 90 87 87 84 77 is unsafe (0 safe options)
+Testing 66 66 69 72 79 81:
+   Variant 66,69,72,79,81 is UNsafe
+   Variant 66,69,72,79,81 is UNsafe
+   Variant 66,66,72,79,81 is UNsafe
+   Variant 66,66,69,79,81 is UNsafe
+   Variant 66,66,69,72,81 is UNsafe
+   ----The line 66 66 69 72 79 81 is unsafe (0 safe options)
+Testing 78 73 72 73 71 70:
+   Variant 73,72,73,71,70 is UNsafe
+   Variant 78,72,73,71,70 is UNsafe
+   Variant 78,73,73,71,70 is UNsafe
+   Variant 78,73,72,71,70 is UNsafe
+   Variant 78,73,72,73,70 is UNsafe
+   ----The line 78 73 72 73 71 70 is unsafe (0 safe options)
+Testing 54 49 46 45 44 39:
+   Variant 49,46,45,44,39 is UNsafe
+   Variant 54,46,45,44,39 is UNsafe
+   Variant 54,49,45,44,39 is UNsafe
+   Variant 54,49,46,44,39 is UNsafe
+   Variant 54,49,46,45,39 is UNsafe
+   ----The line 54 49 46 45 44 39 is unsafe (0 safe options)
+Testing 64 70 73 76 77 77:
+   Variant 70,73,76,77,77 is UNsafe
+   Variant 64,73,76,77,77 is UNsafe
+   Variant 64,70,76,77,77 is UNsafe
+   Variant 64,70,73,77,77 is UNsafe
+   Variant 64,70,73,76,77 is UNsafe
+   ----The line 64 70 73 76 77 77 is unsafe (0 safe options)
+Testing 37 37 38 39 43 41:
+   Variant 37,38,39,43,41 is UNsafe
+   Variant 37,38,39,43,41 is UNsafe
+   Variant 37,37,39,43,41 is UNsafe
+   Variant 37,37,38,43,41 is UNsafe
+   Variant 37,37,38,39,41 is UNsafe
+   ----The line 37 37 38 39 43 41 is unsafe (0 safe options)
+Testing 63 67 70 76 79 81 83 83:
+   Variant 67,70,76,79,81,83,83 is UNsafe
+   Variant 63,70,76,79,81,83,83 is UNsafe
+   Variant 63,67,76,79,81,83,83 is UNsafe
+   Variant 63,67,70,79,81,83,83 is UNsafe
+   Variant 63,67,70,76,81,83,83 is UNsafe
+   Variant 63,67,70,76,79,83,83 is UNsafe
+   Variant 63,67,70,76,79,81,83 is UNsafe
+   ----The line 63 67 70 76 79 81 83 83 is unsafe (0 safe options)
+Testing 68 67 69 69 70 74:
+   Variant 67,69,69,70,74 is UNsafe
+   Variant 68,69,69,70,74 is UNsafe
+   Variant 68,67,69,70,74 is UNsafe
+   Variant 68,67,69,70,74 is UNsafe
+   Variant 68,67,69,69,74 is UNsafe
+   ----The line 68 67 69 69 70 74 is unsafe (0 safe options)
+Testing 57 56 55 54 50 46:
+   Variant 56,55,54,50,46 is UNsafe
+   Variant 57,55,54,50,46 is UNsafe
+   Variant 57,56,54,50,46 is UNsafe
+   Variant 57,56,55,50,46 is UNsafe
+   Variant 57,56,55,54,46 is UNsafe
+   ----The line 57 56 55 54 50 46 is unsafe (0 safe options)
+Testing 28 29 30 30 33 30:
+   Variant 29,30,30,33,30 is UNsafe
+   Variant 28,30,30,33,30 is UNsafe
+   Variant 28,29,30,33,30 is UNsafe
+   Variant 28,29,30,33,30 is UNsafe
+   Variant 28,29,30,30,30 is UNsafe
+   ----The line 28 29 30 30 33 30 is unsafe (0 safe options)
+Testing 57 55 57 60 62 65:
+   Variant 55,57,60,62,65 is safe
+   Variant 57,57,60,62,65 is UNsafe
+   Variant 57,55,60,62,65 is UNsafe
+   Variant 57,55,57,62,65 is UNsafe
+   Variant 57,55,57,60,65 is UNsafe
+   ----The line 57 55 57 60 62 65 is safe (1 safe options)
+Testing 84 84 88 91 97:
+   Variant 84,88,91,97 is UNsafe
+   Variant 84,88,91,97 is UNsafe
+   Variant 84,84,91,97 is UNsafe
+   Variant 84,84,88,97 is UNsafe
+   ----The line 84 84 88 91 97 is unsafe (0 safe options)
+Testing 19 19 17 15 14 13 15:
+   Variant 19,17,15,14,13,15 is UNsafe
+   Variant 19,17,15,14,13,15 is UNsafe
+   Variant 19,19,15,14,13,15 is UNsafe
+   Variant 19,19,17,14,13,15 is UNsafe
+   Variant 19,19,17,15,13,15 is UNsafe
+   Variant 19,19,17,15,14,15 is UNsafe
+   ----The line 19 19 17 15 14 13 15 is unsafe (0 safe options)
+Testing 1 2 5 12 15 16 17 15:
+   Variant 2,5,12,15,16,17,15 is UNsafe
+   Variant 1,5,12,15,16,17,15 is UNsafe
+   Variant 1,2,12,15,16,17,15 is UNsafe
+   Variant 1,2,5,15,16,17,15 is UNsafe
+   Variant 1,2,5,12,16,17,15 is UNsafe
+   Variant 1,2,5,12,15,17,15 is UNsafe
+   Variant 1,2,5,12,15,16,15 is UNsafe
+   ----The line 1 2 5 12 15 16 17 15 is unsafe (0 safe options)
+Testing 80 87 90 91 91 93 91:
+   Variant 87,90,91,91,93,91 is UNsafe
+   Variant 80,90,91,91,93,91 is UNsafe
+   Variant 80,87,91,91,93,91 is UNsafe
+   Variant 80,87,90,91,93,91 is UNsafe
+   Variant 80,87,90,91,93,91 is UNsafe
+   Variant 80,87,90,91,91,91 is UNsafe
+   ----The line 80 87 90 91 91 93 91 is unsafe (0 safe options)
+Testing 52 56 58 63 64 62:
+   Variant 56,58,63,64,62 is UNsafe
+   Variant 52,58,63,64,62 is UNsafe
+   Variant 52,56,63,64,62 is UNsafe
+   Variant 52,56,58,64,62 is UNsafe
+   Variant 52,56,58,63,62 is UNsafe
+   ----The line 52 56 58 63 64 62 is unsafe (0 safe options)
+Testing 94 90 87 85 82 79 78 76:
+   Variant 90,87,85,82,79,78,76 is safe
+   Variant 94,87,85,82,79,78,76 is UNsafe
+   Variant 94,90,85,82,79,78,76 is UNsafe
+   Variant 94,90,87,82,79,78,76 is UNsafe
+   Variant 94,90,87,85,79,78,76 is UNsafe
+   Variant 94,90,87,85,82,78,76 is UNsafe
+   Variant 94,90,87,85,82,79,76 is UNsafe
+   ----The line 94 90 87 85 82 79 78 76 is safe (1 safe options)
+Testing 24 24 25 31 33 34 36 36:
+   Variant 24,25,31,33,34,36,36 is UNsafe
+   Variant 24,25,31,33,34,36,36 is UNsafe
+   Variant 24,24,31,33,34,36,36 is UNsafe
+   Variant 24,24,25,33,34,36,36 is UNsafe
+   Variant 24,24,25,31,34,36,36 is UNsafe
+   Variant 24,24,25,31,33,36,36 is UNsafe
+   Variant 24,24,25,31,33,34,36 is UNsafe
+   ----The line 24 24 25 31 33 34 36 36 is unsafe (0 safe options)
+Testing 80 86 86 88 93:
+   Variant 86,86,88,93 is UNsafe
+   Variant 80,86,88,93 is UNsafe
+   Variant 80,86,88,93 is UNsafe
+   Variant 80,86,86,93 is UNsafe
+   ----The line 80 86 86 88 93 is unsafe (0 safe options)
+Testing 93 94 92 93 95 98:
+   Variant 94,92,93,95,98 is UNsafe
+   Variant 93,92,93,95,98 is UNsafe
+   Variant 93,94,93,95,98 is UNsafe
+   Variant 93,94,92,95,98 is UNsafe
+   Variant 93,94,92,93,98 is UNsafe
+   ----The line 93 94 92 93 95 98 is unsafe (0 safe options)
+Testing 17 21 23 25 25 30:
+   Variant 21,23,25,25,30 is UNsafe
+   Variant 17,23,25,25,30 is UNsafe
+   Variant 17,21,25,25,30 is UNsafe
+   Variant 17,21,23,25,30 is UNsafe
+   Variant 17,21,23,25,30 is UNsafe
+   ----The line 17 21 23 25 25 30 is unsafe (0 safe options)
+Testing 37 31 31 29 27 25 23 20:
+   Variant 31,31,29,27,25,23,20 is UNsafe
+   Variant 37,31,29,27,25,23,20 is UNsafe
+   Variant 37,31,29,27,25,23,20 is UNsafe
+   Variant 37,31,31,27,25,23,20 is UNsafe
+   Variant 37,31,31,29,25,23,20 is UNsafe
+   Variant 37,31,31,29,27,23,20 is UNsafe
+   Variant 37,31,31,29,27,25,20 is UNsafe
+   ----The line 37 31 31 29 27 25 23 20 is unsafe (0 safe options)
+Testing 41 34 32 29 29 27 30:
+   Variant 34,32,29,29,27,30 is UNsafe
+   Variant 41,32,29,29,27,30 is UNsafe
+   Variant 41,34,29,29,27,30 is UNsafe
+   Variant 41,34,32,29,27,30 is UNsafe
+   Variant 41,34,32,29,27,30 is UNsafe
+   Variant 41,34,32,29,29,30 is UNsafe
+   ----The line 41 34 32 29 29 27 30 is unsafe (0 safe options)
+Testing 39 39 40 43 46 43:
+   Variant 39,40,43,46,43 is UNsafe
+   Variant 39,40,43,46,43 is UNsafe
+   Variant 39,39,43,46,43 is UNsafe
+   Variant 39,39,40,46,43 is UNsafe
+   Variant 39,39,40,43,43 is UNsafe
+   ----The line 39 39 40 43 46 43 is unsafe (0 safe options)
+Testing 18 18 16 16 12:
+   Variant 18,16,16,12 is UNsafe
+   Variant 18,16,16,12 is UNsafe
+   Variant 18,18,16,12 is UNsafe
+   Variant 18,18,16,12 is UNsafe
+   ----The line 18 18 16 16 12 is unsafe (0 safe options)
+Testing 17 17 20 23 25 29 31 35:
+   Variant 17,20,23,25,29,31,35 is UNsafe
+   Variant 17,20,23,25,29,31,35 is UNsafe
+   Variant 17,17,23,25,29,31,35 is UNsafe
+   Variant 17,17,20,25,29,31,35 is UNsafe
+   Variant 17,17,20,23,29,31,35 is UNsafe
+   Variant 17,17,20,23,25,31,35 is UNsafe
+   Variant 17,17,20,23,25,29,35 is UNsafe
+   ----The line 17 17 20 23 25 29 31 35 is unsafe (0 safe options)
+Testing 50 50 57 58 65:
+   Variant 50,57,58,65 is UNsafe
+   Variant 50,57,58,65 is UNsafe
+   Variant 50,50,58,65 is UNsafe
+   Variant 50,50,57,65 is UNsafe
+   ----The line 50 50 57 58 65 is unsafe (0 safe options)
+Testing 14 14 13 13 15:
+   Variant 14,13,13,15 is UNsafe
+   Variant 14,13,13,15 is UNsafe
+   Variant 14,14,13,15 is UNsafe
+   Variant 14,14,13,15 is UNsafe
+   ----The line 14 14 13 13 15 is unsafe (0 safe options)
+Testing 45 42 43 45 50 53:
+   Variant 42,43,45,50,53 is UNsafe
+   Variant 45,43,45,50,53 is UNsafe
+   Variant 45,42,45,50,53 is UNsafe
+   Variant 45,42,43,50,53 is UNsafe
+   Variant 45,42,43,45,53 is UNsafe
+   ----The line 45 42 43 45 50 53 is unsafe (0 safe options)
+Testing 49 46 47 53 55 56 59 58:
+   Variant 46,47,53,55,56,59,58 is UNsafe
+   Variant 49,47,53,55,56,59,58 is UNsafe
+   Variant 49,46,53,55,56,59,58 is UNsafe
+   Variant 49,46,47,55,56,59,58 is UNsafe
+   Variant 49,46,47,53,56,59,58 is UNsafe
+   Variant 49,46,47,53,55,59,58 is UNsafe
+   Variant 49,46,47,53,55,56,58 is UNsafe
+   ----The line 49 46 47 53 55 56 59 58 is unsafe (0 safe options)
+Testing 30 32 30 28 24 20:
+   Variant 32,30,28,24,20 is UNsafe
+   Variant 30,30,28,24,20 is UNsafe
+   Variant 30,32,28,24,20 is UNsafe
+   Variant 30,32,30,24,20 is UNsafe
+   Variant 30,32,30,28,20 is UNsafe
+   ----The line 30 32 30 28 24 20 is unsafe (0 safe options)
+Testing 34 33 34 32 35 39:
+   Variant 33,34,32,35,39 is UNsafe
+   Variant 34,34,32,35,39 is UNsafe
+   Variant 34,33,32,35,39 is UNsafe
+   Variant 34,33,34,35,39 is UNsafe
+   Variant 34,33,34,32,39 is UNsafe
+   ----The line 34 33 34 32 35 39 is unsafe (0 safe options)
+Testing 62 58 56 56 53 53:
+   Variant 58,56,56,53,53 is UNsafe
+   Variant 62,56,56,53,53 is UNsafe
+   Variant 62,58,56,53,53 is UNsafe
+   Variant 62,58,56,53,53 is UNsafe
+   Variant 62,58,56,56,53 is UNsafe
+   ----The line 62 58 56 56 53 53 is unsafe (0 safe options)
+Testing 34 33 27 24 22:
+   Variant 33,27,24,22 is UNsafe
+   Variant 34,27,24,22 is UNsafe
+   Variant 34,33,24,22 is UNsafe
+   Variant 34,33,27,22 is UNsafe
+   ----The line 34 33 27 24 22 is unsafe (0 safe options)
+Testing 37 39 32 29 26 22:
+   Variant 39,32,29,26,22 is UNsafe
+   Variant 37,32,29,26,22 is UNsafe
+   Variant 37,39,29,26,22 is UNsafe
+   Variant 37,39,32,26,22 is UNsafe
+   Variant 37,39,32,29,22 is UNsafe
+   ----The line 37 39 32 29 26 22 is unsafe (0 safe options)
+Testing 90 86 88 86 83:
+   Variant 86,88,86,83 is UNsafe
+   Variant 90,88,86,83 is safe
+   Variant 90,86,86,83 is UNsafe
+   Variant 90,86,88,83 is UNsafe
+   ----The line 90 86 88 86 83 is safe (1 safe options)
+Testing 34 30 27 24 18 18:
+   Variant 30,27,24,18,18 is UNsafe
+   Variant 34,27,24,18,18 is UNsafe
+   Variant 34,30,24,18,18 is UNsafe
+   Variant 34,30,27,18,18 is UNsafe
+   Variant 34,30,27,24,18 is UNsafe
+   ----The line 34 30 27 24 18 18 is unsafe (0 safe options)
+Testing 78 75 72 69 71 69 67 67:
+   Variant 75,72,69,71,69,67,67 is UNsafe
+   Variant 78,72,69,71,69,67,67 is UNsafe
+   Variant 78,75,69,71,69,67,67 is UNsafe
+   Variant 78,75,72,71,69,67,67 is UNsafe
+   Variant 78,75,72,69,69,67,67 is UNsafe
+   Variant 78,75,72,69,71,67,67 is UNsafe
+   Variant 78,75,72,69,71,69,67 is UNsafe
+   ----The line 78 75 72 69 71 69 67 67 is unsafe (0 safe options)
+Testing 64 64 68 69 72 73 76 76:
+   Variant 64,68,69,72,73,76,76 is UNsafe
+   Variant 64,68,69,72,73,76,76 is UNsafe
+   Variant 64,64,69,72,73,76,76 is UNsafe
+   Variant 64,64,68,72,73,76,76 is UNsafe
+   Variant 64,64,68,69,73,76,76 is UNsafe
+   Variant 64,64,68,69,72,76,76 is UNsafe
+   Variant 64,64,68,69,72,73,76 is UNsafe
+   ----The line 64 64 68 69 72 73 76 76 is unsafe (0 safe options)
+Testing 21 19 20 23 26 33 33:
+   Variant 19,20,23,26,33,33 is UNsafe
+   Variant 21,20,23,26,33,33 is UNsafe
+   Variant 21,19,23,26,33,33 is UNsafe
+   Variant 21,19,20,26,33,33 is UNsafe
+   Variant 21,19,20,23,33,33 is UNsafe
+   Variant 21,19,20,23,26,33 is UNsafe
+   ----The line 21 19 20 23 26 33 33 is unsafe (0 safe options)
+Testing 58 54 52 49 43 45:
+   Variant 54,52,49,43,45 is UNsafe
+   Variant 58,52,49,43,45 is UNsafe
+   Variant 58,54,49,43,45 is UNsafe
+   Variant 58,54,52,43,45 is UNsafe
+   Variant 58,54,52,49,45 is UNsafe
+   ----The line 58 54 52 49 43 45 is unsafe (0 safe options)
+Testing 78 78 75 74 73 72 72:
+   Variant 78,75,74,73,72,72 is UNsafe
+   Variant 78,75,74,73,72,72 is UNsafe
+   Variant 78,78,74,73,72,72 is UNsafe
+   Variant 78,78,75,73,72,72 is UNsafe
+   Variant 78,78,75,74,72,72 is UNsafe
+   Variant 78,78,75,74,73,72 is UNsafe
+   ----The line 78 78 75 74 73 72 72 is unsafe (0 safe options)
+Testing 29 31 28 29 27 24 17:
+   Variant 31,28,29,27,24,17 is UNsafe
+   Variant 29,28,29,27,24,17 is UNsafe
+   Variant 29,31,29,27,24,17 is UNsafe
+   Variant 29,31,28,27,24,17 is UNsafe
+   Variant 29,31,28,29,24,17 is UNsafe
+   Variant 29,31,28,29,27,17 is UNsafe
+   ----The line 29 31 28 29 27 24 17 is unsafe (0 safe options)
+Testing 46 49 51 53 51 56:
+   Variant 49,51,53,51,56 is UNsafe
+   Variant 46,51,53,51,56 is UNsafe
+   Variant 46,49,53,51,56 is UNsafe
+   Variant 46,49,51,51,56 is UNsafe
+   Variant 46,49,51,53,56 is safe
+   ----The line 46 49 51 53 51 56 is safe (1 safe options)
+Testing 38 38 35 33 31 24 27:
+   Variant 38,35,33,31,24,27 is UNsafe
+   Variant 38,35,33,31,24,27 is UNsafe
+   Variant 38,38,33,31,24,27 is UNsafe
+   Variant 38,38,35,31,24,27 is UNsafe
+   Variant 38,38,35,33,24,27 is UNsafe
+   Variant 38,38,35,33,31,27 is UNsafe
+   ----The line 38 38 35 33 31 24 27 is unsafe (0 safe options)
+Testing 69 69 66 65 64 62 58 59:
+   Variant 69,66,65,64,62,58,59 is UNsafe
+   Variant 69,66,65,64,62,58,59 is UNsafe
+   Variant 69,69,65,64,62,58,59 is UNsafe
+   Variant 69,69,66,64,62,58,59 is UNsafe
+   Variant 69,69,66,65,62,58,59 is UNsafe
+   Variant 69,69,66,65,64,58,59 is UNsafe
+   Variant 69,69,66,65,64,62,59 is UNsafe
+   ----The line 69 69 66 65 64 62 58 59 is unsafe (0 safe options)
+Testing 53 59 60 67 70:
+   Variant 59,60,67,70 is UNsafe
+   Variant 53,60,67,70 is UNsafe
+   Variant 53,59,67,70 is UNsafe
+   Variant 53,59,60,70 is UNsafe
+   ----The line 53 59 60 67 70 is unsafe (0 safe options)
+Testing 88 90 89 85 83 82:
+   Variant 90,89,85,83,82 is UNsafe
+   Variant 88,89,85,83,82 is UNsafe
+   Variant 88,90,85,83,82 is UNsafe
+   Variant 88,90,89,83,82 is UNsafe
+   Variant 88,90,89,85,82 is UNsafe
+   ----The line 88 90 89 85 83 82 is unsafe (0 safe options)
+Testing 14 14 12 11 7:
+   Variant 14,12,11,7 is UNsafe
+   Variant 14,12,11,7 is UNsafe
+   Variant 14,14,11,7 is UNsafe
+   Variant 14,14,12,7 is UNsafe
+   ----The line 14 14 12 11 7 is unsafe (0 safe options)
+Testing 18 25 27 29 31 34 32:
+   Variant 25,27,29,31,34,32 is UNsafe
+   Variant 18,27,29,31,34,32 is UNsafe
+   Variant 18,25,29,31,34,32 is UNsafe
+   Variant 18,25,27,31,34,32 is UNsafe
+   Variant 18,25,27,29,34,32 is UNsafe
+   Variant 18,25,27,29,31,32 is UNsafe
+   ----The line 18 25 27 29 31 34 32 is unsafe (0 safe options)
+Testing 70 70 73 71 71:
+   Variant 70,73,71,71 is UNsafe
+   Variant 70,73,71,71 is UNsafe
+   Variant 70,70,71,71 is UNsafe
+   Variant 70,70,73,71 is UNsafe
+   ----The line 70 70 73 71 71 is unsafe (0 safe options)
+Testing 39 43 50 53 55 57:
+   Variant 43,50,53,55,57 is UNsafe
+   Variant 39,50,53,55,57 is UNsafe
+   Variant 39,43,53,55,57 is UNsafe
+   Variant 39,43,50,55,57 is UNsafe
+   Variant 39,43,50,53,57 is UNsafe
+   ----The line 39 43 50 53 55 57 is unsafe (0 safe options)
+Testing 95 93 95 93 92 90 88 89:
+   Variant 93,95,93,92,90,88,89 is UNsafe
+   Variant 95,95,93,92,90,88,89 is UNsafe
+   Variant 95,93,93,92,90,88,89 is UNsafe
+   Variant 95,93,95,92,90,88,89 is UNsafe
+   Variant 95,93,95,93,90,88,89 is UNsafe
+   Variant 95,93,95,93,92,88,89 is UNsafe
+   Variant 95,93,95,93,92,90,89 is UNsafe
+   ----The line 95 93 95 93 92 90 88 89 is unsafe (0 safe options)
+Testing 95 90 86 85 85:
+   Variant 90,86,85,85 is UNsafe
+   Variant 95,86,85,85 is UNsafe
+   Variant 95,90,85,85 is UNsafe
+   Variant 95,90,86,85 is UNsafe
+   ----The line 95 90 86 85 85 is unsafe (0 safe options)
+Testing 30 36 40 42 43:
+   Variant 36,40,42,43 is UNsafe
+   Variant 30,40,42,43 is UNsafe
+   Variant 30,36,42,43 is UNsafe
+   Variant 30,36,40,43 is UNsafe
+   ----The line 30 36 40 42 43 is unsafe (0 safe options)
+Testing 50 54 55 56 57 57 60:
+   Variant 54,55,56,57,57,60 is UNsafe
+   Variant 50,55,56,57,57,60 is UNsafe
+   Variant 50,54,56,57,57,60 is UNsafe
+   Variant 50,54,55,57,57,60 is UNsafe
+   Variant 50,54,55,56,57,60 is UNsafe
+   Variant 50,54,55,56,57,60 is UNsafe
+   ----The line 50 54 55 56 57 57 60 is unsafe (0 safe options)
+Testing 83 84 81 79 78 80 78:
+   Variant 84,81,79,78,80,78 is UNsafe
+   Variant 83,81,79,78,80,78 is UNsafe
+   Variant 83,84,79,78,80,78 is UNsafe
+   Variant 83,84,81,78,80,78 is UNsafe
+   Variant 83,84,81,79,80,78 is UNsafe
+   Variant 83,84,81,79,78,78 is UNsafe
+   ----The line 83 84 81 79 78 80 78 is unsafe (0 safe options)
+Testing 56 63 64 67 71 71:
+   Variant 63,64,67,71,71 is UNsafe
+   Variant 56,64,67,71,71 is UNsafe
+   Variant 56,63,67,71,71 is UNsafe
+   Variant 56,63,64,71,71 is UNsafe
+   Variant 56,63,64,67,71 is UNsafe
+   ----The line 56 63 64 67 71 71 is unsafe (0 safe options)
+Testing 26 25 22 20 21:
+   Variant 25,22,20,21 is UNsafe
+   Variant 26,22,20,21 is UNsafe
+   Variant 26,25,20,21 is UNsafe
+   Variant 26,25,22,21 is safe
+   ----The line 26 25 22 20 21 is safe (1 safe options)
+Testing 85 82 84 83 77:
+   Variant 82,84,83,77 is UNsafe
+   Variant 85,84,83,77 is UNsafe
+   Variant 85,82,83,77 is UNsafe
+   Variant 85,82,84,77 is UNsafe
+   ----The line 85 82 84 83 77 is unsafe (0 safe options)
+Testing 69 69 69 66 60:
+   Variant 69,69,66,60 is UNsafe
+   Variant 69,69,66,60 is UNsafe
+   Variant 69,69,66,60 is UNsafe
+   Variant 69,69,69,60 is UNsafe
+   ----The line 69 69 69 66 60 is unsafe (0 safe options)
+Testing 35 36 33 27 24 27:
+   Variant 36,33,27,24,27 is UNsafe
+   Variant 35,33,27,24,27 is UNsafe
+   Variant 35,36,27,24,27 is UNsafe
+   Variant 35,36,33,24,27 is UNsafe
+   Variant 35,36,33,27,27 is UNsafe
+   ----The line 35 36 33 27 24 27 is unsafe (0 safe options)
+Testing 29 27 24 17 16 16:
+   Variant 27,24,17,16,16 is UNsafe
+   Variant 29,24,17,16,16 is UNsafe
+   Variant 29,27,17,16,16 is UNsafe
+   Variant 29,27,24,16,16 is UNsafe
+   Variant 29,27,24,17,16 is UNsafe
+   ----The line 29 27 24 17 16 16 is unsafe (0 safe options)
+Testing 8 6 3 5 12:
+   Variant 6,3,5,12 is UNsafe
+   Variant 8,3,5,12 is UNsafe
+   Variant 8,6,5,12 is UNsafe
+   Variant 8,6,3,12 is UNsafe
+   ----The line 8 6 3 5 12 is unsafe (0 safe options)
+Testing 23 24 23 21 20 22:
+   Variant 24,23,21,20,22 is UNsafe
+   Variant 23,23,21,20,22 is UNsafe
+   Variant 23,24,21,20,22 is UNsafe
+   Variant 23,24,23,20,22 is UNsafe
+   Variant 23,24,23,21,22 is UNsafe
+   ----The line 23 24 23 21 20 22 is unsafe (0 safe options)
+Testing 3 5 2 3 4 1:
+   Variant 5,2,3,4,1 is UNsafe
+   Variant 3,2,3,4,1 is UNsafe
+   Variant 3,5,3,4,1 is UNsafe
+   Variant 3,5,2,4,1 is UNsafe
+   Variant 3,5,2,3,1 is UNsafe
+   ----The line 3 5 2 3 4 1 is unsafe (0 safe options)
+Testing 55 55 57 59 59 66:
+   Variant 55,57,59,59,66 is UNsafe
+   Variant 55,57,59,59,66 is UNsafe
+   Variant 55,55,59,59,66 is UNsafe
+   Variant 55,55,57,59,66 is UNsafe
+   Variant 55,55,57,59,66 is UNsafe
+   ----The line 55 55 57 59 59 66 is unsafe (0 safe options)
+Testing 31 28 29 32 32 33 36:
+   Variant 28,29,32,32,33,36 is UNsafe
+   Variant 31,29,32,32,33,36 is UNsafe
+   Variant 31,28,32,32,33,36 is UNsafe
+   Variant 31,28,29,32,33,36 is UNsafe
+   Variant 31,28,29,32,33,36 is UNsafe
+   Variant 31,28,29,32,32,36 is UNsafe
+   ----The line 31 28 29 32 32 33 36 is unsafe (0 safe options)
+Testing 27 33 30 31 31:
+   Variant 33,30,31,31 is UNsafe
+   Variant 27,30,31,31 is UNsafe
+   Variant 27,33,31,31 is UNsafe
+   Variant 27,33,30,31 is UNsafe
+   ----The line 27 33 30 31 31 is unsafe (0 safe options)
+Testing 25 28 30 27 29 30 31 35:
+   Variant 28,30,27,29,30,31,35 is UNsafe
+   Variant 25,30,27,29,30,31,35 is UNsafe
+   Variant 25,28,27,29,30,31,35 is UNsafe
+   Variant 25,28,30,29,30,31,35 is UNsafe
+   Variant 25,28,30,27,30,31,35 is UNsafe
+   Variant 25,28,30,27,29,31,35 is UNsafe
+   Variant 25,28,30,27,29,30,35 is UNsafe
+   ----The line 25 28 30 27 29 30 31 35 is unsafe (0 safe options)
+Testing 47 50 48 51 51:
+   Variant 50,48,51,51 is UNsafe
+   Variant 47,48,51,51 is UNsafe
+   Variant 47,50,51,51 is UNsafe
+   Variant 47,50,48,51 is UNsafe
+   ----The line 47 50 48 51 51 is unsafe (0 safe options)
+Testing 9 15 17 19 18 20 21 18:
+   Variant 15,17,19,18,20,21,18 is UNsafe
+   Variant 9,17,19,18,20,21,18 is UNsafe
+   Variant 9,15,19,18,20,21,18 is UNsafe
+   Variant 9,15,17,18,20,21,18 is UNsafe
+   Variant 9,15,17,19,20,21,18 is UNsafe
+   Variant 9,15,17,19,18,21,18 is UNsafe
+   Variant 9,15,17,19,18,20,18 is UNsafe
+   ----The line 9 15 17 19 18 20 21 18 is unsafe (0 safe options)
+Testing 16 15 13 14 11 10:
+   Variant 15,13,14,11,10 is UNsafe
+   Variant 16,13,14,11,10 is UNsafe
+   Variant 16,15,14,11,10 is safe
+   Variant 16,15,13,11,10 is safe
+   Variant 16,15,13,14,10 is UNsafe
+   ----The line 16 15 13 14 11 10 is safe (2 safe options)
+Testing 76 80 80 82 82:
+   Variant 80,80,82,82 is UNsafe
+   Variant 76,80,82,82 is UNsafe
+   Variant 76,80,82,82 is UNsafe
+   Variant 76,80,80,82 is UNsafe
+   ----The line 76 80 80 82 82 is unsafe (0 safe options)
+Testing 47 42 40 37 36 36 34 27:
+   Variant 42,40,37,36,36,34,27 is UNsafe
+   Variant 47,40,37,36,36,34,27 is UNsafe
+   Variant 47,42,37,36,36,34,27 is UNsafe
+   Variant 47,42,40,36,36,34,27 is UNsafe
+   Variant 47,42,40,37,36,34,27 is UNsafe
+   Variant 47,42,40,37,36,34,27 is UNsafe
+   Variant 47,42,40,37,36,36,27 is UNsafe
+   ----The line 47 42 40 37 36 36 34 27 is unsafe (0 safe options)
+Testing 17 22 23 26 33 33:
+   Variant 22,23,26,33,33 is UNsafe
+   Variant 17,23,26,33,33 is UNsafe
+   Variant 17,22,26,33,33 is UNsafe
+   Variant 17,22,23,33,33 is UNsafe
+   Variant 17,22,23,26,33 is UNsafe
+   ----The line 17 22 23 26 33 33 is unsafe (0 safe options)
+Testing 48 42 40 39 42 43:
+   Variant 42,40,39,42,43 is UNsafe
+   Variant 48,40,39,42,43 is UNsafe
+   Variant 48,42,39,42,43 is UNsafe
+   Variant 48,42,40,42,43 is UNsafe
+   Variant 48,42,40,39,43 is UNsafe
+   ----The line 48 42 40 39 42 43 is unsafe (0 safe options)
+Testing 56 61 66 67 68 66:
+   Variant 61,66,67,68,66 is UNsafe
+   Variant 56,66,67,68,66 is UNsafe
+   Variant 56,61,67,68,66 is UNsafe
+   Variant 56,61,66,68,66 is UNsafe
+   Variant 56,61,66,67,66 is UNsafe
+   ----The line 56 61 66 67 68 66 is unsafe (0 safe options)
+Testing 81 78 74 71 68 67 65 60:
+   Variant 78,74,71,68,67,65,60 is UNsafe
+   Variant 81,74,71,68,67,65,60 is UNsafe
+   Variant 81,78,71,68,67,65,60 is UNsafe
+   Variant 81,78,74,68,67,65,60 is UNsafe
+   Variant 81,78,74,71,67,65,60 is UNsafe
+   Variant 81,78,74,71,68,65,60 is UNsafe
+   Variant 81,78,74,71,68,67,60 is UNsafe
+   ----The line 81 78 74 71 68 67 65 60 is unsafe (0 safe options)
+Testing 84 84 88 89 90 93 96 98:
+   Variant 84,88,89,90,93,96,98 is UNsafe
+   Variant 84,88,89,90,93,96,98 is UNsafe
+   Variant 84,84,89,90,93,96,98 is UNsafe
+   Variant 84,84,88,90,93,96,98 is UNsafe
+   Variant 84,84,88,89,93,96,98 is UNsafe
+   Variant 84,84,88,89,90,96,98 is UNsafe
+   Variant 84,84,88,89,90,93,98 is UNsafe
+   ----The line 84 84 88 89 90 93 96 98 is unsafe (0 safe options)
+Testing 84 84 83 81 79 80 73:
+   Variant 84,83,81,79,80,73 is UNsafe
+   Variant 84,83,81,79,80,73 is UNsafe
+   Variant 84,84,81,79,80,73 is UNsafe
+   Variant 84,84,83,79,80,73 is UNsafe
+   Variant 84,84,83,81,80,73 is UNsafe
+   Variant 84,84,83,81,79,73 is UNsafe
+   ----The line 84 84 83 81 79 80 73 is unsafe (0 safe options)
+Testing 22 18 19 17 10:
+   Variant 18,19,17,10 is UNsafe
+   Variant 22,19,17,10 is UNsafe
+   Variant 22,18,17,10 is UNsafe
+   Variant 22,18,19,10 is UNsafe
+   ----The line 22 18 19 17 10 is unsafe (0 safe options)
+Testing 36 42 42 44 47 50 50:
+   Variant 42,42,44,47,50,50 is UNsafe
+   Variant 36,42,44,47,50,50 is UNsafe
+   Variant 36,42,44,47,50,50 is UNsafe
+   Variant 36,42,42,47,50,50 is UNsafe
+   Variant 36,42,42,44,50,50 is UNsafe
+   Variant 36,42,42,44,47,50 is UNsafe
+   ----The line 36 42 42 44 47 50 50 is unsafe (0 safe options)
+Testing 38 38 39 41 44 46 47 47:
+   Variant 38,39,41,44,46,47,47 is UNsafe
+   Variant 38,39,41,44,46,47,47 is UNsafe
+   Variant 38,38,41,44,46,47,47 is UNsafe
+   Variant 38,38,39,44,46,47,47 is UNsafe
+   Variant 38,38,39,41,46,47,47 is UNsafe
+   Variant 38,38,39,41,44,47,47 is UNsafe
+   Variant 38,38,39,41,44,46,47 is UNsafe
+   ----The line 38 38 39 41 44 46 47 47 is unsafe (0 safe options)
+Testing 97 92 91 90 88 81 78 75:
+   Variant 92,91,90,88,81,78,75 is UNsafe
+   Variant 97,91,90,88,81,78,75 is UNsafe
+   Variant 97,92,90,88,81,78,75 is UNsafe
+   Variant 97,92,91,88,81,78,75 is UNsafe
+   Variant 97,92,91,90,81,78,75 is UNsafe
+   Variant 97,92,91,90,88,78,75 is UNsafe
+   Variant 97,92,91,90,88,81,75 is UNsafe
+   ----The line 97 92 91 90 88 81 78 75 is unsafe (0 safe options)
+Testing 77 80 77 76 73 69 71:
+   Variant 80,77,76,73,69,71 is UNsafe
+   Variant 77,77,76,73,69,71 is UNsafe
+   Variant 77,80,76,73,69,71 is UNsafe
+   Variant 77,80,77,73,69,71 is UNsafe
+   Variant 77,80,77,76,69,71 is UNsafe
+   Variant 77,80,77,76,73,71 is UNsafe
+   ----The line 77 80 77 76 73 69 71 is unsafe (0 safe options)
+Testing 31 30 35 38 41 48:
+   Variant 30,35,38,41,48 is UNsafe
+   Variant 31,35,38,41,48 is UNsafe
+   Variant 31,30,38,41,48 is UNsafe
+   Variant 31,30,35,41,48 is UNsafe
+   Variant 31,30,35,38,48 is UNsafe
+   ----The line 31 30 35 38 41 48 is unsafe (0 safe options)
+Testing 79 75 75 73 66:
+   Variant 75,75,73,66 is UNsafe
+   Variant 79,75,73,66 is UNsafe
+   Variant 79,75,73,66 is UNsafe
+   Variant 79,75,75,66 is UNsafe
+   ----The line 79 75 75 73 66 is unsafe (0 safe options)
+Testing 28 32 35 39 40 43:
+   Variant 32,35,39,40,43 is UNsafe
+   Variant 28,35,39,40,43 is UNsafe
+   Variant 28,32,39,40,43 is UNsafe
+   Variant 28,32,35,40,43 is UNsafe
+   Variant 28,32,35,39,43 is UNsafe
+   ----The line 28 32 35 39 40 43 is unsafe (0 safe options)
+Testing 29 30 28 26 24 21 23 19:
+   Variant 30,28,26,24,21,23,19 is UNsafe
+   Variant 29,28,26,24,21,23,19 is UNsafe
+   Variant 29,30,26,24,21,23,19 is UNsafe
+   Variant 29,30,28,24,21,23,19 is UNsafe
+   Variant 29,30,28,26,21,23,19 is UNsafe
+   Variant 29,30,28,26,24,23,19 is UNsafe
+   Variant 29,30,28,26,24,21,19 is UNsafe
+   ----The line 29 30 28 26 24 21 23 19 is unsafe (0 safe options)
+Testing 65 64 68 71 72 75:
+   Variant 64,68,71,72,75 is UNsafe
+   Variant 65,68,71,72,75 is safe
+   Variant 65,64,71,72,75 is UNsafe
+   Variant 65,64,68,72,75 is UNsafe
+   Variant 65,64,68,71,75 is UNsafe
+   ----The line 65 64 68 71 72 75 is safe (1 safe options)
+Testing 72 78 80 77 79 80 84:
+   Variant 78,80,77,79,80,84 is UNsafe
+   Variant 72,80,77,79,80,84 is UNsafe
+   Variant 72,78,77,79,80,84 is UNsafe
+   Variant 72,78,80,79,80,84 is UNsafe
+   Variant 72,78,80,77,80,84 is UNsafe
+   Variant 72,78,80,77,79,84 is UNsafe
+   ----The line 72 78 80 77 79 80 84 is unsafe (0 safe options)
+Testing 62 55 54 53 48 46 45 45:
+   Variant 55,54,53,48,46,45,45 is UNsafe
+   Variant 62,54,53,48,46,45,45 is UNsafe
+   Variant 62,55,53,48,46,45,45 is UNsafe
+   Variant 62,55,54,48,46,45,45 is UNsafe
+   Variant 62,55,54,53,46,45,45 is UNsafe
+   Variant 62,55,54,53,48,45,45 is UNsafe
+   Variant 62,55,54,53,48,46,45 is UNsafe
+   ----The line 62 55 54 53 48 46 45 45 is unsafe (0 safe options)
+Testing 49 45 43 41 38 35 34 34:
+   Variant 45,43,41,38,35,34,34 is UNsafe
+   Variant 49,43,41,38,35,34,34 is UNsafe
+   Variant 49,45,41,38,35,34,34 is UNsafe
+   Variant 49,45,43,38,35,34,34 is UNsafe
+   Variant 49,45,43,41,35,34,34 is UNsafe
+   Variant 49,45,43,41,38,34,34 is UNsafe
+   Variant 49,45,43,41,38,35,34 is UNsafe
+   ----The line 49 45 43 41 38 35 34 34 is unsafe (0 safe options)
+Testing 55 53 51 51 49 48 45 48:
+   Variant 53,51,51,49,48,45,48 is UNsafe
+   Variant 55,51,51,49,48,45,48 is UNsafe
+   Variant 55,53,51,49,48,45,48 is UNsafe
+   Variant 55,53,51,49,48,45,48 is UNsafe
+   Variant 55,53,51,51,48,45,48 is UNsafe
+   Variant 55,53,51,51,49,45,48 is UNsafe
+   Variant 55,53,51,51,49,48,48 is UNsafe
+   ----The line 55 53 51 51 49 48 45 48 is unsafe (0 safe options)
+Testing 8 12 13 16 18 19 23 20:
+   Variant 12,13,16,18,19,23,20 is UNsafe
+   Variant 8,13,16,18,19,23,20 is UNsafe
+   Variant 8,12,16,18,19,23,20 is UNsafe
+   Variant 8,12,13,18,19,23,20 is UNsafe
+   Variant 8,12,13,16,19,23,20 is UNsafe
+   Variant 8,12,13,16,18,23,20 is UNsafe
+   Variant 8,12,13,16,18,19,20 is UNsafe
+   ----The line 8 12 13 16 18 19 23 20 is unsafe (0 safe options)
+Testing 72 78 82 83 82:
+   Variant 78,82,83,82 is UNsafe
+   Variant 72,82,83,82 is UNsafe
+   Variant 72,78,83,82 is UNsafe
+   Variant 72,78,82,82 is UNsafe
+   ----The line 72 78 82 83 82 is unsafe (0 safe options)
+Testing 50 53 49 48 48:
+   Variant 53,49,48,48 is UNsafe
+   Variant 50,49,48,48 is UNsafe
+   Variant 50,53,48,48 is UNsafe
+   Variant 50,53,49,48 is UNsafe
+   ----The line 50 53 49 48 48 is unsafe (0 safe options)
+Testing 22 26 29 32 37 43:
+   Variant 26,29,32,37,43 is UNsafe
+   Variant 22,29,32,37,43 is UNsafe
+   Variant 22,26,32,37,43 is UNsafe
+   Variant 22,26,29,37,43 is UNsafe
+   Variant 22,26,29,32,43 is UNsafe
+   ----The line 22 26 29 32 37 43 is unsafe (0 safe options)
+Testing 48 45 42 39 37 35 33 33:
+   Variant 45,42,39,37,35,33,33 is UNsafe
+   Variant 48,42,39,37,35,33,33 is UNsafe
+   Variant 48,45,39,37,35,33,33 is UNsafe
+   Variant 48,45,42,37,35,33,33 is UNsafe
+   Variant 48,45,42,39,35,33,33 is UNsafe
+   Variant 48,45,42,39,37,33,33 is UNsafe
+   Variant 48,45,42,39,37,35,33 is safe
+   ----The line 48 45 42 39 37 35 33 33 is safe (1 safe options)
+Testing 64 70 73 76 80:
+   Variant 70,73,76,80 is UNsafe
+   Variant 64,73,76,80 is UNsafe
+   Variant 64,70,76,80 is UNsafe
+   Variant 64,70,73,80 is UNsafe
+   ----The line 64 70 73 76 80 is unsafe (0 safe options)
+Testing 22 26 28 32 33 34 35 35:
+   Variant 26,28,32,33,34,35,35 is UNsafe
+   Variant 22,28,32,33,34,35,35 is UNsafe
+   Variant 22,26,32,33,34,35,35 is UNsafe
+   Variant 22,26,28,33,34,35,35 is UNsafe
+   Variant 22,26,28,32,34,35,35 is UNsafe
+   Variant 22,26,28,32,33,35,35 is UNsafe
+   Variant 22,26,28,32,33,34,35 is UNsafe
+   ----The line 22 26 28 32 33 34 35 35 is unsafe (0 safe options)
+Testing 75 78 79 82 88:
+   Variant 78,79,82,88 is UNsafe
+   Variant 75,79,82,88 is UNsafe
+   Variant 75,78,82,88 is UNsafe
+   Variant 75,78,79,88 is UNsafe
+   ----The line 75 78 79 82 88 is unsafe (0 safe options)
+Testing 75 74 75 76 78 84:
+   Variant 74,75,76,78,84 is UNsafe
+   Variant 75,75,76,78,84 is UNsafe
+   Variant 75,74,76,78,84 is UNsafe
+   Variant 75,74,75,78,84 is UNsafe
+   Variant 75,74,75,76,84 is UNsafe
+   ----The line 75 74 75 76 78 84 is unsafe (0 safe options)
+Testing 10 10 12 19 23:
+   Variant 10,12,19,23 is UNsafe
+   Variant 10,12,19,23 is UNsafe
+   Variant 10,10,19,23 is UNsafe
+   Variant 10,10,12,23 is UNsafe
+   ----The line 10 10 12 19 23 is unsafe (0 safe options)
+Testing 6 8 13 15 19:
+   Variant 8,13,15,19 is UNsafe
+   Variant 6,13,15,19 is UNsafe
+   Variant 6,8,15,19 is UNsafe
+   Variant 6,8,13,19 is UNsafe
+   ----The line 6 8 13 15 19 is unsafe (0 safe options)
+Testing 73 71 69 68 65 66 62:
+   Variant 71,69,68,65,66,62 is UNsafe
+   Variant 73,69,68,65,66,62 is UNsafe
+   Variant 73,71,68,65,66,62 is UNsafe
+   Variant 73,71,69,65,66,62 is UNsafe
+   Variant 73,71,69,68,66,62 is UNsafe
+   Variant 73,71,69,68,65,62 is safe
+   ----The line 73 71 69 68 65 66 62 is safe (1 safe options)
+Testing 84 85 83 83 81 80:
+   Variant 85,83,83,81,80 is UNsafe
+   Variant 84,83,83,81,80 is UNsafe
+   Variant 84,85,83,81,80 is UNsafe
+   Variant 84,85,83,81,80 is UNsafe
+   Variant 84,85,83,83,80 is UNsafe
+   ----The line 84 85 83 83 81 80 is unsafe (0 safe options)
+Testing 81 81 84 81 78 76 74:
+   Variant 81,84,81,78,76,74 is UNsafe
+   Variant 81,84,81,78,76,74 is UNsafe
+   Variant 81,81,81,78,76,74 is UNsafe
+   Variant 81,81,84,78,76,74 is UNsafe
+   Variant 81,81,84,81,76,74 is UNsafe
+   Variant 81,81,84,81,78,74 is UNsafe
+   ----The line 81 81 84 81 78 76 74 is unsafe (0 safe options)
+Testing 46 45 46 49 46 48 48:
+   Variant 45,46,49,46,48,48 is UNsafe
+   Variant 46,46,49,46,48,48 is UNsafe
+   Variant 46,45,49,46,48,48 is UNsafe
+   Variant 46,45,46,46,48,48 is UNsafe
+   Variant 46,45,46,49,48,48 is UNsafe
+   Variant 46,45,46,49,46,48 is UNsafe
+   ----The line 46 45 46 49 46 48 48 is unsafe (0 safe options)
+Testing 65 65 62 60 60 58 57 57:
+   Variant 65,62,60,60,58,57,57 is UNsafe
+   Variant 65,62,60,60,58,57,57 is UNsafe
+   Variant 65,65,60,60,58,57,57 is UNsafe
+   Variant 65,65,62,60,58,57,57 is UNsafe
+   Variant 65,65,62,60,58,57,57 is UNsafe
+   Variant 65,65,62,60,60,57,57 is UNsafe
+   Variant 65,65,62,60,60,58,57 is UNsafe
+   ----The line 65 65 62 60 60 58 57 57 is unsafe (0 safe options)
+Testing 48 50 52 58 60 63 66 66:
+   Variant 50,52,58,60,63,66,66 is UNsafe
+   Variant 48,52,58,60,63,66,66 is UNsafe
+   Variant 48,50,58,60,63,66,66 is UNsafe
+   Variant 48,50,52,60,63,66,66 is UNsafe
+   Variant 48,50,52,58,63,66,66 is UNsafe
+   Variant 48,50,52,58,60,66,66 is UNsafe
+   Variant 48,50,52,58,60,63,66 is UNsafe
+   ----The line 48 50 52 58 60 63 66 66 is unsafe (0 safe options)
+Testing 37 34 27 26 23 22 19 21:
+   Variant 34,27,26,23,22,19,21 is UNsafe
+   Variant 37,27,26,23,22,19,21 is UNsafe
+   Variant 37,34,26,23,22,19,21 is UNsafe
+   Variant 37,34,27,23,22,19,21 is UNsafe
+   Variant 37,34,27,26,22,19,21 is UNsafe
+   Variant 37,34,27,26,23,19,21 is UNsafe
+   Variant 37,34,27,26,23,22,21 is UNsafe
+   ----The line 37 34 27 26 23 22 19 21 is unsafe (0 safe options)
+Testing 48 52 54 54 56 59 61 65:
+   Variant 52,54,54,56,59,61,65 is UNsafe
+   Variant 48,54,54,56,59,61,65 is UNsafe
+   Variant 48,52,54,56,59,61,65 is UNsafe
+   Variant 48,52,54,56,59,61,65 is UNsafe
+   Variant 48,52,54,54,59,61,65 is UNsafe
+   Variant 48,52,54,54,56,61,65 is UNsafe
+   Variant 48,52,54,54,56,59,65 is UNsafe
+   ----The line 48 52 54 54 56 59 61 65 is unsafe (0 safe options)
+Testing 43 46 44 45 46:
+   Variant 46,44,45,46 is UNsafe
+   Variant 43,44,45,46 is safe
+   Variant 43,46,45,46 is UNsafe
+   Variant 43,46,44,46 is UNsafe
+   ----The line 43 46 44 45 46 is safe (1 safe options)
+Testing 12 16 17 20 23 25 27 34:
+   Variant 16,17,20,23,25,27,34 is UNsafe
+   Variant 12,17,20,23,25,27,34 is UNsafe
+   Variant 12,16,20,23,25,27,34 is UNsafe
+   Variant 12,16,17,23,25,27,34 is UNsafe
+   Variant 12,16,17,20,25,27,34 is UNsafe
+   Variant 12,16,17,20,23,27,34 is UNsafe
+   Variant 12,16,17,20,23,25,34 is UNsafe
+   ----The line 12 16 17 20 23 25 27 34 is unsafe (0 safe options)
+Testing 40 37 37 36 32:
+   Variant 37,37,36,32 is UNsafe
+   Variant 40,37,36,32 is UNsafe
+   Variant 40,37,36,32 is UNsafe
+   Variant 40,37,37,32 is UNsafe
+   ----The line 40 37 37 36 32 is unsafe (0 safe options)
+Testing 59 63 66 67 71:
+   Variant 63,66,67,71 is UNsafe
+   Variant 59,66,67,71 is UNsafe
+   Variant 59,63,67,71 is UNsafe
+   Variant 59,63,66,71 is UNsafe
+   ----The line 59 63 66 67 71 is unsafe (0 safe options)
+Testing 54 54 56 55 58 62:
+   Variant 54,56,55,58,62 is UNsafe
+   Variant 54,56,55,58,62 is UNsafe
+   Variant 54,54,55,58,62 is UNsafe
+   Variant 54,54,56,58,62 is UNsafe
+   Variant 54,54,56,55,62 is UNsafe
+   ----The line 54 54 56 55 58 62 is unsafe (0 safe options)
+Testing 48 51 51 54 56 56:
+   Variant 51,51,54,56,56 is UNsafe
+   Variant 48,51,54,56,56 is UNsafe
+   Variant 48,51,54,56,56 is UNsafe
+   Variant 48,51,51,56,56 is UNsafe
+   Variant 48,51,51,54,56 is UNsafe
+   ----The line 48 51 51 54 56 56 is unsafe (0 safe options)
+Testing 45 44 40 39 37:
+   Variant 44,40,39,37 is UNsafe
+   Variant 45,40,39,37 is UNsafe
+   Variant 45,44,39,37 is UNsafe
+   Variant 45,44,40,37 is UNsafe
+   ----The line 45 44 40 39 37 is unsafe (0 safe options)
+Testing 78 72 73 72 68:
+   Variant 72,73,72,68 is UNsafe
+   Variant 78,73,72,68 is UNsafe
+   Variant 78,72,72,68 is UNsafe
+   Variant 78,72,73,68 is UNsafe
+   ----The line 78 72 73 72 68 is unsafe (0 safe options)
+Testing 25 21 20 18 16 18:
+   Variant 21,20,18,16,18 is UNsafe
+   Variant 25,20,18,16,18 is UNsafe
+   Variant 25,21,18,16,18 is UNsafe
+   Variant 25,21,20,16,18 is UNsafe
+   Variant 25,21,20,18,18 is UNsafe
+   ----The line 25 21 20 18 16 18 is unsafe (0 safe options)
+Testing 32 30 30 32 33 35 33:
+   Variant 30,30,32,33,35,33 is UNsafe
+   Variant 32,30,32,33,35,33 is UNsafe
+   Variant 32,30,32,33,35,33 is UNsafe
+   Variant 32,30,30,33,35,33 is UNsafe
+   Variant 32,30,30,32,35,33 is UNsafe
+   Variant 32,30,30,32,33,33 is UNsafe
+   ----The line 32 30 30 32 33 35 33 is unsafe (0 safe options)
+Testing 51 53 46 44 43 42 41 36:
+   Variant 53,46,44,43,42,41,36 is UNsafe
+   Variant 51,46,44,43,42,41,36 is UNsafe
+   Variant 51,53,44,43,42,41,36 is UNsafe
+   Variant 51,53,46,43,42,41,36 is UNsafe
+   Variant 51,53,46,44,42,41,36 is UNsafe
+   Variant 51,53,46,44,43,41,36 is UNsafe
+   Variant 51,53,46,44,43,42,36 is UNsafe
+   ----The line 51 53 46 44 43 42 41 36 is unsafe (0 safe options)
+Testing 21 14 11 14 11 8 3:
+   Variant 14,11,14,11,8,3 is UNsafe
+   Variant 21,11,14,11,8,3 is UNsafe
+   Variant 21,14,14,11,8,3 is UNsafe
+   Variant 21,14,11,11,8,3 is UNsafe
+   Variant 21,14,11,14,8,3 is UNsafe
+   Variant 21,14,11,14,11,3 is UNsafe
+   ----The line 21 14 11 14 11 8 3 is unsafe (0 safe options)
+Testing 50 50 52 50 57:
+   Variant 50,52,50,57 is UNsafe
+   Variant 50,52,50,57 is UNsafe
+   Variant 50,50,50,57 is UNsafe
+   Variant 50,50,52,57 is UNsafe
+   ----The line 50 50 52 50 57 is unsafe (0 safe options)
+Testing 5 7 10 14 15 16 17 15:
+   Variant 7,10,14,15,16,17,15 is UNsafe
+   Variant 5,10,14,15,16,17,15 is UNsafe
+   Variant 5,7,14,15,16,17,15 is UNsafe
+   Variant 5,7,10,15,16,17,15 is UNsafe
+   Variant 5,7,10,14,16,17,15 is UNsafe
+   Variant 5,7,10,14,15,17,15 is UNsafe
+   Variant 5,7,10,14,15,16,15 is UNsafe
+   ----The line 5 7 10 14 15 16 17 15 is unsafe (0 safe options)
+Testing 37 38 37 34 31:
+   Variant 38,37,34,31 is safe
+   Variant 37,37,34,31 is UNsafe
+   Variant 37,38,34,31 is UNsafe
+   Variant 37,38,37,31 is UNsafe
+   ----The line 37 38 37 34 31 is safe (1 safe options)
+Testing 75 78 79 80 84 85 91:
+   Variant 78,79,80,84,85,91 is UNsafe
+   Variant 75,79,80,84,85,91 is UNsafe
+   Variant 75,78,80,84,85,91 is UNsafe
+   Variant 75,78,79,84,85,91 is UNsafe
+   Variant 75,78,79,80,85,91 is UNsafe
+   Variant 75,78,79,80,84,91 is UNsafe
+   ----The line 75 78 79 80 84 85 91 is unsafe (0 safe options)
+Testing 29 28 25 21 20 18 16 17:
+   Variant 28,25,21,20,18,16,17 is UNsafe
+   Variant 29,25,21,20,18,16,17 is UNsafe
+   Variant 29,28,21,20,18,16,17 is UNsafe
+   Variant 29,28,25,20,18,16,17 is UNsafe
+   Variant 29,28,25,21,18,16,17 is UNsafe
+   Variant 29,28,25,21,20,16,17 is UNsafe
+   Variant 29,28,25,21,20,18,17 is UNsafe
+   ----The line 29 28 25 21 20 18 16 17 is unsafe (0 safe options)
+Testing 24 24 21 17 15 12:
+   Variant 24,21,17,15,12 is UNsafe
+   Variant 24,21,17,15,12 is UNsafe
+   Variant 24,24,17,15,12 is UNsafe
+   Variant 24,24,21,15,12 is UNsafe
+   Variant 24,24,21,17,12 is UNsafe
+   ----The line 24 24 21 17 15 12 is unsafe (0 safe options)
+Testing 48 44 44 43 40:
+   Variant 44,44,43,40 is UNsafe
+   Variant 48,44,43,40 is UNsafe
+   Variant 48,44,43,40 is UNsafe
+   Variant 48,44,44,40 is UNsafe
+   ----The line 48 44 44 43 40 is unsafe (0 safe options)
+Testing 14 18 20 24 26 28 29 35:
+   Variant 18,20,24,26,28,29,35 is UNsafe
+   Variant 14,20,24,26,28,29,35 is UNsafe
+   Variant 14,18,24,26,28,29,35 is UNsafe
+   Variant 14,18,20,26,28,29,35 is UNsafe
+   Variant 14,18,20,24,28,29,35 is UNsafe
+   Variant 14,18,20,24,26,29,35 is UNsafe
+   Variant 14,18,20,24,26,28,35 is UNsafe
+   ----The line 14 18 20 24 26 28 29 35 is unsafe (0 safe options)
+Testing 15 14 14 17 17:
+   Variant 14,14,17,17 is UNsafe
+   Variant 15,14,17,17 is UNsafe
+   Variant 15,14,17,17 is UNsafe
+   Variant 15,14,14,17 is UNsafe
+   ----The line 15 14 14 17 17 is unsafe (0 safe options)
+Testing 61 61 63 65 68 71 75:
+   Variant 61,63,65,68,71,75 is UNsafe
+   Variant 61,63,65,68,71,75 is UNsafe
+   Variant 61,61,65,68,71,75 is UNsafe
+   Variant 61,61,63,68,71,75 is UNsafe
+   Variant 61,61,63,65,71,75 is UNsafe
+   Variant 61,61,63,65,68,75 is UNsafe
+   ----The line 61 61 63 65 68 71 75 is unsafe (0 safe options)
+Testing 56 55 57 57 63:
+   Variant 55,57,57,63 is UNsafe
+   Variant 56,57,57,63 is UNsafe
+   Variant 56,55,57,63 is UNsafe
+   Variant 56,55,57,63 is UNsafe
+   ----The line 56 55 57 57 63 is unsafe (0 safe options)
+Testing 3 5 6 9 11 15 19:
+   Variant 5,6,9,11,15,19 is UNsafe
+   Variant 3,6,9,11,15,19 is UNsafe
+   Variant 3,5,9,11,15,19 is UNsafe
+   Variant 3,5,6,11,15,19 is UNsafe
+   Variant 3,5,6,9,15,19 is UNsafe
+   Variant 3,5,6,9,11,19 is UNsafe
+   ----The line 3 5 6 9 11 15 19 is unsafe (0 safe options)
+Testing 90 83 82 78 76 75 74 73:
+   Variant 83,82,78,76,75,74,73 is UNsafe
+   Variant 90,82,78,76,75,74,73 is UNsafe
+   Variant 90,83,78,76,75,74,73 is UNsafe
+   Variant 90,83,82,76,75,74,73 is UNsafe
+   Variant 90,83,82,78,75,74,73 is UNsafe
+   Variant 90,83,82,78,76,74,73 is UNsafe
+   Variant 90,83,82,78,76,75,73 is UNsafe
+   ----The line 90 83 82 78 76 75 74 73 is unsafe (0 safe options)
+Testing 87 87 85 87 90 93:
+   Variant 87,85,87,90,93 is UNsafe
+   Variant 87,85,87,90,93 is UNsafe
+   Variant 87,87,87,90,93 is UNsafe
+   Variant 87,87,85,90,93 is UNsafe
+   Variant 87,87,85,87,93 is UNsafe
+   ----The line 87 87 85 87 90 93 is unsafe (0 safe options)
+Testing 67 73 75 77 83 85 90:
+   Variant 73,75,77,83,85,90 is UNsafe
+   Variant 67,75,77,83,85,90 is UNsafe
+   Variant 67,73,77,83,85,90 is UNsafe
+   Variant 67,73,75,83,85,90 is UNsafe
+   Variant 67,73,75,77,85,90 is UNsafe
+   Variant 67,73,75,77,83,90 is UNsafe
+   ----The line 67 73 75 77 83 85 90 is unsafe (0 safe options)
+Testing 19 20 22 24 26:
+   ----The line 19 20 22 24 26 is safe as it is
+Testing 66 64 63 61 58 55 52:
+   ----The line 66 64 63 61 58 55 52 is safe as it is
+Testing 63 65 68 69 71 74 75:
+   ----The line 63 65 68 69 71 74 75 is safe as it is
+Testing 63 60 58 55 52 49 46:
+   ----The line 63 60 58 55 52 49 46 is safe as it is
+Testing 32 30 28 27 25:
+   ----The line 32 30 28 27 25 is safe as it is
+Testing 74 73 71 70 69 68:
+   ----The line 74 73 71 70 69 68 is safe as it is
+Testing 28 25 22 21 19 17 15 12:
+   ----The line 28 25 22 21 19 17 15 12 is safe as it is
+Testing 59 56 54 53 50 47:
+   ----The line 59 56 54 53 50 47 is safe as it is
+Testing 50 49 46 45 42 39 38:
+   ----The line 50 49 46 45 42 39 38 is safe as it is
+Testing 57 58 60 61 62 64:
+   ----The line 57 58 60 61 62 64 is safe as it is
+Testing 4 5 6 7 10 12 15:
+   ----The line 4 5 6 7 10 12 15 is safe as it is
+Testing 6 7 10 12 14 17:
+   ----The line 6 7 10 12 14 17 is safe as it is
+Testing 36 39 42 44 47 49 52 54:
+   ----The line 36 39 42 44 47 49 52 54 is safe as it is
+Testing 53 51 48 45 44 43 41:
+   ----The line 53 51 48 45 44 43 41 is safe as it is
+Testing 70 73 75 78 80 81 84 87:
+   ----The line 70 73 75 78 80 81 84 87 is safe as it is
+Testing 57 58 61 64 66 67:
+   ----The line 57 58 61 64 66 67 is safe as it is
+Testing 29 32 35 37 38 40:
+   ----The line 29 32 35 37 38 40 is safe as it is
+Testing 31 29 26 23 21 18 16:
+   ----The line 31 29 26 23 21 18 16 is safe as it is
+Testing 41 39 37 36 35 32 30 29:
+   ----The line 41 39 37 36 35 32 30 29 is safe as it is
+Testing 93 90 89 87 84 83 82:
+   ----The line 93 90 89 87 84 83 82 is safe as it is
+Testing 44 42 41 38 35:
+   ----The line 44 42 41 38 35 is safe as it is
+Testing 68 65 62 60 57 56:
+   ----The line 68 65 62 60 57 56 is safe as it is
+Testing 19 17 14 12 9 6:
+   ----The line 19 17 14 12 9 6 is safe as it is
+Testing 33 31 29 26 23 22:
+   ----The line 33 31 29 26 23 22 is safe as it is
+Testing 26 29 30 33 34 37 40:
+   ----The line 26 29 30 33 34 37 40 is safe as it is
+Testing 23 25 28 29 31 32 35:
+   ----The line 23 25 28 29 31 32 35 is safe as it is
+Testing 63 66 67 70 71:
+   ----The line 63 66 67 70 71 is safe as it is
+Testing 26 24 21 18 17 15:
+   ----The line 26 24 21 18 17 15 is safe as it is
+Testing 87 84 81 78 77 74 71:
+   ----The line 87 84 81 78 77 74 71 is safe as it is
+Testing 18 17 16 14 13 12 10 7:
+   ----The line 18 17 16 14 13 12 10 7 is safe as it is
+Testing 2 5 6 7 10 13 15 18:
+   ----The line 2 5 6 7 10 13 15 18 is safe as it is
+Testing 41 42 45 47 48 51 52:
+   ----The line 41 42 45 47 48 51 52 is safe as it is
+Testing 22 24 26 27 29 30 32 35:
+   ----The line 22 24 26 27 29 30 32 35 is safe as it is
+Testing 65 63 62 60 58 55 53 50:
+   ----The line 65 63 62 60 58 55 53 50 is safe as it is
+Testing 33 36 37 40 42 43 44:
+   ----The line 33 36 37 40 42 43 44 is safe as it is
+Testing 87 89 91 93 96 97 98:
+   ----The line 87 89 91 93 96 97 98 is safe as it is
+Testing 17 18 21 22 23:
+   ----The line 17 18 21 22 23 is safe as it is
+Testing 85 83 81 80 77 75 74:
+   ----The line 85 83 81 80 77 75 74 is safe as it is
+Testing 33 30 27 24 22 20 17:
+   ----The line 33 30 27 24 22 20 17 is safe as it is
+Testing 28 29 31 33 34 35 37:
+   ----The line 28 29 31 33 34 35 37 is safe as it is
+Testing 17 20 22 23 24 26:
+   ----The line 17 20 22 23 24 26 is safe as it is
+Testing 33 36 38 40 43 44 46 48:
+   ----The line 33 36 38 40 43 44 46 48 is safe as it is
+Testing 29 28 25 22 19 18:
+   ----The line 29 28 25 22 19 18 is safe as it is
+Testing 38 35 33 32 29 28 27:
+   ----The line 38 35 33 32 29 28 27 is safe as it is
+Testing 54 51 50 48 47:
+   ----The line 54 51 50 48 47 is safe as it is
+Testing 88 91 92 95 97 99:
+   ----The line 88 91 92 95 97 99 is safe as it is
+Testing 43 42 41 39 36 33 31:
+   ----The line 43 42 41 39 36 33 31 is safe as it is
+Testing 42 44 45 48 49 50 51 53:
+   ----The line 42 44 45 48 49 50 51 53 is safe as it is
+Testing 72 74 77 78 81 84 87 89:
+   ----The line 72 74 77 78 81 84 87 89 is safe as it is
+Testing 72 70 67 65 64 63 62 60:
+   ----The line 72 70 67 65 64 63 62 60 is safe as it is
+Testing 24 22 19 17 14 13:
+   ----The line 24 22 19 17 14 13 is safe as it is
+Testing 72 74 76 77 80 82 83:
+   ----The line 72 74 76 77 80 82 83 is safe as it is
+Testing 9 10 12 15 17 19:
+   ----The line 9 10 12 15 17 19 is safe as it is
+Testing 64 65 68 69 72:
+   ----The line 64 65 68 69 72 is safe as it is
+Testing 65 63 60 59 58 56 54:
+   ----The line 65 63 60 59 58 56 54 is safe as it is
+Testing 67 70 71 72 75 76 77 80:
+   ----The line 67 70 71 72 75 76 77 80 is safe as it is
+Testing 4 6 8 10 13 14:
+   ----The line 4 6 8 10 13 14 is safe as it is
+Testing 35 33 32 30 27 26 23 22:
+   ----The line 35 33 32 30 27 26 23 22 is safe as it is
+Testing 52 51 49 46 45 44 41:
+   ----The line 52 51 49 46 45 44 41 is safe as it is
+Testing 39 41 43 44 45:
+   ----The line 39 41 43 44 45 is safe as it is
+Testing 50 53 55 57 58 59 62 64:
+   ----The line 50 53 55 57 58 59 62 64 is safe as it is
+Testing 58 61 64 65 66 69:
+   ----The line 58 61 64 65 66 69 is safe as it is
+Testing 10 8 7 4 3 2:
+   ----The line 10 8 7 4 3 2 is safe as it is
+Testing 92 89 87 85 82:
+   ----The line 92 89 87 85 82 is safe as it is
+Testing 76 77 80 81 84 85 86:
+   ----The line 76 77 80 81 84 85 86 is safe as it is
+Testing 82 85 86 87 90 92:
+   ----The line 82 85 86 87 90 92 is safe as it is
+Testing 22 21 18 16 13:
+   ----The line 22 21 18 16 13 is safe as it is
+Testing 82 83 85 88 91 93 95:
+   ----The line 82 83 85 88 91 93 95 is safe as it is
+Testing 38 39 41 42 44 46 49 50:
+   ----The line 38 39 41 42 44 46 49 50 is safe as it is
+Testing 25 27 30 33 36 39 41 44:
+   ----The line 25 27 30 33 36 39 41 44 is safe as it is
+Testing 48 50 51 52 53 56:
+   ----The line 48 50 51 52 53 56 is safe as it is
+Testing 97 95 92 89 88:
+   ----The line 97 95 92 89 88 is safe as it is
+Testing 60 62 64 65 67 68:
+   ----The line 60 62 64 65 67 68 is safe as it is
+Testing 55 57 60 62 64 66 67 68:
+   ----The line 55 57 60 62 64 66 67 68 is safe as it is
+Testing 34 33 32 31 28 26 25:
+   ----The line 34 33 32 31 28 26 25 is safe as it is
+Testing 72 70 68 65 64 61 59:
+   ----The line 72 70 68 65 64 61 59 is safe as it is
+Testing 76 78 80 81 82:
+   ----The line 76 78 80 81 82 is safe as it is
+Testing 29 27 25 23 21 18 17:
+   ----The line 29 27 25 23 21 18 17 is safe as it is
+Testing 87 84 83 80 77 75 74 73:
+   ----The line 87 84 83 80 77 75 74 73 is safe as it is
+Testing 69 70 73 76 78:
+   ----The line 69 70 73 76 78 is safe as it is
+Testing 74 73 70 69 66 64:
+   ----The line 74 73 70 69 66 64 is safe as it is
+Testing 49 50 53 56 58 60 63 66:
+   ----The line 49 50 53 56 58 60 63 66 is safe as it is
+Testing 56 55 53 50 49:
+   ----The line 56 55 53 50 49 is safe as it is
+Testing 30 28 25 22 19 18:
+   ----The line 30 28 25 22 19 18 is safe as it is
+Testing 97 95 93 91 88 87:
+   ----The line 97 95 93 91 88 87 is safe as it is
+Testing 76 75 74 73 72:
+   ----The line 76 75 74 73 72 is safe as it is
+Testing 39 40 43 44 45 48 51:
+   ----The line 39 40 43 44 45 48 51 is safe as it is
+Testing 33 30 27 24 21:
+   ----The line 33 30 27 24 21 is safe as it is
+Testing 45 47 49 52 55:
+   ----The line 45 47 49 52 55 is safe as it is
+Testing 46 48 50 52 55:
+   ----The line 46 48 50 52 55 is safe as it is
+Testing 46 44 41 38 37 35 34 31:
+   ----The line 46 44 41 38 37 35 34 31 is safe as it is
+Testing 54 52 51 50 47 45 43:
+   ----The line 54 52 51 50 47 45 43 is safe as it is
+Testing 43 42 41 38 37 36 35:
+   ----The line 43 42 41 38 37 36 35 is safe as it is
+Testing 14 17 20 21 23 26 28 29:
+   ----The line 14 17 20 21 23 26 28 29 is safe as it is
+Testing 47 46 44 41 40 38:
+   ----The line 47 46 44 41 40 38 is safe as it is
+Testing 71 73 74 75 77 79 81 84:
+   ----The line 71 73 74 75 77 79 81 84 is safe as it is
+Testing 10 12 13 14 16 19 22:
+   ----The line 10 12 13 14 16 19 22 is safe as it is
+Testing 75 72 71 70 67 64:
+   ----The line 75 72 71 70 67 64 is safe as it is
+Testing 60 59 57 54 52 49:
+   ----The line 60 59 57 54 52 49 is safe as it is
+Testing 60 61 64 66 69 70 72 75:
+   ----The line 60 61 64 66 69 70 72 75 is safe as it is
+Testing 47 44 41 40 39 37 34 33:
+   ----The line 47 44 41 40 39 37 34 33 is safe as it is
+Testing 65 63 60 58 55 53 50:
+   ----The line 65 63 60 58 55 53 50 is safe as it is
+Testing 82 83 85 87 88 89:
+   ----The line 82 83 85 87 88 89 is safe as it is
+Testing 40 38 37 36 33 30 27:
+   ----The line 40 38 37 36 33 30 27 is safe as it is
+Testing 53 52 50 48 46 45:
+   ----The line 53 52 50 48 46 45 is safe as it is
+Testing 72 70 69 68 67 66:
+   ----The line 72 70 69 68 67 66 is safe as it is
+Testing 14 17 19 21 24 25 26:
+   ----The line 14 17 19 21 24 25 26 is safe as it is
+Testing 94 93 90 88 85:
+   ----The line 94 93 90 88 85 is safe as it is
+Testing 65 68 70 73 75 77:
+   ----The line 65 68 70 73 75 77 is safe as it is
+Testing 68 66 65 64 62:
+   ----The line 68 66 65 64 62 is safe as it is
+Testing 83 81 78 76 75 72 69 66:
+   ----The line 83 81 78 76 75 72 69 66 is safe as it is
+Testing 1 3 5 6 9 10 11 13:
+   ----The line 1 3 5 6 9 10 11 13 is safe as it is
+Testing 30 29 27 24 21 19 17:
+   ----The line 30 29 27 24 21 19 17 is safe as it is
+Testing 93 90 88 85 84 81 80:
+   ----The line 93 90 88 85 84 81 80 is safe as it is
+Testing 29 31 34 35 38 40:
+   ----The line 29 31 34 35 38 40 is safe as it is
+Testing 33 34 36 39 42:
+   ----The line 33 34 36 39 42 is safe as it is
+Testing 65 68 69 70 71 74 75:
+   ----The line 65 68 69 70 71 74 75 is safe as it is
+Testing 51 54 56 57 58 61 64 65:
+   ----The line 51 54 56 57 58 61 64 65 is safe as it is
+Testing 68 70 72 75 77 78 79 82:
+   ----The line 68 70 72 75 77 78 79 82 is safe as it is
+Testing 94 93 91 88 85:
+   ----The line 94 93 91 88 85 is safe as it is
+Testing 60 57 54 53 51 49 46:
+   ----The line 60 57 54 53 51 49 46 is safe as it is
+Testing 43 45 46 47 50 53 56 57:
+   ----The line 43 45 46 47 50 53 56 57 is safe as it is
+Testing 64 67 69 72 74 76 78 79:
+   ----The line 64 67 69 72 74 76 78 79 is safe as it is
+Testing 47 46 45 44 43 40 39:
+   ----The line 47 46 45 44 43 40 39 is safe as it is
+Testing 45 42 41 38 35 33 30:
+   ----The line 45 42 41 38 35 33 30 is safe as it is
+Testing 12 10 9 8 6:
+   ----The line 12 10 9 8 6 is safe as it is
+Testing 3 6 9 10 12 13 16:
+   ----The line 3 6 9 10 12 13 16 is safe as it is
+Testing 74 73 70 69 66 63 61 59:
+   ----The line 74 73 70 69 66 63 61 59 is safe as it is
+Testing 21 19 17 15 12 10 9 6:
+   ----The line 21 19 17 15 12 10 9 6 is safe as it is
+Testing 45 44 42 41 39 37:
+   ----The line 45 44 42 41 39 37 is safe as it is
+Testing 35 33 30 28 27 24:
+   ----The line 35 33 30 28 27 24 is safe as it is
+Testing 8 9 10 11 12 13 15 17:
+   ----The line 8 9 10 11 12 13 15 17 is safe as it is
+Testing 50 51 54 57 60:
+   ----The line 50 51 54 57 60 is safe as it is
+Testing 75 74 73 71 70 68:
+   ----The line 75 74 73 71 70 68 is safe as it is
+Testing 60 58 55 52 49:
+   ----The line 60 58 55 52 49 is safe as it is
+Testing 49 51 54 55 57 58:
+   ----The line 49 51 54 55 57 58 is safe as it is
+Testing 23 26 28 29 32 34:
+   ----The line 23 26 28 29 32 34 is safe as it is
+Testing 15 13 10 7 4:
+   ----The line 15 13 10 7 4 is safe as it is
+Testing 51 52 55 57 59 61 62:
+   ----The line 51 52 55 57 59 61 62 is safe as it is
+Testing 73 71 68 67 64:
+   ----The line 73 71 68 67 64 is safe as it is
+Testing 77 75 74 71 70 69 67:
+   ----The line 77 75 74 71 70 69 67 is safe as it is
+Testing 60 58 56 53 52 50 48 46:
+   ----The line 60 58 56 53 52 50 48 46 is safe as it is
+Testing 17 19 20 23 25 26 27 30:
+   ----The line 17 19 20 23 25 26 27 30 is safe as it is
+Testing 19 22 24 27 28 29 30 32:
+   ----The line 19 22 24 27 28 29 30 32 is safe as it is
+Testing 60 62 65 66 67 68 71 74:
+   ----The line 60 62 65 66 67 68 71 74 is safe as it is
+Testing 14 15 16 17 18 21 24:
+   ----The line 14 15 16 17 18 21 24 is safe as it is
+Testing 73 75 77 79 81 82 83:
+   ----The line 73 75 77 79 81 82 83 is safe as it is
+Testing 7 9 10 11 13:
+   ----The line 7 9 10 11 13 is safe as it is
+Testing 58 60 61 62 65:
+   ----The line 58 60 61 62 65 is safe as it is
+Testing 84 83 82 81 79 76 75 73:
+   ----The line 84 83 82 81 79 76 75 73 is safe as it is
+Testing 29 28 27 26 23 21 20:
+   ----The line 29 28 27 26 23 21 20 is safe as it is
+Testing 95 94 92 91 89 86:
+   ----The line 95 94 92 91 89 86 is safe as it is
+Testing 93 90 87 86 83 81 79:
+   ----The line 93 90 87 86 83 81 79 is safe as it is
+Testing 68 71 72 75 76 78:
+   ----The line 68 71 72 75 76 78 is safe as it is
+Testing 68 67 65 63 62:
+   ----The line 68 67 65 63 62 is safe as it is
+Testing 30 31 33 36 39 40 42 45:
+   ----The line 30 31 33 36 39 40 42 45 is safe as it is
+Testing 96 93 91 90 88 85:
+   ----The line 96 93 91 90 88 85 is safe as it is
+Testing 14 15 18 21 22:
+   ----The line 14 15 18 21 22 is safe as it is
+Testing 84 81 78 76 74 71:
+   ----The line 84 81 78 76 74 71 is safe as it is
+Testing 32 31 30 29 28 27 26:
+   ----The line 32 31 30 29 28 27 26 is safe as it is
+Testing 61 58 56 55 54 51:
+   ----The line 61 58 56 55 54 51 is safe as it is
+Testing 6 7 9 10 11 12 15:
+   ----The line 6 7 9 10 11 12 15 is safe as it is
+Testing 74 77 79 80 83 84 85 88:
+   ----The line 74 77 79 80 83 84 85 88 is safe as it is
+Testing 29 30 31 34 36 38 39 40:
+   ----The line 29 30 31 34 36 38 39 40 is safe as it is
+Testing 41 44 46 47 48 51 53:
+   ----The line 41 44 46 47 48 51 53 is safe as it is
+Testing 85 86 89 92 94 97:
+   ----The line 85 86 89 92 94 97 is safe as it is
+Testing 79 78 77 76 73 70 69:
+   ----The line 79 78 77 76 73 70 69 is safe as it is
+Testing 87 85 82 79 77 76 75:
+   ----The line 87 85 82 79 77 76 75 is safe as it is
+Testing 71 74 76 77 80 82 84 85:
+   ----The line 71 74 76 77 80 82 84 85 is safe as it is
+Testing 83 85 87 90 93 94 96:
+   ----The line 83 85 87 90 93 94 96 is safe as it is
+Testing 96 95 94 93 92:
+   ----The line 96 95 94 93 92 is safe as it is
+Testing 8 10 12 15 16 18 20:
+   ----The line 8 10 12 15 16 18 20 is safe as it is
+Testing 76 73 72 71 69 66 63:
+   ----The line 76 73 72 71 69 66 63 is safe as it is
+Testing 75 76 78 81 82 84 87 88:
+   ----The line 75 76 78 81 82 84 87 88 is safe as it is
+Testing 29 30 32 34 36:
+   ----The line 29 30 32 34 36 is safe as it is
+Testing 78 77 75 74 73 71 69 67:
+   ----The line 78 77 75 74 73 71 69 67 is safe as it is
+Testing 92 90 87 86 83:
+   ----The line 92 90 87 86 83 is safe as it is
+Testing 32 33 36 37 39 41 43:
+   ----The line 32 33 36 37 39 41 43 is safe as it is
+Testing 53 56 59 60 63 65 67 68:
+   ----The line 53 56 59 60 63 65 67 68 is safe as it is
+Testing 55 53 52 50 47 46 45 43:
+   ----The line 55 53 52 50 47 46 45 43 is safe as it is
+Testing 30 27 25 23 22 19 16 14:
+   ----The line 30 27 25 23 22 19 16 14 is safe as it is
+Testing 74 73 70 68 65 62:
+   ----The line 74 73 70 68 65 62 is safe as it is
+Testing 99 97 96 93 90 87:
+   ----The line 99 97 96 93 90 87 is safe as it is
+Testing 12 14 15 16 17 19:
+   ----The line 12 14 15 16 17 19 is safe as it is
+Testing 65 63 62 59 57 55 52 50:
+   ----The line 65 63 62 59 57 55 52 50 is safe as it is
+Testing 37 36 35 34 31 30 27 24:
+   ----The line 37 36 35 34 31 30 27 24 is safe as it is
+Testing 36 39 41 42 43 44 46 49:
+   ----The line 36 39 41 42 43 44 46 49 is safe as it is
+Testing 2 3 5 8 10 12 15:
+   ----The line 2 3 5 8 10 12 15 is safe as it is
+Testing 79 80 81 82 85 88:
+   ----The line 79 80 81 82 85 88 is safe as it is
+Testing 16 15 14 11 8 7:
+   ----The line 16 15 14 11 8 7 is safe as it is
+Testing 84 83 81 79 78 76:
+   ----The line 84 83 81 79 78 76 is safe as it is
+Testing 24 23 22 21 20:
+   ----The line 24 23 22 21 20 is safe as it is
+Testing 25 22 20 17 16 14 12:
+   ----The line 25 22 20 17 16 14 12 is safe as it is
+Testing 52 53 56 59 60 61 62:
+   ----The line 52 53 56 59 60 61 62 is safe as it is
+Testing 69 68 67 66 65 64 62:
+   ----The line 69 68 67 66 65 64 62 is safe as it is
+Testing 82 79 76 74 71 68 65 62:
+   ----The line 82 79 76 74 71 68 65 62 is safe as it is
+Testing 12 9 8 7 6 5:
+   ----The line 12 9 8 7 6 5 is safe as it is
+Testing 42 39 37 36 34:
+   ----The line 42 39 37 36 34 is safe as it is
+Testing 74 71 68 67 64:
+   ----The line 74 71 68 67 64 is safe as it is
+Testing 77 78 80 81 84 87 89:
+   ----The line 77 78 80 81 84 87 89 is safe as it is
+Testing 34 37 39 40 43 46:
+   ----The line 34 37 39 40 43 46 is safe as it is
+Testing 3 4 7 9 12 15 16:
+   ----The line 3 4 7 9 12 15 16 is safe as it is
+Testing 71 69 68 66 65 64:
+   ----The line 71 69 68 66 65 64 is safe as it is
+Testing 65 64 63 61 60:
+   ----The line 65 64 63 61 60 is safe as it is
+Testing 60 63 64 67 70 72:
+   ----The line 60 63 64 67 70 72 is safe as it is
+Testing 52 49 46 43 42 41:
+   ----The line 52 49 46 43 42 41 is safe as it is
+Testing 58 59 61 62 64 67 68 71:
+   ----The line 58 59 61 62 64 67 68 71 is safe as it is
+Testing 42 45 47 49 51:
+   ----The line 42 45 47 49 51 is safe as it is
+Testing 15 13 11 10 7 5 2:
+   ----The line 15 13 11 10 7 5 2 is safe as it is
+Testing 45 42 41 38 36 33:
+   ----The line 45 42 41 38 36 33 is safe as it is
+Testing 13 16 19 22 24 26:
+   ----The line 13 16 19 22 24 26 is safe as it is
+Testing 45 42 40 38 35 33:
+   ----The line 45 42 40 38 35 33 is safe as it is
+Testing 59 58 57 56 55 53:
+   ----The line 59 58 57 56 55 53 is safe as it is
+Testing 66 63 61 58 55 53:
+   ----The line 66 63 61 58 55 53 is safe as it is
+Testing 19 20 22 24 26 29:
+   ----The line 19 20 22 24 26 29 is safe as it is
+Testing 64 65 67 68 69:
+   ----The line 64 65 67 68 69 is safe as it is
+Testing 82 80 77 74 71:
+   ----The line 82 80 77 74 71 is safe as it is
+Testing 88 85 83 81 79 76 75 74:
+   ----The line 88 85 83 81 79 76 75 74 is safe as it is
+Testing 26 28 29 31 34 36 37 39:
+   ----The line 26 28 29 31 34 36 37 39 is safe as it is
+Testing 38 39 42 44 45 47 48 51:
+   ----The line 38 39 42 44 45 47 48 51 is safe as it is
+Testing 1 4 7 9 10:
+   ----The line 1 4 7 9 10 is safe as it is
+Testing 74 77 79 81 82 84 86 89:
+   ----The line 74 77 79 81 82 84 86 89 is safe as it is
+Testing 60 62 65 67 69 70:
+   ----The line 60 62 65 67 69 70 is safe as it is
+Testing 3 4 5 6 9 10 13:
+   ----The line 3 4 5 6 9 10 13 is safe as it is
+Testing 55 52 50 49 47 46:
+   ----The line 55 52 50 49 47 46 is safe as it is
+Testing 16 13 11 10 8 6:
+   ----The line 16 13 11 10 8 6 is safe as it is
+Testing 59 61 63 66 68 69 72:
+   ----The line 59 61 63 66 68 69 72 is safe as it is
+Testing 79 77 74 73 71 70 67 65:
+   ----The line 79 77 74 73 71 70 67 65 is safe as it is
+Testing 29 30 33 36 39:
+   ----The line 29 30 33 36 39 is safe as it is
+Testing 80 83 86 88 91 92 94 95:
+   ----The line 80 83 86 88 91 92 94 95 is safe as it is
+Testing 12 13 15 18 20 21 23 26:
+   ----The line 12 13 15 18 20 21 23 26 is safe as it is
+Testing 22 24 27 29 32 34 35 37:
+   ----The line 22 24 27 29 32 34 35 37 is safe as it is
+Testing 73 72 69 68 66 64 62:
+   ----The line 73 72 69 68 66 64 62 is safe as it is
+Testing 12 9 8 5 4:
+   ----The line 12 9 8 5 4 is safe as it is
+Testing 92 89 87 85 84 81:
+   ----The line 92 89 87 85 84 81 is safe as it is
+Testing 40 41 42 43 44 47 49 51:
+   ----The line 40 41 42 43 44 47 49 51 is safe as it is
+Testing 48 49 50 52 54 55 56 59:
+   ----The line 48 49 50 52 54 55 56 59 is safe as it is
+Testing 22 23 25 28 31:
+   ----The line 22 23 25 28 31 is safe as it is
+Testing 79 82 84 86 88 89 91 93:
+   ----The line 79 82 84 86 88 89 91 93 is safe as it is
+Testing 88 87 84 81 80 79 76:
+   ----The line 88 87 84 81 80 79 76 is safe as it is
+Testing 47 50 53 55 56:
+   ----The line 47 50 53 55 56 is safe as it is
+Testing 88 89 92 93 94 95 96:
+   ----The line 88 89 92 93 94 95 96 is safe as it is
+Testing 1 4 7 10 11 12:
+   ----The line 1 4 7 10 11 12 is safe as it is
+Testing 69 70 72 74 75 78 80 82:
+   ----The line 69 70 72 74 75 78 80 82 is safe as it is
+Testing 68 69 72 73 76 79:
+   ----The line 68 69 72 73 76 79 is safe as it is
+Testing 5 6 8 10 13 16:
+   ----The line 5 6 8 10 13 16 is safe as it is
+Testing 87 85 83 82 79 76 74 73:
+   ----The line 87 85 83 82 79 76 74 73 is safe as it is
+Testing 40 42 45 47 49:
+   ----The line 40 42 45 47 49 is safe as it is
+Testing 41 39 37 36 34 32 29 26:
+   ----The line 41 39 37 36 34 32 29 26 is safe as it is
+Testing 36 33 31 28 26 24 23:
+   ----The line 36 33 31 28 26 24 23 is safe as it is
+Testing 87 90 91 93 96:
+   ----The line 87 90 91 93 96 is safe as it is
+Testing 35 34 31 28 26 25 23 20:
+   ----The line 35 34 31 28 26 25 23 20 is safe as it is
+Testing 82 80 77 74 71 68 67 65:
+   ----The line 82 80 77 74 71 68 67 65 is safe as it is
+Testing 59 56 53 50 48:
+   ----The line 59 56 53 50 48 is safe as it is
+Testing 46 45 44 42 41:
+   ----The line 46 45 44 42 41 is safe as it is
+Testing 79 76 73 70 68 67 64 63:
+   ----The line 79 76 73 70 68 67 64 63 is safe as it is
+Testing 94 92 90 87 86 84 82:
+   ----The line 94 92 90 87 86 84 82 is safe as it is
+Testing 22 21 18 15 14 13 11:
+   ----The line 22 21 18 15 14 13 11 is safe as it is
+Testing 94 92 89 88 86 83:
+   ----The line 94 92 89 88 86 83 is safe as it is
+Testing 80 79 78 76 73:
+   ----The line 80 79 78 76 73 is safe as it is
+Testing 4 7 9 10 12 14 15 18:
+   ----The line 4 7 9 10 12 14 15 18 is safe as it is
+Testing 81 83 86 89 91:
+   ----The line 81 83 86 89 91 is safe as it is
+Testing 49 52 53 56 58:
+   ----The line 49 52 53 56 58 is safe as it is
+Testing 55 58 61 63 65:
+   ----The line 55 58 61 63 65 is safe as it is
+Testing 71 68 66 65 64 63 62:
+   ----The line 71 68 66 65 64 63 62 is safe as it is
+Testing 54 57 60 63 65:
+   ----The line 54 57 60 63 65 is safe as it is
+Testing 55 52 49 48 46 43:
+   ----The line 55 52 49 48 46 43 is safe as it is
+Testing 60 59 57 55 52 49 48 47:
+   ----The line 60 59 57 55 52 49 48 47 is safe as it is
+Testing 41 44 45 48 50 53 54:
+   ----The line 41 44 45 48 50 53 54 is safe as it is
+Testing 47 45 43 41 38 35 34 32:
+   ----The line 47 45 43 41 38 35 34 32 is safe as it is
+Testing 25 23 21 20 18 15 12:
+   ----The line 25 23 21 20 18 15 12 is safe as it is
+Testing 54 53 50 47 44 43 40:
+   ----The line 54 53 50 47 44 43 40 is safe as it is
+Testing 32 35 38 41 43 46 48:
+   ----The line 32 35 38 41 43 46 48 is safe as it is
+Testing 54 53 52 49 46 44:
+   ----The line 54 53 52 49 46 44 is safe as it is
+Testing 44 42 41 39 37 34:
+   ----The line 44 42 41 39 37 34 is safe as it is
+Testing 64 66 69 71 73 76 77 79:
+   ----The line 64 66 69 71 73 76 77 79 is safe as it is
+Testing 81 82 84 86 88 91 92 95:
+   ----The line 81 82 84 86 88 91 92 95 is safe as it is
+Testing 17 14 12 10 8 5 4:
+   ----The line 17 14 12 10 8 5 4 is safe as it is
+Testing 74 77 79 82 85 88:
+   ----The line 74 77 79 82 85 88 is safe as it is
+Testing 66 68 69 70 73:
+   ----The line 66 68 69 70 73 is safe as it is
+Testing 58 56 55 54 53 50 47 46:
+   ----The line 58 56 55 54 53 50 47 46 is safe as it is
+Testing 39 37 35 33 31 30 28:
+   ----The line 39 37 35 33 31 30 28 is safe as it is
+Testing 8 11 14 15 17 18:
+   ----The line 8 11 14 15 17 18 is safe as it is
+Testing 59 60 61 63 66:
+   ----The line 59 60 61 63 66 is safe as it is
+Testing 68 65 63 62 60:
+   ----The line 68 65 63 62 60 is safe as it is
+Testing 51 48 45 44 41 38 36:
+   ----The line 51 48 45 44 41 38 36 is safe as it is
+Testing 75 78 80 82 85 88:
+   ----The line 75 78 80 82 85 88 is safe as it is
+Testing 89 87 85 82 79 78:
+   ----The line 89 87 85 82 79 78 is safe as it is
+Testing 16 13 11 8 6 5 3:
+   ----The line 16 13 11 8 6 5 3 is safe as it is
+Testing 20 17 14 12 11 9:
+   ----The line 20 17 14 12 11 9 is safe as it is
+Testing 34 32 31 29 27 25:
+   ----The line 34 32 31 29 27 25 is safe as it is
+Testing 91 88 86 84 81 79:
+   ----The line 91 88 86 84 81 79 is safe as it is
+Testing 79 81 82 85 86 88 90:
+   ----The line 79 81 82 85 86 88 90 is safe as it is
+Testing 97 95 93 92 91 90:
+   ----The line 97 95 93 92 91 90 is safe as it is
+Testing 85 82 80 78 75 74 73 70:
+   ----The line 85 82 80 78 75 74 73 70 is safe as it is
+Testing 66 68 71 74 76 77 80:
+   ----The line 66 68 71 74 76 77 80 is safe as it is
+Testing 90 88 87 85 82 79 78:
+   ----The line 90 88 87 85 82 79 78 is safe as it is
+Testing 38 41 42 44 46:
+   ----The line 38 41 42 44 46 is safe as it is
+Testing 13 14 17 20 23 25 28:
+   ----The line 13 14 17 20 23 25 28 is safe as it is
+Testing 84 85 88 90 91:
+   ----The line 84 85 88 90 91 is safe as it is
+Testing 62 61 60 59 58:
+   ----The line 62 61 60 59 58 is safe as it is
+Testing 59 62 63 66 67:
+   ----The line 59 62 63 66 67 is safe as it is
+Testing 21 22 24 25 26 28:
+   ----The line 21 22 24 25 26 28 is safe as it is
+Testing 79 76 75 73 72 69 68 66:
+   ----The line 79 76 75 73 72 69 68 66 is safe as it is
+Testing 28 27 24 23 21 18 15 14:
+   ----The line 28 27 24 23 21 18 15 14 is safe as it is
+Testing 52 49 47 45 42 41 38 35:
+   ----The line 52 49 47 45 42 41 38 35 is safe as it is
+Testing 84 81 80 79 78 76:
+   ----The line 84 81 80 79 78 76 is safe as it is
+Testing 78 77 75 72 70:
+   ----The line 78 77 75 72 70 is safe as it is
+Testing 79 80 82 83 86:
+   ----The line 79 80 82 83 86 is safe as it is
+Testing 75 77 79 81 82 85:
+   ----The line 75 77 79 81 82 85 is safe as it is
+Testing 53 55 58 59 60:
+   ----The line 53 55 58 59 60 is safe as it is
+Testing 76 73 71 69 66 63:
+   ----The line 76 73 71 69 66 63 is safe as it is
+Testing 73 76 77 80 81 84 86:
+   ----The line 73 76 77 80 81 84 86 is safe as it is
+Testing 23 20 17 15 12 11 10:
+   ----The line 23 20 17 15 12 11 10 is safe as it is
+Testing 77 74 73 71 70 69 67 66:
+   ----The line 77 74 73 71 70 69 67 66 is safe as it is
+Testing 38 35 32 30 28 25 23:
+   ----The line 38 35 32 30 28 25 23 is safe as it is
+Testing 92 89 88 86 85 83 81:
+   ----The line 92 89 88 86 85 83 81 is safe as it is
+Testing 95 92 89 87 84 83:
+   ----The line 95 92 89 87 84 83 is safe as it is
+Testing 27 28 29 32 33 35 37 40:
+   ----The line 27 28 29 32 33 35 37 40 is safe as it is
+Testing 12 10 8 5 3 1:
+   ----The line 12 10 8 5 3 1 is safe as it is
+Testing 29 31 33 35 36 37:
+   ----The line 29 31 33 35 36 37 is safe as it is
+Testing 19 20 23 24 27 30:
+   ----The line 19 20 23 24 27 30 is safe as it is
+Testing 91 88 86 83 82 81:
+   ----The line 91 88 86 83 82 81 is safe as it is
+Testing 31 34 36 37 38 39 42:
+   ----The line 31 34 36 37 38 39 42 is safe as it is
+Testing 63 66 69 70 72 75:
+   ----The line 63 66 69 70 72 75 is safe as it is
+Testing 63 65 68 71 72 75 78:
+   ----The line 63 65 68 71 72 75 78 is safe as it is
+Testing 71 70 67 66 65 62:
+   ----The line 71 70 67 66 65 62 is safe as it is
+Testing 22 24 27 30 32 34 37:
+   ----The line 22 24 27 30 32 34 37 is safe as it is
+Testing 46 47 48 51 52 53:
+   ----The line 46 47 48 51 52 53 is safe as it is
+Testing 26 24 22 19 18 17:
+   ----The line 26 24 22 19 18 17 is safe as it is
+Testing 39 41 43 44 46 47 49:
+   ----The line 39 41 43 44 46 47 49 is safe as it is
+Testing 47 45 44 42 40:
+   ----The line 47 45 44 42 40 is safe as it is
+Testing 66 67 68 71 74 75 77:
+   ----The line 66 67 68 71 74 75 77 is safe as it is
+Testing 1 2 3 6 7 9 10:
+   ----The line 1 2 3 6 7 9 10 is safe as it is
+Testing 74 76 79 82 84 85:
+   ----The line 74 76 79 82 84 85 is safe as it is
+Testing 86 85 82 80 78 77 76:
+   ----The line 86 85 82 80 78 77 76 is safe as it is
+Testing 48 47 45 44 41 38 35 33:
+   ----The line 48 47 45 44 41 38 35 33 is safe as it is
+Testing 63 64 66 69 71:
+   ----The line 63 64 66 69 71 is safe as it is
+Testing 86 85 83 82 81 80:
+   ----The line 86 85 83 82 81 80 is safe as it is
+Testing 49 46 45 42 41 38 37 36:
+   ----The line 49 46 45 42 41 38 37 36 is safe as it is
+Testing 37 38 39 40 41:
+   ----The line 37 38 39 40 41 is safe as it is
+Testing 81 78 75 72 70 68:
+   ----The line 81 78 75 72 70 68 is safe as it is
+Testing 4 5 7 10 11 14 16 18:
+   ----The line 4 5 7 10 11 14 16 18 is safe as it is
+Testing 51 53 56 57 60 63 65 67:
+   ----The line 51 53 56 57 60 63 65 67 is safe as it is
+Testing 88 85 82 81 78 77 74:
+   ----The line 88 85 82 81 78 77 74 is safe as it is
+Testing 27 30 31 33 34 35:
+   ----The line 27 30 31 33 34 35 is safe as it is
+Testing 35 32 31 30 29 28 25:
+   ----The line 35 32 31 30 29 28 25 is safe as it is
+Testing 60 59 56 55 53 51 48:
+   ----The line 60 59 56 55 53 51 48 is safe as it is
+Testing 89 91 94 96 98:
+   ----The line 89 91 94 96 98 is safe as it is
+Testing 65 66 69 72 74 75 77:
+   ----The line 65 66 69 72 74 75 77 is safe as it is
+Testing 40 43 45 46 48:
+   ----The line 40 43 45 46 48 is safe as it is
+Testing 41 43 46 48 50 53 56 57:
+   ----The line 41 43 46 48 50 53 56 57 is safe as it is
+Testing 13 16 18 19 22 23 25 28:
+   ----The line 13 16 18 19 22 23 25 28 is safe as it is
+Testing 57 54 52 51 48 45 42 40:
+   ----The line 57 54 52 51 48 45 42 40 is safe as it is
+Testing 35 38 40 42 45 47 48:
+   ----The line 35 38 40 42 45 47 48 is safe as it is
+Testing 25 26 29 32 34 37 39 41:
+   ----The line 25 26 29 32 34 37 39 41 is safe as it is
+Testing 31 32 34 36 38 39:
+   ----The line 31 32 34 36 38 39 is safe as it is
+Testing 15 16 18 20 23 25:
+   ----The line 15 16 18 20 23 25 is safe as it is
+Testing 6 8 11 12 14 17 19 21:
+   ----The line 6 8 11 12 14 17 19 21 is safe as it is
+Testing 86 85 83 81 79 76 74:
+   ----The line 86 85 83 81 79 76 74 is safe as it is
+Testing 2 3 5 8 10:
+   ----The line 2 3 5 8 10 is safe as it is
+Testing 63 65 68 71 73 75:
+   ----The line 63 65 68 71 73 75 is safe as it is
+Testing 5 6 7 10 12 14 15 16:
+   ----The line 5 6 7 10 12 14 15 16 is safe as it is
+Testing 85 88 89 92 95:
+   ----The line 85 88 89 92 95 is safe as it is
+Testing 58 55 52 49 46:
+   ----The line 58 55 52 49 46 is safe as it is
+Testing 10 9 7 5 2:
+   ----The line 10 9 7 5 2 is safe as it is
+Testing 65 68 69 70 71 73 76 78:
+   ----The line 65 68 69 70 71 73 76 78 is safe as it is
+Testing 96 93 90 88 87 86 83:
+   ----The line 96 93 90 88 87 86 83 is safe as it is
+Testing 51 54 56 57 60 61 64 66:
+   ----The line 51 54 56 57 60 61 64 66 is safe as it is
+Testing 17 18 21 24 25:
+   ----The line 17 18 21 24 25 is safe as it is
+Testing 40 39 37 34 32 29 26:
+   ----The line 40 39 37 34 32 29 26 is safe as it is
+Testing 30 32 33 35 37:
+   ----The line 30 32 33 35 37 is safe as it is
+Testing 16 19 22 25 27 28 29:
+   ----The line 16 19 22 25 27 28 29 is safe as it is
+Testing 8 7 5 4 1:
+   ----The line 8 7 5 4 1 is safe as it is
+Testing 99 98 97 96 95 94 93:
+   ----The line 99 98 97 96 95 94 93 is safe as it is
+Testing 85 87 89 92 95 98:
+   ----The line 85 87 89 92 95 98 is safe as it is
+Testing 57 60 62 64 65 67:
+   ----The line 57 60 62 64 65 67 is safe as it is
+Testing 37 34 31 29 27 25 24:
+   ----The line 37 34 31 29 27 25 24 is safe as it is
+Testing 49 50 51 54 55 57:
+   ----The line 49 50 51 54 55 57 is safe as it is
+Testing 8 9 11 13 15:
+   ----The line 8 9 11 13 15 is safe as it is
+Testing 72 73 74 75 77:
+   ----The line 72 73 74 75 77 is safe as it is
+Testing 7 9 12 13 15:
+   ----The line 7 9 12 13 15 is safe as it is
+Testing 29 30 33 34 37 40 43:
+   ----The line 29 30 33 34 37 40 43 is safe as it is
+Testing 77 78 79 80 81 83 85:
+   ----The line 77 78 79 80 81 83 85 is safe as it is
+Testing 72 73 76 77 80:
+   ----The line 72 73 76 77 80 is safe as it is
+Testing 44 43 41 39 37 34 33:
+   ----The line 44 43 41 39 37 34 33 is safe as it is
+Testing 17 20 23 24 26 28 30 31:
+   ----The line 17 20 23 24 26 28 30 31 is safe as it is
+Testing 80 77 76 74 73:
+   ----The line 80 77 76 74 73 is safe as it is
+Testing 53 56 58 59 60 61:
+   ----The line 53 56 58 59 60 61 is safe as it is
+Testing 78 75 73 70 69 66 64:
+   ----The line 78 75 73 70 69 66 64 is safe as it is
+Testing 14 16 17 20 22 25 28:
+   ----The line 14 16 17 20 22 25 28 is safe as it is
+Testing 16 15 12 10 9 8 5 2:
+   ----The line 16 15 12 10 9 8 5 2 is safe as it is
+Testing 34 32 29 26 23 20 19 18:
+   ----The line 34 32 29 26 23 20 19 18 is safe as it is
+Testing 7 8 9 12 14 17 18:
+   ----The line 7 8 9 12 14 17 18 is safe as it is
+Testing 49 52 54 57 58:
+   ----The line 49 52 54 57 58 is safe as it is
+Testing 46 45 43 42 40:
+   ----The line 46 45 43 42 40 is safe as it is
+Testing 47 44 43 41 39 36:
+   ----The line 47 44 43 41 39 36 is safe as it is
+Testing 61 58 56 55 52:
+   ----The line 61 58 56 55 52 is safe as it is
+Testing 50 53 55 58 61 63 64:
+   ----The line 50 53 55 58 61 63 64 is safe as it is
+Testing 37 38 40 42 45 46 48 50:
+   ----The line 37 38 40 42 45 46 48 50 is safe as it is
+Testing 12 14 15 18 21 22:
+   ----The line 12 14 15 18 21 22 is safe as it is
+Testing 62 61 58 55 54 53:
+   ----The line 62 61 58 55 54 53 is safe as it is
+Testing 61 64 67 70 73 75 78 79:
+   ----The line 61 64 67 70 73 75 78 79 is safe as it is
+Testing 81 84 86 88 90 92 93:
+   ----The line 81 84 86 88 90 92 93 is safe as it is
+Testing 13 11 10 9 8 6:
+   ----The line 13 11 10 9 8 6 is safe as it is
+Testing 21 20 17 16 15 13 11 8:
+   ----The line 21 20 17 16 15 13 11 8 is safe as it is
+Testing 34 33 31 28 25 22 21 20:
+   ----The line 34 33 31 28 25 22 21 20 is safe as it is
+Testing 12 9 6 3 2:
+   ----The line 12 9 6 3 2 is safe as it is
+Testing 10 11 12 13 16 18:
+   ----The line 10 11 12 13 16 18 is safe as it is
+Testing 17 18 21 22 25:
+   ----The line 17 18 21 22 25 is safe as it is
+Testing 48 51 53 54 57:
+   ----The line 48 51 53 54 57 is safe as it is
+Testing 57 58 61 62 64:
+   ----The line 57 58 61 62 64 is safe as it is
+Testing 84 86 87 90 92 95:
+   ----The line 84 86 87 90 92 95 is safe as it is
+Testing 61 59 56 53 50 48 47:
+   ----The line 61 59 56 53 50 48 47 is safe as it is
+Testing 31 34 35 36 37 40 43 45:
+   ----The line 31 34 35 36 37 40 43 45 is safe as it is
+Testing 89 86 83 81 80 78 77 76:
+   ----The line 89 86 83 81 80 78 77 76 is safe as it is
+Testing 11 13 14 15 16:
+   ----The line 11 13 14 15 16 is safe as it is
+Testing 29 32 35 36 37 39 40:
+   ----The line 29 32 35 36 37 39 40 is safe as it is
+Testing 26 27 28 29 32 33:
+   ----The line 26 27 28 29 32 33 is safe as it is
+Testing 34 37 40 43 44:
+   ----The line 34 37 40 43 44 is safe as it is
+Testing 68 70 73 76 78 79:
+   ----The line 68 70 73 76 78 79 is safe as it is
+Testing 61 58 57 54 53 52 49:
+   ----The line 61 58 57 54 53 52 49 is safe as it is
+Testing 88 86 83 82 79:
+   ----The line 88 86 83 82 79 is safe as it is
+Testing 21 19 17 14 13 12 10:
+   ----The line 21 19 17 14 13 12 10 is safe as it is
+Testing 67 66 63 60 59 56 55:
+   ----The line 67 66 63 60 59 56 55 is safe as it is
+Testing 54 55 58 60 61:
+   ----The line 54 55 58 60 61 is safe as it is
+Testing 75 76 77 78 79 80 83:
+   ----The line 75 76 77 78 79 80 83 is safe as it is
+Testing 72 74 75 78 80:
+   ----The line 72 74 75 78 80 is safe as it is
+Testing 15 17 19 20 22 23:
+   ----The line 15 17 19 20 22 23 is safe as it is
+Testing 62 61 58 56 53 51:
+   ----The line 62 61 58 56 53 51 is safe as it is
+Testing 80 79 76 75 72 69:
+   ----The line 80 79 76 75 72 69 is safe as it is
+Testing 74 75 78 79 80:
+   ----The line 74 75 78 79 80 is safe as it is
+Testing 47 44 41 38 36 34 31:
+   ----The line 47 44 41 38 36 34 31 is safe as it is
+Testing 24 22 21 19 16 14:
+   ----The line 24 22 21 19 16 14 is safe as it is
+Testing 49 48 45 44 41:
+   ----The line 49 48 45 44 41 is safe as it is
+Testing 52 53 54 56 58 61:
+   ----The line 52 53 54 56 58 61 is safe as it is
+Testing 4 5 7 9 11 14 17:
+   ----The line 4 5 7 9 11 14 17 is safe as it is
+Testing 52 54 55 57 58 59 60:
+   ----The line 52 54 55 57 58 59 60 is safe as it is
+Testing 92 91 90 87 86 85:
+   ----The line 92 91 90 87 86 85 is safe as it is
+Testing 38 37 34 33 30:
+   ----The line 38 37 34 33 30 is safe as it is
+Testing 27 28 31 32 34 36:
+   ----The line 27 28 31 32 34 36 is safe as it is
+Testing 87 85 82 80 78 75 72 69:
+   ----The line 87 85 82 80 78 75 72 69 is safe as it is
+Testing 6 8 9 12 14 16 18:
+   ----The line 6 8 9 12 14 16 18 is safe as it is
+Testing 65 68 71 74 77:
+   ----The line 65 68 71 74 77 is safe as it is
+Testing 35 34 33 31 28 27:
+   ----The line 35 34 33 31 28 27 is safe as it is
+Testing 58 57 55 54 53 52 50 47:
+   ----The line 58 57 55 54 53 52 50 47 is safe as it is
+Testing 19 16 13 11 8 7 5 4:
+   ----The line 19 16 13 11 8 7 5 4 is safe as it is
+Testing 43 41 39 38 35 34 31 29:
+   ----The line 43 41 39 38 35 34 31 29 is safe as it is
+Testing 50 47 44 42 39 37 34:
+   ----The line 50 47 44 42 39 37 34 is safe as it is
+Testing 58 56 53 51 48 47:
+   ----The line 58 56 53 51 48 47 is safe as it is
+Testing 19 21 24 26 27 30:
+   ----The line 19 21 24 26 27 30 is safe as it is
+Testing 80 79 78 77 75 73:
+   ----The line 80 79 78 77 75 73 is safe as it is
+Testing 11 10 8 7 5:
+   ----The line 11 10 8 7 5 is safe as it is
+Testing 64 66 69 70 73 74 76:
+   ----The line 64 66 69 70 73 74 76 is safe as it is
+Testing 43 41 40 38 37 35 32 29:
+   ----The line 43 41 40 38 37 35 32 29 is safe as it is
+Testing 88 87 85 83 82 80 77 76:
+   ----The line 88 87 85 83 82 80 77 76 is safe as it is
+Testing 72 75 78 81 84 87 90 93:
+   ----The line 72 75 78 81 84 87 90 93 is safe as it is
+Testing 83 82 79 78 75 74 73 71:
+   ----The line 83 82 79 78 75 74 73 71 is safe as it is
+Testing 81 78 77 74 72:
+   ----The line 81 78 77 74 72 is safe as it is
+Testing 43 40 39 36 35 32 30:
+   ----The line 43 40 39 36 35 32 30 is safe as it is
+Testing 13 11 10 9 8 6 3:
+   ----The line 13 11 10 9 8 6 3 is safe as it is
+Testing 51 52 53 56 57:
+   ----The line 51 52 53 56 57 is safe as it is
+Testing 64 66 67 69 70:
+   ----The line 64 66 67 69 70 is safe as it is
+Testing 98 95 93 91 89:
+   ----The line 98 95 93 91 89 is safe as it is
+Testing 50 49 46 44 43 40 39:
+   ----The line 50 49 46 44 43 40 39 is safe as it is
+Testing 87 85 82 80 79 77 75 73:
+   ----The line 87 85 82 80 79 77 75 73 is safe as it is
+Testing 73 72 70 67 65:
+   ----The line 73 72 70 67 65 is safe as it is
+Testing 60 61 64 67 69 70 71:
+   ----The line 60 61 64 67 69 70 71 is safe as it is
+Testing 66 65 63 61 59 57 56 53:
+   ----The line 66 65 63 61 59 57 56 53 is safe as it is
+Testing 75 74 71 69 67:
+   ----The line 75 74 71 69 67 is safe as it is
+Testing 88 86 85 83 81 79 76 75:
+   ----The line 88 86 85 83 81 79 76 75 is safe as it is
+Testing 28 27 25 22 20 18 15 12:
+   ----The line 28 27 25 22 20 18 15 12 is safe as it is
+Testing 20 21 24 27 29 30 32:
+   ----The line 20 21 24 27 29 30 32 is safe as it is
+Testing 38 37 34 33 30 28 26 24:
+   ----The line 38 37 34 33 30 28 26 24 is safe as it is
+Testing 81 79 76 75 72 69 67:
+   ----The line 81 79 76 75 72 69 67 is safe as it is
+Testing 92 89 86 85 82 81 80:
+   ----The line 92 89 86 85 82 81 80 is safe as it is
+Testing 52 51 49 47 44 43:
+   ----The line 52 51 49 47 44 43 is safe as it is
+Testing 26 23 20 18 15:
+   ----The line 26 23 20 18 15 is safe as it is
+Testing 50 47 45 44 42 41 38 35:
+   ----The line 50 47 45 44 42 41 38 35 is safe as it is
+Testing 69 67 65 63 61 58:
+   ----The line 69 67 65 63 61 58 is safe as it is
+Testing 38 35 34 33 31 29 26:
+   ----The line 38 35 34 33 31 29 26 is safe as it is
+Testing 63 62 61 58 55 52:
+   ----The line 63 62 61 58 55 52 is safe as it is
+Testing 16 19 21 23 25 28 31 33:
+   ----The line 16 19 21 23 25 28 31 33 is safe as it is
+Testing 56 57 58 60 63:
+   ----The line 56 57 58 60 63 is safe as it is
+Testing 9 7 6 4 2:
+   ----The line 9 7 6 4 2 is safe as it is
+Testing 64 65 67 69 70 71:
+   ----The line 64 65 67 69 70 71 is safe as it is
+Testing 79 76 74 72 69 66:
+   ----The line 79 76 74 72 69 66 is safe as it is
+Testing 35 36 37 39 40 41 42:
+   ----The line 35 36 37 39 40 41 42 is safe as it is
+Testing 5 8 10 11 12:
+   ----The line 5 8 10 11 12 is safe as it is
+Testing 52 51 49 48 47:
+   ----The line 52 51 49 48 47 is safe as it is
+Testing 29 32 34 36 39 40 42:
+   ----The line 29 32 34 36 39 40 42 is safe as it is
+Testing 78 76 73 70 67 66:
+   ----The line 78 76 73 70 67 66 is safe as it is
+Testing 16 15 13 10 7:
+   ----The line 16 15 13 10 7 is safe as it is
+Testing 38 35 34 33 32 29 28:
+   ----The line 38 35 34 33 32 29 28 is safe as it is
+Testing 90 88 85 84 81 78 75 74:
+   ----The line 90 88 85 84 81 78 75 74 is safe as it is
+Testing 22 24 26 29 32 33 34 37:
+   ----The line 22 24 26 29 32 33 34 37 is safe as it is
+Testing 53 54 55 56 57 58 59 61:
+   ----The line 53 54 55 56 57 58 59 61 is safe as it is
+Testing 9 11 12 14 17 20 23:
+   ----The line 9 11 12 14 17 20 23 is safe as it is
+Testing 84 81 80 77 76 73 71:
+   ----The line 84 81 80 77 76 73 71 is safe as it is
+Testing 31 28 25 22 21:
+   ----The line 31 28 25 22 21 is safe as it is
+Testing 15 18 19 21 22 24:
+   ----The line 15 18 19 21 22 24 is safe as it is
+Testing 24 22 20 18 15 12 9 6:
+   ----The line 24 22 20 18 15 12 9 6 is safe as it is
+Testing 27 28 30 32 35 36:
+   ----The line 27 28 30 32 35 36 is safe as it is
+Testing 99 97 95 92 89 86 84 82:
+   ----The line 99 97 95 92 89 86 84 82 is safe as it is
+Testing 31 28 26 23 22 19:
+   ----The line 31 28 26 23 22 19 is safe as it is
+Testing 58 61 62 65 67 69:
+   ----The line 58 61 62 65 67 69 is safe as it is
+Testing 33 30 27 24 23 22:
+   ----The line 33 30 27 24 23 22 is safe as it is
+Testing 21 18 17 16 15 14:
+   ----The line 21 18 17 16 15 14 is safe as it is
+Testing 25 27 29 32 34:
+   ----The line 25 27 29 32 34 is safe as it is
+Testing 45 43 42 40 38 36 33 31:
+   ----The line 45 43 42 40 38 36 33 31 is safe as it is
+Testing 20 18 16 15 13 11:
+   ----The line 20 18 16 15 13 11 is safe as it is
+Testing 76 74 73 71 70 69 66:
+   ----The line 76 74 73 71 70 69 66 is safe as it is
+Testing 88 89 90 93 95 97 99:
+   ----The line 88 89 90 93 95 97 99 is safe as it is
+Testing 55 52 51 50 48 46 43:
+   ----The line 55 52 51 50 48 46 43 is safe as it is
+Testing 48 50 52 55 57 58 59 62:
+   ----The line 48 50 52 55 57 58 59 62 is safe as it is
+Testing 60 63 64 66 68:
+   ----The line 60 63 64 66 68 is safe as it is
+Testing 53 52 49 48 47 44 42 39:
+   ----The line 53 52 49 48 47 44 42 39 is safe as it is
+Testing 85 83 80 78 75:
+   ----The line 85 83 80 78 75 is safe as it is
+Testing 39 40 43 44 46 49 52:
+   ----The line 39 40 43 44 46 49 52 is safe as it is
+Testing 10 11 12 15 18 21:
+   ----The line 10 11 12 15 18 21 is safe as it is
+Testing 46 47 50 52 55 56:
+   ----The line 46 47 50 52 55 56 is safe as it is
+Testing 68 67 66 65 62 61 60:
+   ----The line 68 67 66 65 62 61 60 is safe as it is
+Testing 28 29 32 34 35 36 38:
+   ----The line 28 29 32 34 35 36 38 is safe as it is
+Testing 17 16 14 13 10:
+   ----The line 17 16 14 13 10 is safe as it is
+Testing 38 41 42 43 44:
+   ----The line 38 41 42 43 44 is safe as it is
+Testing 59 57 54 52 50 48 47:
+   ----The line 59 57 54 52 50 48 47 is safe as it is
+Testing 81 80 77 74 71 68 66 63:
+   ----The line 81 80 77 74 71 68 66 63 is safe as it is
+Testing 44 42 41 39 36 35 32 31:
+   ----The line 44 42 41 39 36 35 32 31 is safe as it is
+Testing 7 10 11 14 16 18:
+   ----The line 7 10 11 14 16 18 is safe as it is
+Testing 50 52 53 55 57 60 63 64:
+   ----The line 50 52 53 55 57 60 63 64 is safe as it is
+Testing 57 60 61 64 67:
+   ----The line 57 60 61 64 67 is safe as it is
+Testing 46 44 43 42 40 38 35 32:
+   ----The line 46 44 43 42 40 38 35 32 is safe as it is
+Testing 63 60 59 58 55:
+   ----The line 63 60 59 58 55 is safe as it is
+Testing 19 22 24 25 26 27 28 30:
+   ----The line 19 22 24 25 26 27 28 30 is safe as it is
+Testing 2 3 4 6 9 10:
+   ----The line 2 3 4 6 9 10 is safe as it is
+Testing 19 18 17 16 14:
+   ----The line 19 18 17 16 14 is safe as it is
+Testing 85 84 81 80 78 77:
+   ----The line 85 84 81 80 78 77 is safe as it is
+Testing 82 81 79 78 75 73:
+   ----The line 82 81 79 78 75 73 is safe as it is
+Testing 66 63 62 60 59 57 55:
+   ----The line 66 63 62 60 59 57 55 is safe as it is
+Testing 99 96 95 92 89:
+   ----The line 99 96 95 92 89 is safe as it is
+Testing 41 44 46 48 51 53:
+   ----The line 41 44 46 48 51 53 is safe as it is
+Testing 46 45 42 41 40 39 38:
+   ----The line 46 45 42 41 40 39 38 is safe as it is
+Testing 52 53 54 56 57:
+   ----The line 52 53 54 56 57 is safe as it is
+Testing 75 73 71 70 69:
+   ----The line 75 73 71 70 69 is safe as it is
+Testing 93 90 88 86 84:
+   ----The line 93 90 88 86 84 is safe as it is
+Testing 39 36 34 33 32 29 28:
+   ----The line 39 36 34 33 32 29 28 is safe as it is
+Testing 46 43 40 37 34 33:
+   ----The line 46 43 40 37 34 33 is safe as it is
+Testing 99 96 94 93 92 89:
+   ----The line 99 96 94 93 92 89 is safe as it is
+Testing 73 75 76 79 80 81:
+   ----The line 73 75 76 79 80 81 is safe as it is
+Testing 63 66 68 71 72 73 76 79:
+   ----The line 63 66 68 71 72 73 76 79 is safe as it is
+Testing 68 65 62 59 57 56 54:
+   ----The line 68 65 62 59 57 56 54 is safe as it is
+Testing 81 80 77 74 73 71 70 68:
+   ----The line 81 80 77 74 73 71 70 68 is safe as it is
+Testing 14 13 10 9 6 4 1:
+   ----The line 14 13 10 9 6 4 1 is safe as it is
+Testing 75 77 79 80 82 83 84:
+   ----The line 75 77 79 80 82 83 84 is safe as it is
+Testing 1 3 5 8 9:
+   ----The line 1 3 5 8 9 is safe as it is
+Testing 36 35 33 30 27 25 22 19:
+   ----The line 36 35 33 30 27 25 22 19 is safe as it is
+Testing 73 72 69 67 66 65 64:
+   ----The line 73 72 69 67 66 65 64 is safe as it is
+Testing 80 82 83 86 88 90:
+   ----The line 80 82 83 86 88 90 is safe as it is
+Testing 62 60 57 56 54 52 49:
+   ----The line 62 60 57 56 54 52 49 is safe as it is
+Testing 78 77 76 75 72:
+   ----The line 78 77 76 75 72 is safe as it is
+Testing 22 24 26 27 29 31 34:
+   ----The line 22 24 26 27 29 31 34 is safe as it is
+Testing 13 15 18 21 23:
+   ----The line 13 15 18 21 23 is safe as it is
+Testing 12 15 18 20 22 24 27 29:
+   ----The line 12 15 18 20 22 24 27 29 is safe as it is
+Testing 29 26 23 20 18:
+   ----The line 29 26 23 20 18 is safe as it is
+Testing 63 60 57 54 52 49 48:
+   ----The line 63 60 57 54 52 49 48 is safe as it is
+Testing 21 20 19 16 15 14 11 9:
+   ----The line 21 20 19 16 15 14 11 9 is safe as it is
+Testing 37 34 33 32 30 28:
+   ----The line 37 34 33 32 30 28 is safe as it is
+Testing 57 55 53 52 49 48 46 45:
+   ----The line 57 55 53 52 49 48 46 45 is safe as it is
+Testing 13 15 17 18 19:
+   ----The line 13 15 17 18 19 is safe as it is
+Testing 50 53 56 59 61 64 67:
+   ----The line 50 53 56 59 61 64 67 is safe as it is
+Testing 59 58 56 55 52 49:
+   ----The line 59 58 56 55 52 49 is safe as it is
+Testing 26 28 29 31 32 34:
+   ----The line 26 28 29 31 32 34 is safe as it is
+The Sum is:  605
