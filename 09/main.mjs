@@ -18,21 +18,26 @@ function findTotalDiskSpace(diskMap) {
 	return String(diskMap).split('').map(c => Number(c)).reduce((acc, el) => acc + el, 0);
 }
 
-function returnUsedUnusedMap(diskMap) {
+function returnUsedUnusedMap(diskMap, isPart2 = false) {
 	const used = [];
 	const free = [];
+	const full = [];
 
 	let idCounter = 0;
 	String(diskMap).split('').map(c => Number(c)).forEach((val, idx) => {
 		if (idx % 2 === 0) {
-			used.push(new MemoryChunk(idCounter, val, false));
+			const chunk = new MemoryChunk(idCounter, val, false);
+			used.push(chunk);
+			full.push(chunk);
 			idCounter++;
 		} else {
-			free.push(new MemoryChunk(-1, val, true));
+			const chunk = new MemoryChunk(-1, val, true);
+			free.push(chunk);
+			full.push(chunk);
 		}
 	});
 
-	return [used, free];
+	return isPart2 ? full : [used, free];
 }
 
 function part1(lines) {
@@ -80,48 +85,56 @@ function part1(lines) {
 
 function part2(lines) {
 	lines.filter(l => l !== "").forEach(line => {
-		const [used, unused] = returnUsedUnusedMap(line);
+		const chunks = returnUsedUnusedMap(line, true);
 
 		const diskSize = findTotalDiskSpace(line);
 		printd(`Disksize = ${diskSize}`, DEBUG);
 
-		const orderedSlots = [];
-		while (true) {
-			const file = used.shift();
-			orderedSlots.push(file);
-			printd(`   Added slot: ${file}`, DEBUG);
+		for (let i = chunks.length - 1; i >= 0; i--) {
+			if (!chunks[i].isFree) {
 
-			const space = unused.shift();
-			printd(`   Checking space: ${space.size}`, DEBUG);
+				for (let j = 0; j < i; j++) {
+					if (chunks[j].isFree) {
+						if (chunks[j].size > chunks[i].size) {
+							const newId = chunks[i].id;
+							const newSize = chunks[i].size;
 
-			for (let i = used.length - 1; i >= 0; i--) {
-				if (used[i].size <= space.size) {
-					const relocated = used.splice(i, 1)[0];
-					printd(`   Added slot: ${relocated}`, DEBUG);
-					orderedSlots.push(relocated);
-					space.size -= relocated.size;
+							chunks[j].size -= newSize;
+
+							chunks[i].id = -1;
+							chunks[i].isFree = true;
+							chunks.splice(j, 0, new MemoryChunk(newId, newSize, false));
+							i++; //fix since we are adding a new item 
+							break;
+						} else if (chunks[j].size === chunks[i].size) {
+							chunks[j].id = chunks[i].id;
+							chunks[j].isFree = false;
+
+							chunks[i].id = -1;
+							chunks[i].isFree = true;
+							break;
+						}
+					}
 				}
-
-				if (space.size === 0) {
-					printd(`     No free space left. Moving on...`, DEBUG);
-					break;
-				}
-			}
-
-			if (space.size !== 0) {
-				orderedSlots.push(space);
-				printd(`   Space left: ${space.size}`, DEBUG);
-			}
-
-			if (used.length === 0) {
-				break;
 			}
 		}
 
-
-		console.log(orderedSlots);
-		printDisk(orderedSlots);
+		printDisk(chunks);
 		let checkSum = 0;
+		let head = 0;
+		while (head < diskSize) {
+			const c = chunks.shift();
+
+			if (c.isFree) {
+				head += c.size;
+				continue;
+			}
+
+			for (let i = 0; i < c.size; i++) {
+				checkSum += head * c.id;
+				head++;
+			}
+		}
 		console.log("Checksum is: ", checkSum);
 	});
 }
@@ -132,7 +145,7 @@ function printDisk(slots) {
 		s += slot.id === -1 ? '.'.repeat(slot.size) : `${slot.id}`.repeat(slot.size);
 	});
 
-	console.log("Disk: ", s);
+	printd(`Disk: ${s}`, DEBUG);
 }
 
 (async () => {
