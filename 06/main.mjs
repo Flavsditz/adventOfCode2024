@@ -1,10 +1,6 @@
-import { readLines, printd, printdMap } from "../common.mjs";
+import { readLines, printd, printdMap, buildMapMatrix } from "../common.mjs";
 
 let DEBUG = false;
-
-function buildMapMatrix(lines) {
-	return lines.filter(l => l.trim() !== "").map(l => l.split(''));
-}
 
 function findStart(map) {
 	const idLine = map.findIndex(line => line.includes('^'));

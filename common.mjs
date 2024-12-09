@@ -38,3 +38,8 @@ export function printdMap(map, debug_mode) {
 
 	}
 }
+
+export function buildMapMatrix(lines) {
+	return lines.filter(l => l.trim() !== "").map(l => l.split(''));
+}
+
