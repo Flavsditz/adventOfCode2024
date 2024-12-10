@@ -1,4 +1,4 @@
-import { readLines, printd, printdMap, buildMapMatrix } from "../common.mjs";
+import { readLines, printd, printdMap, buildNumberMapMatrix } from "../common.mjs";
 
 let DEBUG = false
 let PART1 = true
@@ -11,7 +11,7 @@ let PART1 = true
 	* @returns {string[]} the possible directions ( <, >, ^, v)
 	*/
 function findPossibleDirections(zRow, zCol, map) {
-	const next = String(Number(map[zRow][zCol]) + 1);
+	const next = map[zRow][zCol] + 1;
 
 	if (next > 9) {
 		return ['='];
@@ -89,7 +89,7 @@ function part1(map) {
 	let sum = 0;
 	map.forEach((row, rIdx) => {
 		row.forEach((num, cIdx) => {
-			if (Number(num) === 0) {
+			if (num === 0) {
 				printd(`  Found 0 in ${rIdx}, ${cIdx}`, DEBUG);
 				const found = countTrails(rIdx, cIdx, map, {});
 
@@ -109,7 +109,7 @@ function part2(map) {
 	let sum = 0;
 	map.forEach((row, rIdx) => {
 		row.forEach((num, cIdx) => {
-			if (Number(num) === 0) {
+			if (num === 0) {
 				printd(`  Found 0 in ${rIdx}, ${cIdx}`, DEBUG);
 				const found = countTrails(rIdx, cIdx, map, {});
 
@@ -144,7 +144,7 @@ function part2(map) {
 	const filePath = `${mode}input.txt`;
 	const lines = await readLines(filePath);
 
-	const map = buildMapMatrix(lines);
+	const map = buildNumberMapMatrix(lines);
 
 	printdMap(map, DEBUG);
 

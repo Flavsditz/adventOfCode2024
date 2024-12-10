@@ -41,9 +41,16 @@ export function printdMap(map, debug_mode) {
 
 /**
  * @param {string[]} lines lines read one by one from a file
- * @returns {any[][]}
+ * @returns {string[][]}
  */
 export function buildMapMatrix(lines) {
 	return lines.filter(l => l.trim() !== "").map(l => l.split(''));
 }
 
+/**
+ * @param {string[]} lines lines read one by one from a file
+ * @returns {number[][]}
+ */
+export function buildNumberMapMatrix(lines) {
+	return lines.filter(l => l.trim() !== "").map(l => l.split('')).map(r => r.map(c => Number(c)));
+}
