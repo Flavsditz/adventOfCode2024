@@ -21,7 +21,7 @@ export function printdMap(map, debug_mode) {
 
 		let tensHeader = "     "; // 5 spaces for line lables
 		let unitHeader = "     ";
-		for (let i = 0; i < Math.floor(width / 10); i++) {
+		for (let i = 0; i <= Math.floor(width / 10); i++) {
 			tensHeader += `${i}         `;
 
 			for (let j = 0; j < 10; j++) {
@@ -39,6 +39,10 @@ export function printdMap(map, debug_mode) {
 	}
 }
 
+/**
+ * @param {string[]} lines lines read one by one from a file
+ * @returns {any[][]}
+ */
 export function buildMapMatrix(lines) {
 	return lines.filter(l => l.trim() !== "").map(l => l.split(''));
 }
