@@ -10,27 +10,23 @@ function findStart(map) {
 }
 
 function nextStep(line, col, dir) {
-	let newLine, newCol = 0;
+	let newDir = [];
 	switch (dir) {
 		case '>':
-			newLine = line;
-			newCol = col + 1;
+			newDir = [0, 1];
 			break;
 		case 'v':
-			newLine = line + 1;
-			newCol = col;
+			newDir = [1, 0];
 			break;
 		case '<':
-			newLine = line;
-			newCol = col - 1;
+			newDir = [0, -1];
 			break;
 		case '^':
-			newLine = line - 1;
-			newCol = col;
+			newDir = [-1, 0];
 			break;
 	}
 
-	return [newLine, newCol];
+	return [line + newDir[0], col + newDir[1]];
 }
 
 function nextDirection(line, col, dir, map) {
@@ -58,13 +54,15 @@ function nextDirection(line, col, dir, map) {
 	return nDir;
 }
 
-function canBeLoop(lin, col, dir, map) {
+/**
+	* @param {number} lin 
+	* @param {number} col
+	* @param {string} dir
+	* @param {string[][]} map 
+	* @param {Map} beenThereMap
+	*/
+function canBeLoop(lin, col, dir, map, beenThereMap) {
 	printd(`Check for loop at (${lin},${col}) '${dir}'`, DEBUG);
-	//if we put an obstruction on the next step would we loop?
-	const cp = JSON.parse(JSON.stringify(map));
-
-	// Register starting point
-	const [stLin, stCol, sDir] = [lin, col, dir];
 
 	// Where to put the obstruction
 	const [oLin, oCol] = nextStep(lin, col, dir);
@@ -72,34 +70,48 @@ function canBeLoop(lin, col, dir, map) {
 
 
 	//console.log(`  (${lin}, ${col}) ${dir} (${oLin}, ${oCol})`);
-	if (!cp[oLin] || !cp[oLin][oCol]) {
+	if (!map[oLin] || !map[oLin][oCol] || map[oLin][oCol] === "#") {
 		return false;
 	}
 
-	cp[oLin][oCol] = "#";
+	map[oLin][oCol] = "#";
 	let isLoop = true;
 	let isOnArea = true;
 	let steps = 0;
+
+	const beenThere = new Map(beenThereMap);
 	while (isOnArea) {
-		dir = nextDirection(lin, col, dir, cp);
-		[lin, col] = nextStep(lin, col, dir);
+		dir = nextDirection(lin, col, dir, map);
+
+		const key = getMoveKey(lin, col, dir);
+		if (beenThere.has(key)) {
+			//Found loop
+			isOnArea = false
+		} else {
+			beenThere.set(key, 1);
+
+			[lin, col] = nextStep(lin, col, dir);
 
 
-		if (!cp[lin] || !cp[lin][col]) {
-			isOnArea = false;
-			isLoop = false;
-		} else if (stLin === lin && stCol === col && sDir === dir || steps > 1300000) {
-			// Found loop let's get out of this one
-			isOnArea = false;
+			if (!map[lin] || !map[lin][col]) {
+				isOnArea = false;
+				isLoop = false;
+			} else if (steps > 1300000) {
+				// Hail mary exit clause
+				isOnArea = false;
+			}
+			steps++;
 		}
-		steps++;
 	}
 
-
 	printd(`  This can be a loop: ${isLoop} `, DEBUG)
+	map[oLin][oCol] = ".";
 	return isLoop;
 }
 // 897 < ans < 1977 
+function getMoveKey(lin, col, dir) {
+	return `${lin}-${col}-${dir}`;
+}
 
 function part1(map) {
 	let [lin, col] = findStart(map);
@@ -136,6 +148,7 @@ function part2(map) {
 
 	printd(`Start position at(${lin}, ${col})`, DEBUG);
 
+	const beenThereMap = new Map();
 	let count = 0;
 	while (isOnArea) {
 		map[lin][col] = "X";
@@ -148,12 +161,15 @@ function part2(map) {
 		// Look ahead and see if we can continue on that direction (or turn)
 		direction = nextDirection(lin, col, direction, map);
 
+		// Remember we were here and at that direction
+		beenThereMap.set(getMoveKey(lin, col, direction), 1);
+
 		// Now check the next step with the correct direction
 		[lin, col] = nextStep(lin, col, direction);
 
-		//If next step has been visited already test for possible loop
+		//test for possible loop
 		//printdMap(map, DEBUG);
-		if (canBeLoop(lin, col, direction, map)) {
+		if (canBeLoop(lin, col, direction, map, beenThereMap)) {
 			possibleObstructionPosition++;
 		}
 
@@ -173,12 +189,13 @@ function part2(map) {
 	process.argv.forEach(function(val, index, array) {
 		if (val === '-d') {
 			DEBUG = true;
-		}
-		if (val === '-t') {
+		} else if (val === '-t') {
 			mode = 't';
-		}
-		if (val === '2') {
+		} else if (val === '2') {
 			part = 2;
+		} else if (val.startsWith("-e")) {
+			mode = val.slice(1);
+			console.log("Special mode: ", val);
 		}
 	});
 	const filePath = `${mode}input.txt`;
