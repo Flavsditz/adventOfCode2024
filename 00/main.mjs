@@ -16,8 +16,8 @@ function part2(lines) {
 		if (val === '-d') {
 			DEBUG = true;
 		}
-		if (val === '-t') {
-			mode = 't';
+		if (val.startsWith('-t')) {
+			mode = val.slice(1);
 		}
 		if (val === '2') {
 			part = 2;
