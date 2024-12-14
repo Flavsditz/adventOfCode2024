@@ -36,47 +36,47 @@ function parseBlock(lines) {
 }
 
 /**
-	* @param {GameData} data
+	* @param {GamepadButton} buttonData
+	* @param {number} offset
 	*
 	* @returns {number}
 	*/
-function calculateBestGame(data) {
-	const { a, b, prize } = data;
+function solveMachine(buttonData, offset) {
+	printd(`Solving for ${JSON.stringify(buttonData)}`, DEBUG);
+	const { prize, a, b } = buttonData;
+	// Adjust the prize coordinates with the offset
+	const rPrize = {
+		x: prize.x + offset,
+		y: prize.y + offset
+	};
 
-	let [pressA, pressB] = [0, 0];
-	if (prize.x > prize.y) {
-		if (a.y > b.y) {
-			[pressA, pressB] = calcOptimum(Math.floor(prize.y / a.y), prize.y, prize.x, a.y, a.x, b.y, b.x);
-		} else {
-			[pressB, pressA] = calcOptimum(Math.floor(prize.y / b.y), prize.y, prize.x, b.y, b.x, a.y, a.x);
-		}
+	// Calculate the determinant of the matrix
+	const det = a.x * b.y - a.y * b.x;
+
+	if (det === 0) {
+		printd("Determinant is zero, cannot solve the system", DEBUG);
+		return 0;
+	}
+
+	// Solve for coefficients 'a' and 'b'
+	const pressA = Math.floor((rPrize.x * b.y - rPrize.y * b.x) / det);
+	const pressB = Math.floor((a.x * rPrize.y - a.y * rPrize.x) / det);
+
+	// Recalculate prize to validate the solution
+	const recalculatedPrize = {
+		x: a.x * pressA + b.x * pressB,
+		y: a.y * pressA + b.y * pressB
+	};
+
+	printd(` PressA=${pressA}`, DEBUG);
+	printd(` PressB=${pressB}`, DEBUG);
+	printd(` Recalc=${JSON.stringify(recalculatedPrize)}`, DEBUG);
+	// Check if the recalculated prize matches the adjusted prize
+	if (recalculatedPrize.x === rPrize.x && recalculatedPrize.y === rPrize.y) {
+		return pressA * 3 + pressB;
 	} else {
-		if (a.x > b.x) {
-			[pressA, pressB] = calcOptimum(Math.floor(prize.x / a.x), prize.x, prize.y, a.x, a.y, b.x, b.y);
-		} else {
-			[pressB, pressA] = calcOptimum(Math.floor(prize.x / b.x), prize.x, prize.y, b.x, b.y, a.x, a.y);
-		}
+		return 0;
 	}
-
-	printd(`For game ${JSON.stringify(data)} the press are A: ${pressA} and B: ${pressB} (total=${3 * pressA + pressB})`, DEBUG)
-	return 3 * pressA + pressB
-}
-
-function calcOptimum(maxPress, prizeDim1, prizeDim2, btn1Dim1, btn1Dim2, btn2Dim1, btn2Dim2) {
-	if (maxPress > 100) {
-		maxPress = 100;
-	}
-
-	for (let i = maxPress; i > 0; i--) {
-		if (Number.isInteger((prizeDim1 - btn1Dim1 * i) / btn2Dim1)) {
-			const presses = (prizeDim2 - btn1Dim2 * i) / btn2Dim2;
-			if (Number.isInteger(presses)) {
-				return presses > 100 ? [0, 0] : [i, presses];
-			}
-		}
-	}
-
-	return [0, 0];
 }
 
 function part1(lines) {
@@ -88,7 +88,7 @@ function part1(lines) {
 			// Blank line indicates end of block
 			if (currentBlock.length > 0) {
 				const gameData = parseBlock(currentBlock);
-				totalInvestment += calculateBestGame(gameData);
+				totalInvestment += solveMachine(gameData, 0);
 				currentBlock = [];
 			}
 		} else {
@@ -100,7 +100,7 @@ function part1(lines) {
 	// Handle the last block if the file doesn't end with a blank line
 	if (currentBlock.length > 0) {
 		const gameData = parseBlock(currentBlock);
-		totalInvestment += calculateBestGame(gameData);
+		totalInvestment += solveMachine(gameData, 0);
 	}
 
 
@@ -109,6 +109,31 @@ function part1(lines) {
 }
 
 function part2(lines) {
+	let currentBlock = [];
+	let totalInvestment = 0;
+
+	lines.forEach(line => {
+		if (line.trim() === "") {
+			// Blank line indicates end of block
+			if (currentBlock.length > 0) {
+				const gameData = parseBlock(currentBlock);
+				totalInvestment += solveMachine(gameData, 10000000000000);
+				currentBlock = [];
+			}
+		} else {
+			// Collect lines for the current block
+			currentBlock.push(line.trim())
+		}
+	});
+
+	// Handle the last block if the file doesn't end with a blank line
+	if (currentBlock.length > 0) {
+		const gameData = parseBlock(currentBlock);
+		totalInvestment += solveMachine(gameData, 10000000000000);
+	}
+
+
+	console.log("Total Investment: ", totalInvestment);
 }
 
 (async () => {
