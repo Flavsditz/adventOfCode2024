@@ -12,7 +12,7 @@ function part2(lines) {
 	let mode = 'r' //t - test, r - real
 	let part = 1;
 
-	process.argv.forEach(function(val, index, array) {
+	process.argv.forEach(function(val) {
 		if (val === '-d') {
 			DEBUG = true;
 		}
@@ -23,7 +23,7 @@ function part2(lines) {
 			part = 2;
 		}
 	});
-	const filePath = `${mode}input.txt`;
+	const filePath = `${process.cwd()}/${mode}input.txt`;
 	const lines = await readLines(filePath);
 
 	printd(lines, DEBUG);
