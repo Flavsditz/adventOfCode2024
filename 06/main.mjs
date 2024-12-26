@@ -189,13 +189,10 @@ function part2(map) {
 	process.argv.forEach(function(val, index, array) {
 		if (val === '-d') {
 			DEBUG = true;
-		} else if (val === '-t') {
-			mode = 't';
+		} else if (val.startsWith('-t')) {
+			mode = val.slice(1);
 		} else if (val === '2') {
 			part = 2;
-		} else if (val.startsWith("-e")) {
-			mode = val.slice(1);
-			console.log("Special mode: ", val);
 		}
 	});
 	const filePath = `${mode}input.txt`;
